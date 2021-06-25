@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Metropolis';
+  src: url('../fonts/metropolis/Metropolis-Regular.otf') format('truetype');
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Metropolis';
+}

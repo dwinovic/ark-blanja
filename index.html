@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blanja | Seller Login</title>
+  <link rel="stylesheet" href="./src/styles/seller-login.css" />
+  <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- START = header page -->
+    <header>
+      <div class="logo-wrapper">
+        <img src="./src/images/icons/blanja-icon.png" alt="Blanja.com" />
+        <h3 class="logo">Blanja</h3>
+      </div>
+      <p class="sub-heading">Please login with your account</p>
+    </header>
+    <!-- END = header page -->
+
+    <!-- START = Navigation role -->
+    <nav>
+      <a href="./src/pages/customer-login.html" class="customer">Custommer</a>
+      <a href="./index.html" class="seller">Seller</a>
+    </nav>
+
+    <!-- END = Navigation role -->
+
+    <!-- START = Form Login Input -->
+    <form>
+      <div class="email-wrapper">
+        <label for="email"></label>
+        <input type="text" placeholder="Email" name="email" />
+      </div>
+      <div class="password-wrapper">
+        <label for="password"></label>
+        <input type="password" name="password" placeholder="Password" />
+      </div>
+      <div class="forgot-info">
+        <a href="#">Forgot password?</a>
+      </div>
+      <button onclick="goHome()" class="submit" type="button">
+        PRIMARY</button>
+      <div class="register">
+        <p>Don't have a Blanja account? <a href="./src/pages/seller-signup.html">Register</a></p>
+      </div>
+    </form>
+  </div>
+  </div>
+
+  <script src="./src/scripts/main.js"></script>
+</body>
+
+</html>
