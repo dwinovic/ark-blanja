@@ -3,6 +3,21 @@
   src: url('../fonts/metropolis/Metropolis-Regular.otf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Metropolis-Medium';
+  src: url('../fonts/metropolis/Metropolis-Medium.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Metropolis-SemiBold';
+  src: url('../fonts/metropolis/Metropolis-SemiBold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Metropolis-Bold';
+  src: url('../fonts/metropolis/Metropolis-Bold.otf') format('truetype');
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -10,4 +25,5 @@
 
 body {
   font-family: 'Metropolis';
+  background-color: white;
 }

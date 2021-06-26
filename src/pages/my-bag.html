@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Blanja | My Bag</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../styles/my-bag.css" />
+  <link rel="stylesheet" href="../styles/main.css" />
+</head>
+
+<body>
+  <nav>
+    <!-- Start = Navigation bar -->
+    <div class="container" id="">
+      <!-- Start = Logo brand -->
+      <a href="./homepage.html" class="logo-brand">
+        <img src="../images/icons/blanja-icon.png" alt="Blanja.com" />
+        <p class="logo-name">Blanja</p>
+      </a>
+      <!-- End = Logo brand -->
+      <!-- Start = Searching feature -->
+      <div class="seaching-wrapper">
+        <form action="">
+          <input type="text" name="searching" placeholder="Search" />
+          <button>
+              <img src="../images/icons/IC-search.png" alt="searching-button" />
+            </button>
+        </form>
+        <div class="filter-wrapper">
+          <a href="">
+            <img src="../images/icons/IC-filter.png" alt="filter icon" />
+          </a>
+        </div>
+      </div>
+      <!-- End = Searching feature -->
+
+      <!-- Start = Navigation -->
+      <div class="navigation-auth">
+        <a href="#" class="cart"><img src="../images/icons/IC-cart.png" alt="cart icon" /></a>
+        <a href="/index.html" class="button primary">Login</a>
+        <a href="/src/pages/customer-signup.html" class="button secondary">Signup</a
+          >
+          <!-- <ul>
+          <li><a href="" class="button primary">Login</a></li>
+        <li><a href="" class="button secondary">Signup</a></li>
+        </ul> -->
+      </div>
+      <!-- End = Navigation -->
+    </div>
+    <!-- End = Navigation bar -->
+  </nav>
+  <!-- Start Heading Page -->
+  <header class="container">
+    <h1 class="heading-page">My Bag</h1>
+  </header>
+  <!-- End Heading Page -->
+  <!-- Start = Main content -->
+  <main class="container">
+    <div class="list-cart-wrapper">
+      <div class="all-controls">
+        <input type="checkbox" name="" id="" />
+        <h3>Select all items</h3>
+        <span>(2 Items selected)</span>
+        <button>Delete</button>
+      </div>
+      <div class="items-product">
+        <div class="item 1">
+          <input type="checkbox" name="" id="" />
+          <div class="detail-product">
+            <img src="" alt="" />
+            <div class="desc-product">
+              <h5>Men's formal suit - Black</h5>
+              <p>Zalora.com</p>
+            </div>
+          </div>
+          <button>-</button>
+          <p>1</p>
+          <button>+</button>
+          <p>$20.0</p>
+        </div>
+      </div>
+    </div>
+    <div class="total-payment">
+      <h3>Shopping summary</h3>
+      <div class="price">
+        <p>Total price</p>
+        <p>$ 40.0</p>
+      </div>
+      <button>Buy</button>
+    </div>
+  </main>
+  <footer>
+    <img src="../images/icons/blanja-icon.png" alt="" />
+    <p>Blanja.com</p>
+  </footer>
+
+  <!-- End = Main content -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
