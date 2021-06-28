@@ -75,7 +75,11 @@
         <p>
           Perumahan Sapphire Mediterania, Wiradadi, Kec. Sokaraja, Kabupaten Banyumas, Jawa Tengah, 53181 [Tokopedia Note: blok c 16] Sokaraja, Kab. Banyumas, 53181
         </p>
-        <button>Choose another address</button>
+        <div class="btn-wrapper">
+          <button data-bs-toggle="modal" data-bs-target="#chooseAddress" class="btn secondary">
+              Choose another address
+            </button>
+        </div>
       </div>
       <!-- End = Address-->
       <!-- Start = Product order -->
@@ -113,20 +117,114 @@
         <p>$ 40.0</p>
       </div>
       <div class="divider"></div>
-      <div class="price-wrapper">
+      <div class="price-wrapper last">
         <h3>Shopping summary</h3>
         <p>$ 40.0</p>
       </div>
-      <button>Buy</button>
+      <button class="btn primary">Buy</button>
     </div>
     <!-- End = Total Payement -->
   </main>
   <!-- End = Main content -->
-
+  <!-- Start = Footer -->
   <footer>
     <img src="../images/icons/blanja-icon.png" alt="" />
     <p>Blanja.com</p>
   </footer>
+  <!-- End = Footer -->
+
+  <!-- Start = Modal Choose Address -->
+  <div class="modal fade" id="chooseAddress" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="chooseAddressLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="d-flex justify-content-end">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <h5 class="modal-title" id="chooseAddressLabel">
+            Choose another address
+          </h5>
+          <!-- Note = Hubungkan button ke modal add new address -->
+          <div class="add-address" data-bs-toggle="modal" data-bs-target="#addNewAddress">
+            Add New Address
+          </div>
+          <div class="item address card">
+            <h3>Andreas Jane</h3>
+            <p>
+              Perumahan Sapphire Mediterania, Wiradadi, Kec. Sokaraja, Kabupaten Banyumas, Jawa Tengah, 53181 [Tokopedia Note: blok c 16] Sokaraja, Kab. Banyumas, 53181
+            </p>
+            <p class="primary" data-bs-toggle="modal" data-bs-target="#addNewAddress">
+              Change address
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End = Modal Choose Address -->
+
+  <!-- Start = Modal Add New Address -->
+  <div class="modal fade" id="addNewAddress" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="addNewAddressLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="d-flex justify-content-end">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <h5 class="modal-title" id="addNewAddressLabel">Add new address</h5>
+          <form action="">
+            <div class="row">
+              <label for="type-address">
+                  Save address as (ex : home address, office address)
+                </label>
+              <input type="text" name="type-address" placeholder="Rumah" id="" />
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="name">Recipient’s name</label>
+                <input type="text" name="name" placeholder="Your Name" />
+              </div>
+              <div class="col">
+                <label for="phone">Recipient's telephone number</label>
+                <input type="text" name="phone" placeholder="Phone Number" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="address">Address</label>
+                <input type="text" name="address" placeholder="Your Address" />
+              </div>
+              <div class="col">
+                <label for="code-post">Postal code</label>
+                <input type="text" name="code-post" placeholder="Code Post" />
+              </div>
+            </div>
+            <div class="row">
+              <label for="city"> City or Subdistrict </label>
+              <input type="text" name="city" placeholder="Rumah" id="" />
+            </div>
+            <div class="row last">
+              <input type="checkbox" name="primary-address" id="" />
+              <label for="primary-address">Make it the primary address</label>
+            </div>
+            <div class="action-wrapper">
+              <div class="btn-wrapper">
+                <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn secondary" data-bs-dismiss="modal">
+                    Cancel
+                  </button>
+              </div>
+              <div class="btn-wrapper">
+                <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn primary" data-bs-dismiss="modal">
+                    Save
+                  </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End = Modal Add New Address -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 

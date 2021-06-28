@@ -375,7 +375,7 @@ main.container .total-payment .price-wrapper p {
   color: #222222;
 }
 
-main.container .total-payment button {
+main.container .total-payment .btn-primary {
   background: #db3022;
   border-radius: 25px;
   border: 0;
@@ -386,9 +386,12 @@ main.container .total-payment button {
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 
-main.container .total-payment button:hover {
+main.container .total-payment .btn-primary:hover {
   opacity: 0.8;
 }
 

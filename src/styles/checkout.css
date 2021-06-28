@@ -1,6 +1,54 @@
+/* Global Styling ============================== */
+
 .container {
   /* background-color: cyan; */
 }
+
+
+/* Button */
+
+.btn.secondary {
+  border: 1px solid #9b9b9b;
+  box-sizing: border-box;
+  border-radius: 24px;
+  background-color: transparent;
+  padding: 8px;
+  width: 100%;
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  color: #9b9b9b;
+}
+
+.btn.secondary:hover {
+  border: 1px solid #1b1b1b;
+  color: #1b1b1b;
+}
+
+.btn.primary {
+  background: #db3022;
+  border-radius: 25px;
+  border: 0;
+  box-sizing: border-box;
+  color: white;
+  width: 100%;
+  padding: 8px 0;
+  height: 36px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.btn.primary:hover {
+  opacity: 0.8;
+}
+
+
+/* Global Styling =============================== */
 
 
 /* Start = Navigation bar ====================*/
@@ -153,7 +201,7 @@ main.container {
 
 /* START = MAIN CONTENT GENERAL */
 
-main.container .card {
+.card {
   background: #ffffff;
   box-shadow: 0px 0px 8px rgba(115, 115, 115, 0.25);
   border-radius: 4px;
@@ -161,7 +209,7 @@ main.container .card {
   margin-bottom: 20px;
 }
 
-main.container h3 {
+h3 {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -172,9 +220,6 @@ main.container h3 {
 
 
 /* END = MAIN CONTENT GENERAL */
-
-
-/* Start = List Cart Products */
 
 
 /* Start = Information Order */
@@ -195,11 +240,11 @@ main.container .information-order h2 {
 
 /* Start = Address */
 
-main.container .information-order .item.address h3 {
+.item.address h3 {
   margin-bottom: 10px;
 }
 
-main.container .information-order .item.address p {
+.item.address p {
   font-family: Metropolis;
   font-style: normal;
   font-weight: normal;
@@ -208,26 +253,8 @@ main.container .information-order .item.address p {
   color: #222222;
 }
 
-main.container .information-order .item.address button {
-  border: 1px solid #9b9b9b;
-  box-sizing: border-box;
-  border-radius: 24px;
-  background-color: transparent;
-  padding: 8px;
+.item.address .btn-wrapper {
   width: 210px;
-  font-family: Metropolis;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  align-items: center;
-  text-align: center;
-  color: #9b9b9b;
-}
-
-main.container .information-order .item.address button:hover {
-  border: 1px solid #1b1b1b;
-  color: #1b1b1b;
 }
 
 
@@ -236,30 +263,30 @@ main.container .information-order .item.address button:hover {
 
 /* Start = Product Order */
 
-main.container .information-order .item.product {
+.item.product {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
 
-main.container .information-order .item .product-desc {
+.item .product-desc {
   display: flex;
 }
 
-main.container .information-order .item .product-desc img {
+.item .product-desc img {
   width: 70px;
   height: 69px;
   border-radius: 10px;
 }
 
-main.container .information-order .item .product-desc .product-title {
+.item .product-desc .product-title {
   margin-left: 14px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-main.container .information-order .item .product-desc .product-title h5 {
+.item .product-desc .product-title h5 {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -267,7 +294,7 @@ main.container .information-order .item .product-desc .product-title h5 {
   margin-bottom: 4px;
 }
 
-main.container .information-order .item .product-desc .product-title p {
+.item .product-desc .product-title p {
   font-family: Metropolis;
   font-style: normal;
   font-weight: 500;
@@ -299,13 +326,16 @@ main.container .total-payment {
   align-self: flex-start;
   width: 370px;
   margin-left: 50px;
-  /* height: 180px; */
 }
 
 main.container .total-payment .price-wrapper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 14px;
+}
+
+main.container .total-payment .price-wrapper.last {
+  margin-bottom: 23px;
 }
 
 main.container .total-payment .price-wrapper p.heading {
@@ -342,24 +372,6 @@ main.container .divider {
   margin: 6px 0 18px 0;
 }
 
-main.container .total-payment button {
-  background: #db3022;
-  border-radius: 25px;
-  border: 0;
-  box-sizing: border-box;
-  color: white;
-  padding: 8px 0;
-  height: 36px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  margin-top: 23px;
-}
-
-main.container .total-payment button:hover {
-  opacity: 0.8;
-}
-
 
 /* End = Total Payement */
 
@@ -367,7 +379,167 @@ main.container .total-payment button:hover {
 /* End = Main content ============================ */
 
 
-/* Start = Footer Section ============================ */
+/* Global Modal Start */
+
+.modal-content {
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.modal-content {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content h5 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 28px;
+  color: #222222;
+  text-align: center;
+  margin: 11px 0 30px 0;
+}
+
+
+/* Global Modal End */
+
+
+/* Start = Modal Choose Address */
+
+.modal.fade .modal-dialog .modal-content .modal-body .add-address {
+  border: 2px dashed #9b9b9b;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 34px;
+  padding: 34px;
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  color: #9b9b9b;
+}
+
+.modal.fade .modal-dialog .modal-content .modal-body .add-address:hover {
+  border: 2px dashed #222222;
+  color: #222222;
+  cursor: pointer;
+}
+
+.modal.fade .modal-dialog .modal-content .modal-body .card {
+  background: #ffffff;
+  border: 1px solid #db3022;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 0;
+}
+
+.modal.fade .modal-dialog .modal-content .modal-body .card p.primary {
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: #db3022;
+}
+
+.modal.fade .modal-dialog .modal-content .modal-body .card p.primary:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+/* End = Modal Choose Address */
+
+
+/* Start = Add New Address */
+
+#addNewAddress.modal .modal-body h5 {
+  margin-bottom: 40px;
+}
+
+#addNewAddress.modal .modal-body .label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #9b9b9b;
+}
+
+
+/* Start = Form Input Add New Address */
+
+form input {
+  border: 1px solid #9b9b9b;
+  height: 48px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 23px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #9b9b9b;
+  filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.05));
+  border-radius: 4px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 14px;
+}
+
+form .row {
+  display: flex;
+  margin-bottom: 16px;
+  gap: 32px;
+}
+
+form .row .col {
+  padding: 0;
+}
+
+form .row.last {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+}
+
+form .row.last label {
+  box-sizing: border-box;
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+  padding-top: 12px;
+  margin-left: 13px;
+}
+
+form .row.last input {
+  border: 1px solid #9b9b9b;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 20px;
+  padding: 0;
+}
+
+#addNewAddress.modal form .action-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  height: 36px;
+}
+
+#addNewAddress.modal form .btn-wrapper {
+  width: 160px;
+}
+
+
+/* End = Form Input Add New Address */
+
+
+/* End = Add New Address */
 
 
 /* Start = Footer Section ============================ */
@@ -392,4 +564,4 @@ footer p {
 }
 
 
-/* Start = Footer Section ============================ */
+/* End = Footer Section ============================ */

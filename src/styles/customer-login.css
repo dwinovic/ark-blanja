@@ -118,11 +118,11 @@ form input {
   border-radius: 4px;
 }
 
-form .email-wrapper {
+form .row {
   margin-bottom: 16px;
 }
 
-form .password-wrapper {
+form .last {
   margin-bottom: 26px;
 }
 
