@@ -52,9 +52,9 @@
         <div class="btn">
           <img src="/src/images/icons/IC-main.svg" alt="" />
         </div>
-        <div class="btn profile">
+        <a href="./profile.html" class="btn profile">
           <img src="/src/images/icons/profile.png" alt="" />
-        </div>
+        </a>
       </div>
       <!-- End = Navigation -->
     </div>
@@ -121,7 +121,9 @@
         <h3>Shopping summary</h3>
         <p>$ 40.0</p>
       </div>
-      <button class="btn primary">Buy</button>
+      <button class="btn primary" data-bs-toggle="modal" data-bs-target="#payment">
+          Buy
+        </button>
     </div>
     <!-- End = Total Payement -->
   </main>
@@ -225,6 +227,62 @@
     </div>
   </div>
   <!-- End = Modal Add New Address -->
+
+  <!-- Start = Modal Payment -->
+  <div class="modal fade" id="payment" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="payment" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h5 class="modal-title" id="payment">Payment</h5>
+        </div>
+        <div class="body">
+          <div class="section">
+            <h6 class="heading">Payment method</h6>
+            <div class="bank-wrapper">
+              <div class="row-wrap">
+                <img src="../images/icons/IC-Bank-Gopay.png" alt="Gopay" />
+                <h6 class="heading">Gopay</h6>
+                <input type="checkbox" name="gopay" id="" />
+              </div>
+              <div class="row-wrap">
+                <img src="../images/icons/IC-Bank-Pos.png" alt="Pos Indonesia" />
+                <h6 class="heading">Pos Indonesia</h6>
+                <input type="checkbox" name="posindo" id="" />
+              </div>
+              <div class="row-wrap">
+                <img src="../images/icons/IC-Bank-Mastercard.png" alt="Mastercard" />
+                <h6 class="heading">Mastercard</h6>
+                <input type="checkbox" name="mastercard" id="" />
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="section">
+            <h6 class="heading">Shopping Summary</h6>
+            <div class="row-wrap">
+              <p class="text-secondary">Order</p>
+              <h6 class="heading price">$ 40.0</h6>
+            </div>
+            <div class="row-wrap">
+              <p>Delivery</p>
+              <h6 class="heading price">$ 5.0</h6>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="total-wrapper">
+            <h6 class="heading">Shopping summary</h6>
+            <p class="text primary">$ 45.0</p>
+          </div>
+          <div class="btn-wrapper">
+            <button class="btn primary">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End = Modal Payment -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 

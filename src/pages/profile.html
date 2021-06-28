@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Blanja | User Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../styles/profile.css" />
+  <link rel="stylesheet" href="../styles/main.css" />
+</head>
+
+<body>
+  <nav>
+    <!-- Start = Navigation bar -->
+    <div class="container" id="">
+      <!-- Start = Logo brand -->
+      <a href="./homepage.html" class="logo-brand">
+        <img src="../images/icons/blanja-icon.png" alt="Blanja.com" />
+        <p class="logo-name">Blanja</p>
+      </a>
+      <!-- End = Logo brand -->
+      <!-- Start = Searching feature -->
+      <div class="seaching-wrapper">
+        <form action="">
+          <input type="text" name="searching" placeholder="Search" />
+          <button>
+              <img src="../images/icons/IC-search.png" alt="searching-button" />
+            </button>
+        </form>
+        <div class="filter-wrapper">
+          <a href="">
+            <img src="../images/icons/IC-filter.png" alt="filter icon" />
+          </a>
+        </div>
+      </div>
+      <!-- End = Searching feature -->
+
+      <!-- Start = Navigation -->
+      <div class="navigation-auth">
+        <div class="btn">
+          <img src="/src/images/icons/IC-cart.svg" alt="" />
+        </div>
+        <div class="btn">
+          <img src="/src/images/icons/IC-bell.svg" alt="" />
+        </div>
+        <div class="btn">
+          <img src="/src/images/icons/IC-main.svg" alt="" />
+        </div>
+        <a href="./profile.html" class="btn profile">
+          <img src="/src/images/icons/profile.png" alt="" />
+        </a>
+      </div>
+      <!-- End = Navigation -->
+    </div>
+    <!-- End = Navigation bar -->
+  </nav>
+
+  <!-- Start = Main content -->
+  <main class="container">
+    <!-- Start = Aside User Menu -->
+    <aside>
+      <div class="user-profile-wrapper">
+        <img src="" alt="" />
+        <div class="username-wrapper">
+          <h3>Johannes Mikael</h3>
+          <div class="edit-profile-wrapper">
+            <img src="" alt="" />
+            <p class="text secondary">Ubah profile</p>
+          </div>
+        </div>
+      </div>
+      <div class="menu-wrapper">
+        <div class="menu-row">
+          <img src="" alt="" />
+          <p>My Account</p>
+        </div>
+        <div class="menu-row">
+          <img src="" alt="" />
+          <p>Shipping Adress</p>
+        </div>
+        <div class="menu-row">
+          <img src="" alt="" />
+          <p>My Order</p>
+        </div>
+      </div>
+    </aside>
+    <!-- End = Aside User Menu -->
+    <!-- Start = Data Profile -->
+    <div class="content">
+      <div class="card">
+        <div class="header">
+          <h1>Profile</h1>
+          <p>Manage your porfile information</p>
+        </div>
+        <div class="divider"></div>
+        <div class="body">
+          <form action="">
+            <div class="row">
+              <div class="col">
+                <p class="text secondary">Name</p>
+              </div>
+              <div class="col">
+                <input type="text" name="name" id="" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p class="text secondary">Email</p>
+              </div>
+              <div class="col">
+                <input type="email" name="email" id="" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p class="text secondary">Phone Number</p>
+              </div>
+              <div class="col">
+                <input type="text" name="phone" id="" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p class="text secondary">Gender</p>
+              </div>
+              <div class="col">
+                <input type="checkbox" name="male" id="" />
+              </div>
+              <div class="col">
+                <input type="checkbox" name="female" id="" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p class="text secondary">Date of birth</p>
+              </div>
+              <div class="col">
+                <select name="day" id="">
+                    <option value="1"></option>
+                  </select>
+              </div>
+              <div class="col">
+                <select name="month" id="">
+                    <option value="January"></option>
+                  </select>
+              </div>
+              <div class="col">
+                <select name="year" id="">
+                    <option value="1990"></option>
+                  </select>
+              </div>
+            </div>
+            <div class="btn-wrapper">
+              <input type="button" value="Save" class="btn primary" />
+            </div>
+          </form>
+          <div class="divider vertical"></div>
+          <div class="photo-profile-wrapper">
+            <img src="" alt="" />
+            <button class="btn secondary">Select Image</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End = Data Profile -->
+  </main>
+  <!-- End = Main content -->
+  <!-- Start = Footer -->
+  <footer>
+    <img src="../images/icons/blanja-icon.png" alt="" />
+    <p>Blanja.com</p>
+  </footer>
+  <!-- End = Footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

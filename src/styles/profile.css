@@ -1,0 +1,223 @@
+/* Global Styling ============================== */
+
+.container {
+  /* background-color: cyan; */
+}
+
+
+/* Button */
+
+.btn.secondary {
+  border: 1px solid #9b9b9b;
+  box-sizing: border-box;
+  border-radius: 24px;
+  background-color: transparent;
+  padding: 8px;
+  width: 100%;
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  color: #9b9b9b;
+}
+
+.btn.secondary:hover {
+  border: 1px solid #1b1b1b;
+  color: #1b1b1b;
+}
+
+.btn.primary {
+  background: #db3022;
+  border-radius: 25px;
+  border: 0;
+  box-sizing: border-box;
+  color: white;
+  width: 100%;
+  padding: 8px 0;
+  height: 36px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.btn.primary:hover {
+  opacity: 0.8;
+}
+
+
+/* Global Styling =============================== */
+
+
+/* Start = Navigation bar ====================*/
+
+nav {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 9;
+  box-shadow: 0px 6px 40px rgba(173, 173, 173, 0.25);
+}
+
+nav .container {
+  padding: 30px 0;
+  display: flex;
+}
+
+
+/* Start = Logo brand */
+
+nav .container .logo-brand {
+  display: flex;
+  text-decoration: none;
+  width: auto;
+  height: 44px;
+  margin-right: 60px;
+}
+
+nav .container .logo-brand .logo-name {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-family: 'Metropolis-Bold';
+  font-size: 24px;
+  margin-left: 9px;
+  color: #db3022;
+}
+
+
+/* End = Logo brand */
+
+
+/* Start = Searching feature */
+
+nav .container .seaching-wrapper {
+  display: flex;
+  align-self: flex-start;
+  width: 100%;
+}
+
+nav .container .seaching-wrapper form {
+  background: #ffffff;
+  border: 1px solid #8e8e93;
+  box-sizing: border-box;
+  border-radius: 23px;
+  margin-right: 10px;
+}
+
+nav .container .seaching-wrapper form input {
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 23px 0 0 23px;
+  width: 507px;
+  height: 40px;
+  font: inherit;
+  border: 0;
+}
+
+nav .container .seaching-wrapper form button {
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 23px;
+  padding: 0 23px;
+  height: 100%;
+  border: 0;
+}
+
+nav .container .seaching-wrapper .filter-wrapper a {
+  background: #ffffff;
+  border: 1px solid #8e8e93;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+
+/* End = Searching feature */
+
+
+/* Start = Navigation */
+
+nav .container .navigation-auth {
+  display: flex;
+  align-items: center;
+}
+
+nav .container .navigation-auth .btn {
+  margin-right: 40px;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  width: 32px;
+}
+
+nav .container .navigation-auth .btn.profile {
+  margin-right: 0;
+}
+
+
+/* End = Navigation */
+
+
+/* End = Navigation bar ==========================*/
+
+
+/* START = MAIN ========================= */
+
+
+/* MAIN GLOBAL */
+
+main.container {
+  margin-top: 150px;
+}
+
+main.container .text.secondary {
+  background-color: yellow;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #9b9b9b;
+}
+
+
+/* Start = Aside User Menu */
+
+
+/* End = Aside User Menu */
+
+
+/* END = MAIN ========================= */
+
+
+/* Start = Footer Section ============================ */
+
+footer {
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  background-color: rgba(192, 192, 192, 0.404);
+  display: flex;
+  padding: 24px;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+footer p {
+  margin: auto 0;
+  margin-left: 16px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #db3022;
+}
+
+
+/* End = Footer Section ============================ */
