@@ -62,31 +62,40 @@
   </nav>
 
   <!-- Start = Main content -->
-  <main class="container">
+
+  <main>
     <!-- Start = Aside User Menu -->
     <aside>
-      <div class="user-profile-wrapper">
-        <img src="" alt="" />
-        <div class="username-wrapper">
-          <h3>Johannes Mikael</h3>
-          <div class="edit-profile-wrapper">
-            <img src="" alt="" />
-            <p class="text secondary">Ubah profile</p>
+      <div class="aside-content-wrapper">
+        <div class="user-profile-wrapper">
+          <img src="../images/IMG-Profile.png" alt="user-profile" />
+          <div class="username-wrapper">
+            <h3>Johannes Mikael</h3>
+            <div class="edit-profile-wrapper">
+              <img class="profile-aside" src="../images/icons/IC-pen.svg" alt="pen icon" />
+              <p class="text secondary">Ubah profile</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="menu-wrapper">
-        <div class="menu-row">
-          <img src="" alt="" />
-          <p>My Account</p>
-        </div>
-        <div class="menu-row">
-          <img src="" alt="" />
-          <p>Shipping Adress</p>
-        </div>
-        <div class="menu-row">
-          <img src="" alt="" />
-          <p>My Order</p>
+        <div class="menu-wrapper">
+          <div class="menu-row">
+            <div class="icon-wrapper blue">
+              <img src="../images/icons/IC-user.svg" alt="user" />
+            </div>
+            <p class="text secondary active">My Account</p>
+          </div>
+          <div class="menu-row">
+            <div class="icon-wrapper orange">
+              <img src="../images/icons/IC-maps.svg" alt="location" />
+            </div>
+            <p class="text secondary">Shipping Adress</p>
+          </div>
+          <div class="menu-row">
+            <div class="icon-wrapper pink">
+              <img src="../images/icons/IC-circle-order.svg" alt="order" />
+            </div>
+            <p class="text secondary">My Order</p>
+          </div>
         </div>
       </div>
     </aside>
@@ -102,57 +111,61 @@
         <div class="body">
           <form action="">
             <div class="row">
-              <div class="col">
+              <div class="col-2">
                 <p class="text secondary">Name</p>
               </div>
-              <div class="col">
-                <input type="text" name="name" id="" />
+              <div class="col-10">
+                <input type="text" name="name" id="" placeholder="Your Name" />
               </div>
             </div>
             <div class="row">
-              <div class="col">
+              <div class="col-2">
                 <p class="text secondary">Email</p>
               </div>
-              <div class="col">
-                <input type="email" name="email" id="" />
+              <div class="col-10">
+                <input type="email" name="email" id="" placeholder="Your Email" />
               </div>
             </div>
             <div class="row">
-              <div class="col">
+              <div class="col-2">
                 <p class="text secondary">Phone Number</p>
               </div>
-              <div class="col">
-                <input type="text" name="phone" id="" />
+              <div class="col-10">
+                <input type="text" name="phone" id="" placeholder="Phone Number" />
               </div>
             </div>
             <div class="row">
-              <div class="col">
+              <div class="col-2">
                 <p class="text secondary">Gender</p>
               </div>
-              <div class="col">
-                <input type="checkbox" name="male" id="" />
-              </div>
-              <div class="col">
-                <input type="checkbox" name="female" id="" />
+              <div class="col-10 center-wrapper">
+                <div class="gender">
+                  <input type="checkbox" name="male" id="" />
+                  <label for="male">Laki - laki</label>
+                </div>
+                <div class="gender">
+                  <input type="checkbox" name="female" id="" />
+                  <label for="female">Perempuan</label>
+                </div>
               </div>
             </div>
             <div class="row">
-              <div class="col">
+              <div class="col-2">
                 <p class="text secondary">Date of birth</p>
               </div>
-              <div class="col">
+              <div class="col-3">
                 <select name="day" id="">
-                    <option value="1"></option>
+                    <option value="1">1</option>
                   </select>
               </div>
-              <div class="col">
+              <div class="col-3">
                 <select name="month" id="">
-                    <option value="January"></option>
+                    <option value="January">Januari</option>
                   </select>
               </div>
-              <div class="col">
+              <div class="col-3">
                 <select name="year" id="">
-                    <option value="1990"></option>
+                    <option value="1990">1999</option>
                   </select>
               </div>
             </div>
@@ -162,8 +175,10 @@
           </form>
           <div class="divider vertical"></div>
           <div class="photo-profile-wrapper">
-            <img src="" alt="" />
-            <button class="btn secondary">Select Image</button>
+            <img src="../images/IMG-Profile.png" alt="" />
+            <div class="btn-wrapper">
+              <button class="btn secondary">Select Image</button>
+            </div>
           </div>
         </div>
       </div>

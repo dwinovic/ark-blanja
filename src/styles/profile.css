@@ -177,6 +177,8 @@ nav .container .navigation-auth .btn.profile {
 
 main.container {
   margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
 }
 
 main.container .text.secondary {
@@ -188,11 +190,276 @@ main.container .text.secondary {
   color: #9b9b9b;
 }
 
+main.container .text.secondary.active {
+  color: #222222;
+}
+
+
+/* COLOR GLOBAL */
+
+.blue {
+  background: #456bf3;
+}
+
+.orange {
+  background: #f36f45;
+}
+
+.pink {
+  background: #f3456f;
+}
+
 
 /* Start = Aside User Menu */
 
+body {
+  position: relative;
+  height: 100vh;
+}
+
+main {
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  height: 100%;
+}
+
+main aside {
+  background: #d40000;
+  padding-top: 150px;
+  width: 34%;
+  z-index: -9;
+  display: flex;
+  justify-content: flex-end;
+}
+
+main aside .aside-content-wrapper {
+  align-self: flex-start;
+  background-color: gold;
+  width: 50%;
+}
+
+main aside .user-profile-wrapper {
+  background-color: green;
+  display: flex;
+}
+
+main aside .user-profile-wrapper .username-wrapper {
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 13px;
+}
+
+main aside .user-profile-wrapper .username-wrapper h3 {
+  background-color: pink;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #222222;
+  margin-bottom: 0;
+}
+
+main aside .user-profile-wrapper .username-wrapper .edit-profile-wrapper {
+  background-color: purple;
+  display: flex;
+  align-items: center;
+  /* margin: 0; */
+}
+
+main aside .user-profile-wrapper img {
+  width: 60px;
+  height: 60px;
+}
+
+main aside .user-profile-wrapper .username-wrapper .edit-profile-wrapper img {
+  background-color: powderblue;
+  height: fit-content;
+  margin-right: 9px;
+  width: 16px;
+  height: 16px;
+}
+
+main aside .user-profile-wrapper .username-wrapper .edit-profile-wrapper p {
+  margin: 0;
+}
+
+main aside .menu-wrapper {
+  background-color: yellow;
+  margin-top: 70px;
+}
+
+main aside .menu-row {
+  background-color: violet;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+main aside .menu-row p.text.secondary {
+  background-color: turquoise;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+main aside .menu-row .icon-wrapper {
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 14px;
+}
+
+main aside .menu-row .icon-wrapper img {
+  /* background-color: yellow; */
+}
+
 
 /* End = Aside User Menu */
+
+
+/* Start = Content Data Profile Menu */
+
+main .content {
+  background-color: pink;
+  width: 75%;
+  padding: 40px;
+  padding-top: 0;
+  padding-top: 150px;
+}
+
+main .content .card {
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #9b9b9b;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 80%;
+}
+
+main .content .card h1 {
+  background-color: yellow;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #222222;
+  margin-bottom: 6px;
+}
+
+main .content .card p {
+  background-color: pink;
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #9b9b9b;
+}
+
+main .divider {
+  border: 1px solid #d4d4d4;
+  margin: 16px 0 34px 0;
+}
+
+main .content .card .body {
+  display: flex;
+  justify-content: space-between;
+  background-color: green;
+}
+
+main form {
+  width: 70%;
+  background-color: aqua;
+}
+
+main form .row {
+  background-color: orange;
+  height: 48px;
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+main form .row p.text {
+  background-color: palegreen;
+  text-align: right;
+  margin: auto 0;
+  margin-right: 32px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+main form .row .col {
+  background-color: palegreen;
+}
+
+main form input {
+  border: 1px solid #9b9b9b;
+  width: 100%;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.05));
+  border-radius: 4px;
+  padding: 12px 18px;
+}
+
+main form input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+}
+
+main form .center-wrapper {
+  display: flex;
+  gap: 36px;
+}
+
+main form .gender {
+  gap: 16px;
+  background-color: chartreuse;
+  display: flex;
+  align-items: center;
+}
+
+main form .gender label {}
+
+main .content .card .body form .row .col-2,
+.col-10 {
+  padding: 0;
+}
+
+main form .gender input {
+  background-color: cornflowerblue;
+}
+
+form select {
+  background-color: blue;
+  width: 100px;
+}
+
+main form .btn-wrapper {
+  width: 100px;
+  margin-top: 48px;
+}
+
+main .content .card .body .photo-profile-wrapper {
+  background-color: blue;
+  margin: 0 49px;
+}
+
+main .content .card .body .photo-profile-wrapper img {
+  width: 110px;
+  height: 110px;
+  background-color: bisque;
+  margin-bottom: 20px;
+}
+
+
+/* End = Content Data Profile Menu */
 
 
 /* END = MAIN ========================= */
@@ -201,10 +468,12 @@ main.container .text.secondary {
 /* Start = Footer Section ============================ */
 
 footer {
+  visibility: hidden;
   position: absolute;
   width: 100vw;
   bottom: 0;
-  background-color: rgba(192, 192, 192, 0.404);
+  background-color: gray;
+  /* background-color: rgba(192, 192, 192, 0.404); */
   display: flex;
   padding: 24px;
   justify-content: center;
