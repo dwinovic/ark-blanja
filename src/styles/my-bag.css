@@ -44,9 +44,15 @@ main.container .card {
 main.container .list-cart-wrapper input[type='checkbox'] {
   width: 20px;
   height: 20px;
-  background-color: #db3022;
   border-radius: 4px;
   margin-right: 20px;
+}
+
+
+/* input checked */
+
+main.container .list-cart-wrapper input:checked~.checkmark {
+  background-color: #db3022;
 }
 
 main.container .list-cart-wrapper p {

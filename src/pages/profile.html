@@ -10,9 +10,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Blanja | User Profile</title>
+  <!-- Favicon Blanja.com -->
+  <link rel="icon" href="/src/images/icons/favicon.ico" />
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Global CSS = Color || Font || Body -->
+  <link rel="stylesheet" href="../styles/global.css" />
+
+  <!-- Global CSS = Navbar User -->
+  <link rel="stylesheet" href="../styles/components/navbar-user.css" />
+  <!-- Current Page CSS -->
   <link rel="stylesheet" href="../styles/profile.css" />
-  <link rel="stylesheet" href="../styles/main.css" />
+
+  <!-- Responsive Current Page CSS -->
+  <link rel="stylesheet" href="../styles/responsive/mq-profile.css" />
 </head>
 
 <body>
@@ -27,40 +39,71 @@
       <!-- End = Logo brand -->
       <!-- Start = Searching feature -->
       <div class="seaching-wrapper">
-        <form action="">
+        <div class="form">
           <input type="text" name="searching" placeholder="Search" />
-          <button>
+          <button onclick="show404()">
               <img src="../images/icons/IC-search.png" alt="searching-button" />
             </button>
-        </form>
+        </div>
         <div class="filter-wrapper">
-          <a href="">
+          <div href="" onclick="show404()">
             <img src="../images/icons/IC-filter.png" alt="filter icon" />
-          </a>
+            </a>
+          </div>
         </div>
-      </div>
-      <!-- End = Searching feature -->
+        <!-- End = Searching feature -->
 
-      <!-- Start = Navigation -->
-      <div class="navigation-auth">
-        <div class="btn">
-          <img src="/src/images/icons/IC-cart.svg" alt="" />
+        <!-- Start = Navigation -->
+        <div class="navigation-auth">
+          <div class="btn">
+            <a href="/src/pages/my-bag.html" class="cart"><img src="../images/icons/IC-cart.png" alt="cart icon" /></a>
+          </div>
+          <div class="btn" onclick="show404()">
+            <img src="/src/images/icons/IC-bell.svg" alt="" />
+          </div>
+          <div class="btn" onclick="show404()">
+            <img src="/src/images/icons/IC-main.svg" alt="" />
+          </div>
+          <div class="btn profile">
+            <a href="/src/pages/profile.html">
+              <img src="/src/images/icons/profile.png" alt="" />
+            </a>
+          </div>
+          <!-- START = HAMBURGER -->
+          <div class="toggler-wrapper" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M3 6H21V8H3V6ZM3 11H21V13H3V11ZM3 16H21V18H3V16Z"
+                fill=" #9B9B9B"
+              />
+            </svg>
+          </div>
+          <!-- END = HAMBURGER -->
         </div>
-        <div class="btn">
-          <img src="/src/images/icons/IC-bell.svg" alt="" />
-        </div>
-        <div class="btn">
-          <img src="/src/images/icons/IC-main.svg" alt="" />
-        </div>
-        <a href="./profile.html" class="btn profile">
-          <img src="/src/images/icons/profile.png" alt="" />
-        </a>
+        <!-- End = Navigation -->
       </div>
-      <!-- End = Navigation -->
-    </div>
-    <!-- End = Navigation bar -->
+      <!-- End = Navigation bar -->
+      <!-- START = NAVBAR TOGGLER -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav container shadow p-3 mb-5 bg-body rounded">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/src/pages/homepage.html">Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/src/pages/my-bag.html">My Bag</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/src/pages/kategori.html">Category</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Masuk</a>
+          </li>
+        </ul>
+      </div>
+      <!-- START = NAVBAR TOGGLER -->
   </nav>
-
   <!-- Start = Main content -->
 
   <main>
@@ -109,36 +152,39 @@
         </div>
         <div class="divider"></div>
         <div class="body">
-          <form action="">
+          <form action="" class="container">
             <div class="row">
-              <div class="col-2">
+              <div class="col col-sm-12 col-md-12 col-lg-2 col-xl-2">
                 <p class="text secondary">Name</p>
               </div>
-              <div class="col-10">
+              <div class="col col-sm-12 col-md-12 col-lg-10 col-xl-10">
                 <input type="text" name="name" id="" placeholder="Your Name" />
               </div>
             </div>
             <div class="row">
-              <div class="col-2">
+              <div class="col col-sm-12 col-md-12 col-lg-2 col-xl-2">
                 <p class="text secondary">Email</p>
               </div>
-              <div class="col-10">
+              <div class="col col-sm-12 col-md-12 col-lg-10 col-xl-10">
                 <input type="email" name="email" id="" placeholder="Your Email" />
               </div>
             </div>
             <div class="row">
-              <div class="col-2">
+              <div class="col col-sm-12 col-md-12 col-lg-2 col-xl-2">
                 <p class="text secondary">Phone Number</p>
               </div>
-              <div class="col-10">
+              <div class="col col-sm-12 col-md-12 col-lg-10 col-xl-10">
                 <input type="text" name="phone" id="" placeholder="Phone Number" />
               </div>
             </div>
             <div class="row">
-              <div class="col-2">
+              <div class="col col-sm-12 col-md-12 col-lg-2 col-xl-2">
                 <p class="text secondary">Gender</p>
               </div>
-              <div class="col-10 center-wrapper">
+              <div class="
+                    col col-sm-12 col-md-12 col-lg-10 col-xl-10
+                    center-wrapper
+                  ">
                 <div class="gender">
                   <input type="checkbox" name="male" id="" />
                   <label for="male">Laki - laki</label>
@@ -150,21 +196,27 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-2">
+              <div class="col col-sm-12 col-md-12 col-lg-2 col-xl-2">
                 <p class="text secondary">Date of birth</p>
               </div>
-              <div class="col-3">
+              <div class="col col-sm-4 col-md-4 col-lg-3 col-xl-3">
                 <select name="day" id="">
                     <option value="1">1</option>
+                    <option value="1">11</option>
+                    <option value="1">19</option>
                   </select>
               </div>
-              <div class="col-3">
+              <div class="col col-sm-4 col-md-4 col-lg-3 col-xl-3">
                 <select name="month" id="">
                     <option value="January">Januari</option>
+                    <option value="January">Februari</option>
+                    <option value="January">Maret</option>
                   </select>
               </div>
-              <div class="col-3">
+              <div class="col col-sm-4 col-md-4 col-lg-3 col-xl-3">
                 <select name="year" id="">
+                    <option value="1990">2019</option>
+                    <option value="1990">2009</option>
                     <option value="1990">1999</option>
                   </select>
               </div>
@@ -177,7 +229,7 @@
           <div class="photo-profile-wrapper">
             <img src="../images/IMG-Profile.png" alt="" />
             <div class="btn-wrapper">
-              <button class="btn secondary">Select Image</button>
+              <button class="btn secondary" onclick="show404()">Select Image</button>
             </div>
           </div>
         </div>
@@ -193,6 +245,28 @@
   </footer>
   <!-- End = Footer -->
 
+  <!-- START = 404 PAGE -->
+  <div class="hide-modal-404" id="modal-404">
+    <div class="page-404-wrapper" onclick="goBack()">
+      <div class="card-404">
+        <div class="logo">
+          <img src="/src/images/logo-blanja-full.png" alt="Blanja Logo" />
+        </div>
+        <div class="header">
+          <h1>Upps! <br />Features under development</h1>
+        </div>
+        <div class="illustration">
+          <img src="/src/images/404.png" alt="404" />
+        </div>
+        <div class="btn-wrapper">
+          <button class="btn primary" onclick="goBack()">Go Back</button>
+        </div>
+        <div class="bottom"></div>
+      </div>
+    </div>
+  </div>
+  <!-- END = 404 PAGE -->
+  <script src="/src/scripts/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 

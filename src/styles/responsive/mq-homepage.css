@@ -19,14 +19,6 @@
   .container {
     /* background-color: orange; */
   }
-  /* Start = Searching feature */
-  nav .container .seaching-wrapper {
-    /* background-color: yellow; */
-  }
-  nav .container .seaching-wrapper form input {
-    width: 400px;
-  }
-  /* End = Searching feature */
   /* START = NEW PRODUCT SECTION */
   main section .custom-container {
     display: grid;
@@ -45,99 +37,20 @@
   .container {
     /* background-color: blue; */
   }
-  /* Start = Searching feature */
-  nav .container .seaching-wrapper {
-    /* background-color: yellow; */
+  main.container {
+    margin-top: 150px;
   }
-  nav .container .seaching-wrapper form input {
-    width: 280px;
-  }
-  /* End = Searching feature */
   /* START = NEW PRODUCT SECTION */
   main section .custom-container {
     display: grid;
     grid-template-columns: auto auto auto;
   }
   /* END = NEW PRODUCT SECTION */
-  /* START = NAVIGATION BAR */
-  nav .container .navigation-auth {
-    /* display: flex;  */
-    /* background-color: blue; */
-  }
-  nav .toggler-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-    /* background-color: blueviolet; */
-  }
-  nav .toggler-wrapper svg path:hover {
-    fill: darkgreen;
-  }
-  nav .btn-wrapper {
-    display: none;
-  }
-  nav .cart {
-    /* background-color: darkcyan; */
-  }
-  /* END = NAVIGATION BAR */
 }
 
 
 /* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .container {
-    /* background-color: pink; */
-  }
-  /* Start = Searching feature */
-  nav .container .seaching-wrapper {
-    /* background-color: yellow; */
-  }
-  nav .container .seaching-wrapper form input {
-    width: 280px;
-  }
-  /* End = Searching feature */
-  /* START = NEW PRODUCT SECTION */
-  main section .custom-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-  /* END = NEW PRODUCT SECTION */
-  /* START = NAVIGATION BAR */
-  nav .container .navigation-auth {
-    /* display: flex;  */
-    /* background-color: blue; */
-  }
-  nav .toggler-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-    /* background-color: blueviolet; */
-  }
-  nav .toggler-wrapper svg path:hover {
-    fill: darkgreen;
-  }
-  nav .btn-wrapper {
-    display: none;
-  }
-  nav .cart {
-    /* background-color: darkcyan; */
-  }
-  /* END = NAVIGATION BAR */
-}
-
-
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Device = Low Resolution Tablets, Mobiles
   ##Screen = B/w 481px to 767px
 */
 
@@ -145,55 +58,9 @@
   .container {
     /* background-color: green; */
   }
-  /* START = NAVIGATION BAR */
-  nav .container {
-    padding: 30px;
+  main.container {
+    margin-top: 150px;
   }
-  /* Start = Searching feature */
-  nav .container .seaching-wrapper {
-    width: 450px;
-    margin-left: 25px;
-    display: flex;
-    /* justify-content: space-between; */
-    margin-right: -55px;
-  }
-  nav .container .seaching-wrapper form input {
-    width: 170px;
-  }
-  /* End = Searching feature */
-  /* START = LOGO BRAND */
-  nav .container .logo-brand .logo-name {
-    display: none;
-  }
-  /* END = LOGO BRAND */
-  /* START = LOGIN BUTTON */
-  nav .container .navigation-auth {
-    /* display: flex;  */
-    /* background-color: blue; */
-  }
-  nav .toggler-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-    /* background-color: blueviolet; */
-  }
-  nav .toggler-wrapper svg path:hover {
-    fill: darkgreen;
-  }
-  nav .btn-wrapper {
-    display: none;
-  }
-  nav .cart {
-    /* background-color: darkcyan; */
-    /* display: none; */
-    visibility: hidden;
-    /* background-color: darkgrey; */
-  }
-  /* END = LOGIN BUTTON */
-  /* END = NAVIGATION BAR */
   /* START = MAIN SECTION */
   /* START = NEW PRODUCT SECTION */
   main section .custom-container {
@@ -214,63 +81,11 @@
   .container {
     /* background-color: aqua; */
   }
-  /* START = NAVIGATION BAR */
-  nav .container {
-    padding: 30px;
-    display: flex;
-    /* justify-content: flex-start; */
-  }
-  /* Start = Searching feature */
-  nav .container .seaching-wrapper {
-    display: none;
-  }
-  /* End = Searching feature */
-  /* START = LOGO BRAND */
-  nav .container .logo-brand {
-    width: 100%;
-  }
-  nav .container .logo-brand .logo-name {
-    font-size: 34px;
-    /* width: 330px; */
-    width: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-  }
-  /* END = LOGO BRAND */
-  /* START = LOGIN BUTTON */
-  nav .container .navigation-auth {
-    /* display: flex;  */
-    /* background-color: blue; */
-  }
-  nav .toggler-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-    margin-left: -65px;
-    /* background-color: blueviolet; */
-  }
-  nav .toggler-wrapper svg path:hover {
-    fill: darkgreen;
-  }
-  nav .btn-wrapper {
-    display: none;
-  }
-  nav .cart {
-    /* background-color: darkcyan; */
-    /* display: none; */
-    visibility: hidden;
-    /* background-color: darkgrey; */
-  }
-  /* END = LOGIN BUTTON */
-  /* END = NAVIGATION BAR */
   /* START = MAIN SECTION */
   /* START = MAIN CONTENT */
   main.container {
     padding: 0 25px;
+    margin-top: 150px;
   }
   /* END = MAIN CONTENT */
   /* START = NEW PRODUCT SECTION */

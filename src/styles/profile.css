@@ -10,7 +10,7 @@
 .btn.secondary {
   border: 1px solid #9b9b9b;
   box-sizing: border-box;
-  border-radius: 24px;
+  /* border-radius: 24px; */
   background-color: transparent;
   padding: 8px;
   width: 100%;
@@ -51,125 +51,6 @@
 /* Global Styling =============================== */
 
 
-/* Start = Navigation bar ====================*/
-
-nav {
-  background-color: white;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  z-index: 9;
-  box-shadow: 0px 6px 40px rgba(173, 173, 173, 0.25);
-}
-
-nav .container {
-  padding: 30px 0;
-  display: flex;
-}
-
-
-/* Start = Logo brand */
-
-nav .container .logo-brand {
-  display: flex;
-  text-decoration: none;
-  width: auto;
-  height: 44px;
-  margin-right: 60px;
-}
-
-nav .container .logo-brand .logo-name {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  font-style: normal;
-  font-family: 'Metropolis-Bold';
-  font-size: 24px;
-  margin-left: 9px;
-  color: #db3022;
-}
-
-
-/* End = Logo brand */
-
-
-/* Start = Searching feature */
-
-nav .container .seaching-wrapper {
-  display: flex;
-  align-self: flex-start;
-  width: 100%;
-}
-
-nav .container .seaching-wrapper form {
-  background: #ffffff;
-  border: 1px solid #8e8e93;
-  box-sizing: border-box;
-  border-radius: 23px;
-  margin-right: 10px;
-}
-
-nav .container .seaching-wrapper form input {
-  padding: 10px 20px;
-  box-sizing: border-box;
-  border-radius: 23px 0 0 23px;
-  width: 507px;
-  height: 40px;
-  font: inherit;
-  border: 0;
-}
-
-nav .container .seaching-wrapper form button {
-  background-color: white;
-  box-sizing: border-box;
-  border-radius: 23px;
-  padding: 0 23px;
-  height: 100%;
-  border: 0;
-}
-
-nav .container .seaching-wrapper .filter-wrapper a {
-  background: #ffffff;
-  border: 1px solid #8e8e93;
-  border-radius: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-}
-
-
-/* End = Searching feature */
-
-
-/* Start = Navigation */
-
-nav .container .navigation-auth {
-  display: flex;
-  align-items: center;
-}
-
-nav .container .navigation-auth .btn {
-  margin-right: 40px;
-  padding: 0;
-  box-sizing: border-box;
-  display: flex;
-  width: 32px;
-}
-
-nav .container .navigation-auth .btn.profile {
-  margin-right: 0;
-}
-
-
-/* End = Navigation */
-
-
-/* End = Navigation bar ==========================*/
-
-
 /* START = MAIN ========================= */
 
 
@@ -182,7 +63,7 @@ main.container {
 }
 
 main.container .text.secondary {
-  background-color: yellow;
+  /* background-color: yellow; */
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -225,7 +106,7 @@ main {
 }
 
 main aside {
-  background: #d40000;
+  /* background: #d40000; */
   padding-top: 150px;
   width: 34%;
   z-index: -9;
@@ -235,17 +116,17 @@ main aside {
 
 main aside .aside-content-wrapper {
   align-self: flex-start;
-  background-color: gold;
+  /* background-color: gold; */
   width: 50%;
 }
 
 main aside .user-profile-wrapper {
-  background-color: green;
+  /* background-color: green; */
   display: flex;
 }
 
 main aside .user-profile-wrapper .username-wrapper {
-  background-color: orange;
+  /* background-color: orange; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -253,7 +134,7 @@ main aside .user-profile-wrapper .username-wrapper {
 }
 
 main aside .user-profile-wrapper .username-wrapper h3 {
-  background-color: pink;
+  /* background-color: pink; */
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -263,7 +144,7 @@ main aside .user-profile-wrapper .username-wrapper h3 {
 }
 
 main aside .user-profile-wrapper .username-wrapper .edit-profile-wrapper {
-  background-color: purple;
+  /* background-color: purple; */
   display: flex;
   align-items: center;
   /* margin: 0; */
@@ -275,7 +156,7 @@ main aside .user-profile-wrapper img {
 }
 
 main aside .user-profile-wrapper .username-wrapper .edit-profile-wrapper img {
-  background-color: powderblue;
+  /* background-color: powderblue; */
   height: fit-content;
   margin-right: 9px;
   width: 16px;
@@ -287,18 +168,22 @@ main aside .user-profile-wrapper .username-wrapper .edit-profile-wrapper p {
 }
 
 main aside .menu-wrapper {
-  background-color: yellow;
+  /* background-color: yellow; */
   margin-top: 70px;
 }
 
 main aside .menu-row {
-  background-color: violet;
+  /* background-color: violet; */
   display: flex;
   margin-bottom: 20px;
 }
 
+main aside .menu-row:hover {
+  cursor: pointer;
+}
+
 main aside .menu-row p.text.secondary {
-  background-color: turquoise;
+  /* background-color: turquoise; */
   margin: 0;
   display: flex;
   align-items: center;
@@ -325,7 +210,7 @@ main aside .menu-row .icon-wrapper img {
 /* Start = Content Data Profile Menu */
 
 main .content {
-  background-color: pink;
+  background: #f5f5f5;
   width: 75%;
   padding: 40px;
   padding-top: 0;
@@ -342,7 +227,7 @@ main .content .card {
 }
 
 main .content .card h1 {
-  background-color: yellow;
+  /* background-color: yellow; */
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -352,7 +237,7 @@ main .content .card h1 {
 }
 
 main .content .card p {
-  background-color: pink;
+  /* background-color: pink; */
   font-family: Metropolis;
   font-style: normal;
   font-weight: 500;
@@ -369,23 +254,23 @@ main .divider {
 main .content .card .body {
   display: flex;
   justify-content: space-between;
-  background-color: green;
+  /* background-color: green; */
 }
 
 main form {
   width: 70%;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 main form .row {
-  background-color: orange;
+  /* background-color: orange; */
   height: 48px;
   margin: 0;
   margin-bottom: 22px;
 }
 
 main form .row p.text {
-  background-color: palegreen;
+  /* background-color: palegreen; */
   text-align: right;
   margin: auto 0;
   margin-right: 32px;
@@ -396,7 +281,7 @@ main form .row p.text {
 }
 
 main form .row .col {
-  background-color: palegreen;
+  /* background-color: palegreen; */
 }
 
 main form input {
@@ -420,12 +305,10 @@ main form .center-wrapper {
 
 main form .gender {
   gap: 16px;
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
   display: flex;
   align-items: center;
 }
-
-main form .gender label {}
 
 main .content .card .body form .row .col-2,
 .col-10 {
@@ -433,12 +316,19 @@ main .content .card .body form .row .col-2,
 }
 
 main form .gender input {
-  background-color: cornflowerblue;
+  /* background-color: cornflowerblue; */
 }
 
 form select {
-  background-color: blue;
+  background: #ffffff;
   width: 100px;
+  border: 1px solid #9b9b9b;
+  border-radius: 4px;
+  padding: 10px 12px;
+}
+
+option {
+  /* background-color: royalblue; */
 }
 
 main form .btn-wrapper {
@@ -447,14 +337,14 @@ main form .btn-wrapper {
 }
 
 main .content .card .body .photo-profile-wrapper {
-  background-color: blue;
+  /* background-color: blue; */
   margin: 0 49px;
 }
 
 main .content .card .body .photo-profile-wrapper img {
   width: 110px;
   height: 110px;
-  background-color: bisque;
+  /* background-color: bisque; */
   margin-bottom: 20px;
 }
 

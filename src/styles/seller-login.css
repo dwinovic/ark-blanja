@@ -135,24 +135,8 @@ form .forgot-info a {
   font-size: 14px;
 }
 
-form button.submit {
+.btn-wrapper {
   width: 100%;
-  padding: 14px 0;
-  font-weight: 500;
-  font-size: 14px;
-  font: inherit;
-  font-weight: 500;
-  line-height: 20px;
-  color: white;
-  background: #db3022;
-  border-width: 0px;
-  border-radius: 25px;
-  box-shadow: 0px 4px 8px rgba(211, 38, 38, 0.25);
-}
-
-form button.submit:hover {
-  opacity: 0.9;
-  cursor: pointer;
 }
 
 form .register {

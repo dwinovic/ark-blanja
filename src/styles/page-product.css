@@ -1,160 +1,3 @@
-/* Start = Navigation bar ====================*/
-
-nav {
-  background-color: white;
-  width: 100vw;
-  box-shadow: 0px 6px 40px rgba(173, 173, 173, 0.25);
-  position: fixed;
-  z-index: 9;
-  top: 0;
-}
-
-nav .container {
-  padding: 30px 0;
-  display: flex;
-}
-
-
-/* Start = Logo brand */
-
-nav .container .logo-brand {
-  display: flex;
-  text-decoration: none;
-  width: auto;
-  height: 44px;
-  margin-right: 60px;
-}
-
-nav .container .logo-brand .logo-name {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  font-style: normal;
-  font-family: 'Metropolis-Bold';
-  font-size: 24px;
-  margin-left: 9px;
-  color: #db3022;
-}
-
-
-/* End = Logo brand */
-
-
-/* Start = Searching feature */
-
-nav .container .seaching-wrapper {
-  display: flex;
-  align-self: flex-start;
-  width: 100%;
-}
-
-nav .container .seaching-wrapper form {
-  background: #ffffff;
-  border: 1px solid #8e8e93;
-  box-sizing: border-box;
-  border-radius: 23px;
-  margin-right: 10px;
-}
-
-nav .container .seaching-wrapper form input {
-  padding: 10px 20px;
-  box-sizing: border-box;
-  border-radius: 23px 0 0 23px;
-  width: 507px;
-  height: 40px;
-  font: inherit;
-  border: 0;
-}
-
-nav .container .seaching-wrapper form button {
-  background-color: white;
-  box-sizing: border-box;
-  border-radius: 23px;
-  padding: 0 23px;
-  height: 100%;
-  border: 0;
-}
-
-nav .container .seaching-wrapper .filter-wrapper a {
-  background: #ffffff;
-  border: 1px solid #8e8e93;
-  border-radius: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-}
-
-
-/* End = Searching feature */
-
-
-/* Start = Navigation igation */
-
-nav .container .navigation-auth {
-  display: flex;
-  align-items: center;
-  height: 40px;
-}
-
-nav .container .navigation-auth .cart {
-  display: flex;
-  width: 40px;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  margin-right: 40px;
-}
-
-nav .container .navigation-auth a {
-  text-decoration: none;
-  text-decoration: none;
-  font-family: 'Metropolis';
-  font-weight: 500;
-  font-size: 14px;
-}
-
-nav .container .navigation-auth a.button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 36px;
-  box-sizing: border-box;
-  border-radius: 24px;
-}
-
-nav .container .navigation-auth a.button.primary {
-  background-color: #db3022;
-  color: white;
-}
-
-nav .container .navigation-auth a.button.primary:hover {
-  opacity: 0.8;
-}
-
-nav .container .navigation-auth a.button.secondary {
-  border: 1px solid #9b9b9b;
-  margin-left: 20px;
-  box-sizing: border-box;
-  border-radius: 24px;
-  color: #9b9b9b;
-}
-
-nav .container .navigation-auth a.button.secondary:hover {
-  border: 1px solid #242424;
-  color: #242424;
-}
-
-
-/* NAVBAR REV */
-
-
-/* End = Navigation bar ==========================*/
-
-
 /* Start = Main content ==========================*/
 
 main.container {
@@ -177,6 +20,20 @@ main.container .breadcrumb-wrapper .breadcrumb li {
   color: #9b9b9b;
 }
 
+main.container .breadcrumb-wrapper .breadcrumb li a {
+  text-decoration: none;
+  color: #9b9b9b;
+}
+
+main.container .breadcrumb-wrapper .breadcrumb li a:hover {
+  opacity: 0.5;
+}
+
+main.container .breadcrumb-wrapper .breadcrumb li.active {
+  color: #464646;
+  font-weight: 900;
+}
+
 
 /* End = Breadcrumb */
 
@@ -186,6 +43,7 @@ main.container .breadcrumb-wrapper .breadcrumb li {
 main section.products-header-wrapper {
   display: flex;
   margin-top: 50px;
+  width: 100%;
 }
 
 
@@ -231,6 +89,8 @@ main section.products-header-wrapper .product-desc-wrapper h1 {
   line-height: 28px;
   color: #222222;
   margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 main section.products-header-wrapper .product-desc-wrapper p {
@@ -351,6 +211,7 @@ main section.products-header-wrapper .product-desc-wrapper .counter-wrapper .hea
 
 main section.products-header-wrapper .product-desc-wrapper .counter-wrapper .count-wrapper {
   margin-right: 80px;
+  /* background-color: yellow; */
 }
 
 
@@ -359,33 +220,26 @@ main section.products-header-wrapper .product-desc-wrapper .counter-wrapper .cou
 main section.products-header-wrapper .product-desc-wrapper .action-wrapper {
   display: flex;
   gap: 10px;
+  /* background-color: pink; */
+  width: 100%;
 }
 
-main section.products-header-wrapper .product-desc-wrapper .action-wrapper button {
+main section.products-header-wrapper .product-desc-wrapper .action-wrapper .btn-wrapper {
   height: 48px;
-  border: 0;
-  box-sizing: border-box;
-  border-radius: 24px;
+  width: 100%;
 }
 
-main section.products-header-wrapper .product-desc-wrapper .action-wrapper button:hover {
-  opacity: 0.6;
+main section.products-header-wrapper .product-desc-wrapper .action-wrapper .btn-wrapper {
+  height: 48px;
+  width: 100%;
 }
 
-main section.products-header-wrapper .product-desc-wrapper .action-wrapper button.secondary {
-  border: 1.5px solid #222222;
-  width: 160px;
-  box-sizing: border-box;
-  border-radius: 24px;
-  background-color: white;
+main section.products-header-wrapper .product-desc-wrapper .action-wrapper .btn-wrapper.secondary {
+  width: 20%;
 }
 
-main section.products-header-wrapper .product-desc-wrapper .action-wrapper button.primary {
-  background: #db3022;
-  border-radius: 25px;
-  color: white;
-  width: 343px;
-  position: relative;
+main section.products-header-wrapper .product-desc-wrapper .action-wrapper .btn-wrapper.primary {
+  width: 40%;
 }
 
 
@@ -555,33 +409,19 @@ main.container .divider {
 
 /* Start = New Product Section ==================  */
 
-main section .container {
-  /* background-color: yellow; */
-}
-
-main section .heading h1 {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 34px;
-  line-height: 22px;
-  color: #222222;
-}
-
-main section .heading p {
-  color: #9b9b9b;
-}
-
-main section .container .row {
+main section .custom-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto;
   gap: 25px;
-  margin-bottom: 25px;
-}
-
-main section .container .row .col {
-  /* background-color: green; */
   padding: 0;
 }
 
-main section .container .row .col a {
+main section .custom-container .item {
+  /* background-color: red; */
+}
+
+main section .custom-container .item a {
   text-decoration: none;
   color: #222222;
   background-color: white;
@@ -589,22 +429,22 @@ main section .container .row .col a {
   border-radius: 8px;
 }
 
-main section .container .row .col a:hover {
+main section .custom-container .item a:hover {
   box-shadow: 0px 0px 14px rgba(44, 44, 44, 0.164);
 }
 
-main section .container .row .col .card .card-body {
+main section .custom-container .item .card .card-body {
   padding: 10px 12px;
 }
 
-main section .container .row .col .card .card-body .card-title {
+main section .custom-container .item .card .card-body .card-title {
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
 }
 
-main section .container .row .col .card .card-body p.price {
+main section .custom-container .item .card .card-body p.price {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -612,32 +452,35 @@ main section .container .row .col .card .card-body p.price {
   color: #db3022;
 }
 
-main section .container .row .col .card .card-body p.store {
-  font-family: Metropolis;
+main section .custom-container .item .card .card-body p.store {
+  /* font-family: Metropolis; */
   font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
+  font-weight: 600;
+  font-size: 14px;
   line-height: 12px;
-  /* identical to box height */
   color: #9b9b9b;
+  margin-bottom: 11px;
 }
 
-main section .container .row .col .card .card-body .rating .star-wrapper {
+main section .custom-container .item .card .card-body .rating .star-wrapper {
   display: flex;
   /* align-self: flex-start; */
   gap: 2px;
   height: 100%;
 }
 
-main section .container .row .col .card .card-body .rating .star-wrapper img {
+main section .custom-container .item .card .card-body .rating .star-wrapper img {
   width: 13px;
   height: 12px;
 }
 
-main section .container .row .col .card .card-body .rating .sold {
+main section .custom-container .item .card .card-body .rating .sold {
   margin-left: 3px;
   color: #9b9b9b;
 }
+
+
+/* TEST GRID */
 
 
 /* End = New Product Section ====================*/

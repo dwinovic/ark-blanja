@@ -1,0 +1,469 @@
+/* START = NAVBAR USER */
+
+
+/* Start = Navigation bar ====================*/
+
+nav {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 9;
+  box-shadow: 0px 6px 40px rgba(173, 173, 173, 0.25);
+}
+
+nav .container {
+  padding: 30px 0;
+  display: flex;
+}
+
+
+/* Start = Logo brand */
+
+nav .container .logo-brand {
+  display: flex;
+  text-decoration: none;
+  width: auto;
+  height: 44px;
+  margin-right: 60px;
+}
+
+nav .container .logo-brand .logo-name {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-family: 'Metropolis-Bold';
+  font-size: 24px;
+  margin-left: 9px;
+  color: #db3022;
+}
+
+
+/* End = Logo brand */
+
+
+/* Start = Searching feature */
+
+nav .container .seaching-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* background-color: teal; */
+}
+
+nav .container .seaching-wrapper .form {
+  background: #ffffff;
+  border: 1px solid #8e8e93;
+  box-sizing: border-box;
+  border-radius: 23px;
+  margin-right: 10px;
+}
+
+nav .container .seaching-wrapper .form input {
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 23px 0 0 23px;
+  width: 507px;
+  height: 40px;
+  font: inherit;
+  border: 0;
+}
+
+nav .container .seaching-wrapper .form button {
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 23px;
+  padding: 0 23px;
+  height: 100%;
+  border: 0;
+}
+
+nav .container .seaching-wrapper .filter-wrapper {
+  background: #ffffff;
+  border: 1px solid #8e8e93;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+
+/* End = Searching feature */
+
+
+/* Start = Navigation */
+
+nav .container .navigation-auth {
+  display: flex;
+  align-items: center;
+}
+
+nav .toggler-wrapper {
+  display: none;
+}
+
+nav .container .navigation-auth .btn {
+  margin-right: 40px;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  width: 32px;
+}
+
+nav .container .navigation-auth .btn.profile {
+  margin-right: 0;
+}
+
+
+/* End = Navigation */
+
+
+/* End = Navigation bar ==========================*/
+
+
+/* START = NAVBAR USER */
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  .container {
+    /* background-color: yellow; */
+  }
+  nav .container .seaching-wrapper {
+    /* background-color: yellow; */
+    /* justify-content: flex-start; */
+  }
+  nav .container .seaching-wrapper .form input {
+    width: 700px;
+  }
+  nav .container .seaching-wrapper .filter-wrapper {}
+  #navbarNavDropdown {
+    display: none;
+  }
+}
+
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    /* background-color: yellow; */
+  }
+  /* START = NAVBAR USER */
+  nav .container .seaching-wrapper {
+    /* background-color: yellow; */
+  }
+  nav .container .seaching-wrapper .form input {
+    width: 400px;
+  }
+  /* END = NAVBAR USER */
+  #navbarNavDropdown {
+    display: none;
+  }
+}
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    /* background-color: orange; */
+  }
+  /* START = NAVIGATION USER */
+  nav .container .seaching-wrapper {
+    /* background-color: yellow; */
+  }
+  nav .container .seaching-wrapper .form input {
+    width: 150px;
+  }
+  nav .container .navigation-auth {
+    /* background-color: blue; */
+  }
+  nav .container .navigation-auth .btn {
+    margin-right: 20px;
+    /* background-color: blueviolet; */
+  }
+  nav .container .navigation-auth .btn.profile {}
+  /* END = NAVIGATION USER */
+  /* START = NAVIGATION DROPDOWN */
+  #navbarNavDropdown {
+    /* background-color: yellow; */
+    z-index: 1;
+    position: absolute;
+    width: 100vw;
+    top: 100px;
+    background-color: white;
+  }
+  #navbarNavDropdown .container {
+    /* background-color: cyan; */
+    padding: 0;
+  }
+  #navbarNavDropdown .container .nav-item {
+    padding: 16px;
+  }
+  #navbarNavDropdown .container .nav-item a {
+    text-decoration: none;
+    color: #242424;
+    font-size: 1.25rem;
+  }
+  #navbarNavDropdown .container .nav-item a:hover {
+    opacity: 0.5;
+  }
+  /* END = NAVIGATION DROPDOWN */
+  /* Start = Main content ==========================*/
+  main.container {
+    /* background-color: red; */
+    margin-top: 30px;
+    margin-bottom: 60px;
+    display: block;
+  }
+  /* Start = List Cart Products */
+  /* Start = Select All items */
+  main.container .list-cart-wrapper {
+    width: 100%;
+  }
+  /* End = Select All items */
+  /* End = List Cart Products */
+  /* Start = Total Payement */
+  main.container .total-payment {
+    width: 100%;
+    margin-left: 0;
+  }
+  /* END = Total Payement */
+  /* End = Main content ==========================*/
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    /* background-color: green; */
+  }
+  /* START = NAVIGATION USER */
+  nav {
+    padding: 0 20px;
+  }
+  /* Start = Searching feature */
+  nav .container .seaching-wrapper {
+    /* background-color: yellow; */
+    /* width: max-content; */
+  }
+  nav .container .seaching-wrapper .form input {
+    width: 70%;
+  }
+  /* End = Searching feature */
+  /* Start = Navigation Icons */
+  nav .container .navigation-auth {
+    /* background-color: blue; */
+  }
+  nav .container .navigation-auth .btn {
+    display: none;
+  }
+  nav .container .navigation-auth .btn.profile {
+    margin-right: 10px;
+    margin-left: 10px;
+    display: inline;
+    /* background-color: blueviolet; */
+  }
+  nav .container .navigation-auth .btn.profile img {
+    width: 40px;
+  }
+  /* End = Navigation Icons */
+  /* Start = Logo brand */
+  nav .container .logo-brand {
+    margin-right: 0;
+  }
+  /* End = Logo brand */
+  /* END = NAVIGATION USER */
+  /* START = NAVIGATION DROPDOWN */
+  #navbarNavDropdown {
+    /* background-color: yellow; */
+    z-index: 1;
+    position: absolute;
+    width: 100vw;
+    top: 100px;
+    background-color: white;
+  }
+  #navbarNavDropdown .container {
+    /* background-color: cyan; */
+    padding: 0;
+  }
+  #navbarNavDropdown .container .nav-item {
+    padding: 16px;
+  }
+  #navbarNavDropdown .container .nav-item a {
+    text-decoration: none;
+    color: #242424;
+    font-size: 1.25rem;
+  }
+  #navbarNavDropdown .container .nav-item a:hover {
+    opacity: 0.5;
+  }
+  /* END = NAVIGATION DROPDOWN */
+  /* Start = Main content page MY BAG AND CHECKOUT ==========================*/
+  header.container {
+    padding: 0 20px;
+  }
+  main.container {
+    /* background-color: red; */
+    margin-top: 30px;
+    margin-bottom: 60px;
+    display: block;
+    padding: 0 20px;
+  }
+  /* Start = List Cart Products */
+  /* Start = Select All items */
+  main.container .list-cart-wrapper {
+    width: 100%;
+  }
+  /* End = Select All items */
+  /* End = List Cart Products */
+  /* Start = Total Payement */
+  main.container .total-payment {
+    width: 100%;
+    margin-left: 0;
+  }
+  /* END = Total Payement */
+  /* End = Main content MY BAG AND CHECKOUT ==========================*/
+}
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 250px) and (max-width: 480px) {
+  .container {
+    /* background-color: aqua; */
+  }
+  /* START = NAVIGATION USER */
+  /* START = NAVIGATION BAR */
+  nav .container {
+    padding: 25px;
+    justify-content: space-between;
+  }
+  /* END = NAVIGATION BAR */
+  /* Start = Searching feature */
+  nav .container .seaching-wrapper {
+    /* background-color: yellow; */
+    display: none;
+  }
+  /* End = Searching feature */
+  /* Start = Navigation Icons */
+  nav .container .navigation-auth .btn {
+    display: none;
+  }
+  /* End = Navigation Icons */
+  /* Start = Logo brand */
+  nav .container .logo-brand {
+    width: 100%;
+  }
+  nav .container .logo-brand p.logo-name {
+    display: inline;
+    text-align: center;
+    font-size: 35px;
+  }
+  /* End = Logo brand */
+  nav .toggler-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    /* background-color: blueviolet; */
+  }
+  nav .toggler-wrapper svg path:hover {
+    fill: darkgreen;
+  }
+  /* END = NAVIGATION USER */
+  /* START = NAVIGATION DROPDOWN */
+  #navbarNavDropdown {
+    /* background-color: yellow; */
+    z-index: 1;
+    position: absolute;
+    width: 100vw;
+    top: 100px;
+    background-color: white;
+  }
+  #navbarNavDropdown .container {
+    /* background-color: cyan; */
+    padding: 0;
+  }
+  #navbarNavDropdown .container .nav-item {
+    padding: 16px;
+  }
+  #navbarNavDropdown .container .nav-item a {
+    text-decoration: none;
+    color: #242424;
+    font-size: 1.25rem;
+  }
+  #navbarNavDropdown .container .nav-item a:hover {
+    opacity: 0.5;
+  }
+  /* END=NAVIGATION DROPDOWN */
+  /* Start = Main content  ==========================*/
+  header.container {
+    padding: 0 25px;
+    /* background-color: orangered; */
+    margin-top: 125px;
+  }
+  main.container {
+    /* background-color: red; */
+    margin-top: 30px;
+    margin-bottom: 60px;
+    display: block;
+    padding: 0 25px;
+  }
+  main.container .list-cart-wrapper .items-product .item .count-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: skyblue; */
+    width: 30%;
+  }
+  main.container .list-cart-wrapper .items-product .item .count-wrapper p.price {
+    /* background-color: red; */
+    width: 100%;
+    margin: 0;
+    margin-top: 14px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+  }
+  main.container .list-cart-wrapper .items-product .item .count-wrapper p.count {
+    /* background-color: red; */
+    display: block;
+    margin: 0;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+  }
+  /* Start = List Cart Products */
+  /* Start = Select All items */
+  main.container .list-cart-wrapper {
+    width: 100%;
+  }
+  /* End = Select All items */
+  /* End = List Cart Products */
+  /* Start = Total Payement */
+  main.container .total-payment {
+    width: 100%;
+    margin-left: 0;
+  }
+  /* END = Total Payement */
+  /* End = Main content ==========================*/
+}

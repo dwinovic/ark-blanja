@@ -1,0 +1,306 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  .container {
+    /* background-color: yellow; */
+  }
+}
+
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    /* background-color: orange; */
+  }
+  /* START = NEW PRODUCT SECTION */
+  main section .custom-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  /* END = NEW PRODUCT SECTION */
+}
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    /* background-color: aqua; */
+  }
+  main.container {
+    margin-top: 150px;
+  }
+  /* START = NEW PRODUCT SECTION */
+  main section .custom-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  /* END = NEW PRODUCT SECTION */
+  /* Start Action Button */
+  main section.products-header-wrapper .product-desc-wrapper .action-wrapper {
+    display: flex;
+    width: 80%;
+    gap: 10px;
+    /* background-color: green; */
+    flex-wrap: wrap;
+  }
+  main section.products-header-wrapper .product-desc-wrapper .action-wrapper .btn-wrapper {
+    height: 38px;
+    width: 100%;
+    /* background-color: yellowgreen; */
+  }
+  main section.products-header-wrapper .product-desc-wrapper .action-wrapper .btn-wrapper.secondary {
+    width: 100px;
+  }
+  main section.products-header-wrapper .product-desc-wrapper .action-wrapper .btn-wrapper.primary {
+    width: 210px;
+  }
+  /* End Action Button */
+  /* START = PRODUCT HEADER */
+  main section.products-header-wrapper {
+    margin-top: 20px;
+    width: 100%;
+    /* background-color: teal; */
+  }
+  main section.products-header-wrapper .image-wrapper img {
+    height: 300px;
+    width: 300px;
+  }
+  main section.products-header-wrapper .image-wrapper .tumbnail {
+    flex-wrap: wrap;
+    /* background-color: yellow; */
+    gap: 10px;
+  }
+  main section.products-header-wrapper .product-desc-wrapper {
+    margin-left: 20px;
+  }
+  /* Price */
+  main section.products-header-wrapper .product-desc-wrapper h3 {
+    margin-bottom: 30px;
+  }
+  main section.products-header-wrapper .product-desc-wrapper .selectcolor-wrapper {
+    margin-bottom: 20px;
+  }
+  main section.products-header-wrapper .product-desc-wrapper .counter-wrapper {
+    margin-bottom: 35px;
+  }
+  /* END = PRODUCT HEADER */
+}
+
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    /* background-color: green; */
+  }
+  main.container {
+    margin-top: 140px;
+    padding: 0 25px;
+  }
+  main section.products-header-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  /* START = NEW PRODUCT SECTION */
+  main section .custom-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  /* END = NEW PRODUCT SECTION */
+  /* Start Action Button */
+  main section.products-header-wrapper .product-desc-wrapper .action-wrapper {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    margin-top: 14px;
+    /* background-color: yellow; */
+  }
+  main section.products-header-wrapper .product-desc-wrapper .action-wrapper .btn-wrapper {
+    height: 45px;
+    width: 100%;
+    /* background-color: rgb(170, 255, 0); */
+  }
+  main section.products-header-wrapper .product-desc-wrapper .action-wrapper .btn-wrapper.secondary {
+    width: 25%;
+  }
+  main section.products-header-wrapper .product-desc-wrapper .action-wrapper .btn-wrapper.primary {
+    width: 50%;
+    margin: 0;
+  }
+  /* End Action Button */
+  /* START = PRODUCT HEADER */
+  main section.products-header-wrapper {
+    margin-top: 20px;
+    width: 100%;
+    /* background-color: rgb(7, 255, 255); */
+    position: relative;
+  }
+  main section.products-header-wrapper .image-wrapper img {
+    height: 280px;
+    width: 100%;
+  }
+  main section.products-header-wrapper .image-wrapper .tumbnail {
+    flex-wrap: wrap;
+    /* background-color: yellow; */
+    gap: 10px;
+  }
+  main section.products-header-wrapper .product-desc-wrapper {
+    margin-left: 0;
+    margin-top: 24px;
+    /* background-color: violet; */
+  }
+  /* Price */
+  main section.products-header-wrapper .product-desc-wrapper h3 {
+    margin-bottom: 16px;
+  }
+  main section.products-header-wrapper .product-desc-wrapper .selectcolor-wrapper {
+    margin-bottom: 20px;
+  }
+  main section.products-header-wrapper .product-desc-wrapper .counter-wrapper {
+    margin-bottom: 0;
+    /* flex-direction: column; */
+    gap: 16px;
+    /* background-color: royalblue; */
+  }
+  main section.products-header-wrapper .product-desc-wrapper .counter-wrapper .count-wrapper {
+    margin-right: 10px;
+  }
+  /* Start = Product Info */
+  main section.products-info-wrapper {
+    margin-top: 100px;
+  }
+  main section h2 {
+    margin-bottom: 20px;
+  }
+  /* END = Product Info */
+  /* END = PRODUCT HEADER */
+  /* START = MAIN SECTION */
+  /* START = NEW PRODUCT SECTION */
+  main section .custom-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  /* END = NEW PRODUCT SECTION */
+  /* START = MAIN SECTION */
+}
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 250px) and (max-width: 480px) {
+  .container {
+    /* background-color: aqua; */
+  }
+  main.container {
+    margin-top: 140px;
+    padding: 0 25px;
+  }
+  main section.products-header-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  /* START = NEW PRODUCT SECTION */
+  main section .custom-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  /* END = NEW PRODUCT SECTION */
+  /* Start Action Button */
+  main section.products-header-wrapper .product-desc-wrapper .action-wrapper {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    margin-top: 14px;
+    background-color: yellow;
+  }
+  main section.products-header-wrapper .product-desc-wrapper .action-wrapper .btn-wrapper {
+    height: 45px;
+    width: 100%;
+    /* background-color: rgb(170, 255, 0); */
+  }
+  main section.products-header-wrapper .product-desc-wrapper .action-wrapper .btn-wrapper.secondary {
+    width: 25%;
+  }
+  main section.products-header-wrapper .product-desc-wrapper .action-wrapper .btn-wrapper.primary {
+    width: 50%;
+    margin: 0;
+  }
+  /* End Action Button */
+  /* START = PRODUCT HEADER */
+  main section.products-header-wrapper {
+    margin-top: 20px;
+    width: 100%;
+    /* background-color: rgb(7, 255, 255); */
+    position: relative;
+  }
+  main section.products-header-wrapper .image-wrapper img {
+    height: 280px;
+    width: 100%;
+  }
+  main section.products-header-wrapper .image-wrapper .tumbnail {
+    flex-wrap: wrap;
+    /* background-color: yellow; */
+    gap: 10px;
+  }
+  main section.products-header-wrapper .product-desc-wrapper {
+    margin-left: 0;
+    margin-top: 24px;
+    /* background-color: violet; */
+  }
+  /* Price */
+  main section.products-header-wrapper .product-desc-wrapper h3 {
+    margin-bottom: 16px;
+  }
+  main section.products-header-wrapper .product-desc-wrapper .selectcolor-wrapper {
+    margin-bottom: 20px;
+  }
+  main section.products-header-wrapper .product-desc-wrapper .counter-wrapper {
+    margin-bottom: 0;
+    /* flex-direction: column; */
+    gap: 16px;
+    /* background-color: royalblue; */
+  }
+  main section.products-header-wrapper .product-desc-wrapper .counter-wrapper .count-wrapper {
+    margin-right: 10px;
+  }
+  /* Start = Product Info */
+  main section.products-info-wrapper {
+    margin-top: 100px;
+  }
+  main section h2 {
+    margin-bottom: 20px;
+  }
+  /* END = Product Info */
+  /* END = PRODUCT HEADER */
+  /* START = MAIN SECTION */
+  /* START = NEW PRODUCT SECTION */
+  main section .custom-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  /* END = NEW PRODUCT SECTION */
+  /* START = MAIN SECTION */
+}

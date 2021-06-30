@@ -6,8 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blanja | Customer Register</title>
+  <!-- Favicon Blanja.com -->
+  <link rel="icon" href="/src/images/icons/favicon.ico">
+
+  <!-- Global CSS = Color || Font || Body -->
+  <link rel="stylesheet" href="../styles/global.css">
+
+  <!-- Current Page CSS -->
   <link rel="stylesheet" href="../styles/customer-signup.css" />
-  <link rel="stylesheet" href="../styles/main.css">
+
 
 </head>
 
@@ -45,15 +52,42 @@
         <input type="password" name="password" placeholder="Password" />
       </div>
       <div class="forgot-info">
-        <a href="#">Forgot password?</a>
+        <a href="#" onclick="show404()">Forgot password?</a>
+
       </div>
-      <button class="submit" onclick="goHome()" class="submit" type="button">PRIMARY</button>
+      <div class="btn-wrapper">
+        <a class="btn primary submit" href="/src/pages/homepage.html" type="button">
+          PRIMARY</a>
+      </div>
       <div class="register">
         <p>Already have a Blanja account? <a href="./customer-login.html">Login</a></p>
       </div>
     </form>
   </div>
   </div>
+
+  <!-- START = 404 PAGE -->
+  <div class="hide-modal-404" id="modal-404">
+    <div class="page-404-wrapper" onclick="goBack()">
+      <div class="card-404">
+        <div class="logo">
+          <img src="/src/images/logo-blanja-full.png" alt="Blanja Logo">
+        </div>
+        <div class="header">
+          <h1>Upps! <br />Features under development</h1>
+        </div>
+        <div class="illustration">
+          <img src="/src/images/404.png" alt="404">
+        </div>
+        <div class="btn-wrapper">
+          <button class="btn primary" onclick="goBack()">Go Back</button>
+        </div>
+        <div class="bottom">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END = 404 PAGE -->
 
   <script src="../scripts/main.js"></script>
 
