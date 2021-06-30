@@ -1,0 +1,279 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  .container {
+    /* background-color: yellow; */
+  }
+}
+
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    /* background-color: purple; */
+  }
+  /* START = NAVBAR USER */
+  /* Start = Searching feature */
+  nav .container .seaching-wrapper {
+    /* background-color: yellow; */
+  }
+  nav .container .seaching-wrapper form input {
+    width: 400px;
+  }
+  /* End = Searching feature */
+  /* END = NAVBAR USER */
+}
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    /* background-color: aqua; */
+  }
+  /* Start = Searching feature */
+  nav .container .seaching-wrapper {
+    /* background-color: yellow; */
+  }
+  nav .container .seaching-wrapper form input {
+    width: 180px;
+  }
+  /* End = Searching feature */
+  /* Start = Navigation Icons */
+  nav .container .navigation-auth {
+    /* background-color: blue; */
+  }
+  nav .container .navigation-auth .btn {
+    margin-right: 20px;
+    /* background-color: blueviolet; */
+  }
+  nav .container .navigation-auth .btn.profile {}
+  /* End = Navigation Icons */
+  /* Start = Main content ==========================*/
+  main.container {
+    /* background-color: red; */
+    margin-top: 30px;
+    margin-bottom: 60px;
+    display: block;
+  }
+  /* Start = List Cart Products */
+  /* Start = Select All items */
+  main.container .list-cart-wrapper {
+    width: 100%;
+  }
+  /* End = Select All items */
+  /* End = List Cart Products */
+  /* Start = Total Payement */
+  main.container .total-payment {
+    width: 100%;
+    margin-left: 0;
+  }
+  /* END = Total Payement */
+  /* End = Main content ==========================*/
+}
+
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .container {
+    /* background-color: green; */
+  }
+  /* START = NAVBAR USER */
+  /* Start = Logo brand */
+  nav .container .logo-brand {
+    margin-right: 20px;
+  }
+  /* End = Logo brand */
+  /* Start = Searching feature */
+  nav .container .seaching-wrapper {
+    /* background-color: yellow; */
+    padding-right: 20px;
+    justify-content: space-between;
+  }
+  nav .container .seaching-wrapper form input {
+    width: 280px;
+  }
+  /* End = Searching feature */
+  /* Start = Navigation */
+  nav .container .navigation-auth {
+    /* background-color: blue; */
+  }
+  nav .container .navigation-auth .btn {
+    margin-right: 10px;
+  }
+  /* End = Navigation */
+  /* END = NAVBAR USER */
+  /* Start = Main content ==========================*/
+  main.container {
+    /* background-color: red; */
+    margin-top: 30px;
+    margin-bottom: 60px;
+    display: block;
+  }
+  /* Start = List Cart Products */
+  /* Start = Select All items */
+  main.container .list-cart-wrapper {
+    width: 100%;
+  }
+  /* End = Select All items */
+  /* End = List Cart Products */
+  /* Start = Total Payement */
+  main.container .total-payment {
+    width: 100%;
+    margin-left: 0;
+  }
+  /* END = Total Payement */
+  /* End = Main content ==========================*/
+}
+
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    /* background-color: pink; */
+  }
+  /* Start = Searching feature */
+  nav .container .seaching-wrapper {
+    /* background-color: yellow; */
+  }
+  nav .container .seaching-wrapper form input {
+    width: 190px;
+  }
+  /* End = Searching feature */
+  /* Start = Navigation Icons */
+  nav .container .navigation-auth {
+    /* background-color: blue; */
+  }
+  nav .container .navigation-auth .btn {
+    display: none;
+  }
+  nav .container .navigation-auth .btn.profile {
+    margin-right: 20px;
+    display: inline;
+    /* background-color: blueviolet; */
+  }
+  /* End = Navigation Icons */
+  /* Start = Logo brand */
+  nav .container .logo-brand {
+    margin-right: 0;
+  }
+  /* End = Logo brand */
+  /* Start = Main content ==========================*/
+  main.container {
+    /* background-color: red; */
+    margin-top: 30px;
+    margin-bottom: 60px;
+    display: block;
+    padding: 25px;
+  }
+  /* Start = List Cart Products */
+  /* Start = Select All items */
+  main.container .list-cart-wrapper {
+    width: 100%;
+  }
+  /* End = Select All items */
+  /* End = List Cart Products */
+  /* Start = Total Payement */
+  main.container .total-payment {
+    width: 100%;
+    margin-left: 0;
+  }
+  /* END = Total Payement */
+  /* End = Main content ==========================*/
+}
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 250px) and (max-width: 480px) {
+  .container {
+    /* background-color: orange; */
+  }
+  /* START = NAVIGATION BAR */
+  nav .container {
+    padding: 25px;
+    justify-content: space-between;
+  }
+  /* END = NAVIGATION BAR */
+  /* Start = Searching feature */
+  nav .container .seaching-wrapper {
+    /* background-color: yellow; */
+    display: none;
+  }
+  /* End = Searching feature */
+  /* Start = Navigation Icons */
+  nav .container .navigation-auth .btn {
+    display: none;
+  }
+  /* End = Navigation Icons */
+  /* Start = Logo brand */
+  nav .container .logo-brand {
+    width: 100%;
+  }
+  nav .container .logo-brand p.logo-name {
+    display: inline;
+    text-align: center;
+    font-size: 35px;
+  }
+  /* End = Logo brand */
+  nav .toggler-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    /* background-color: blueviolet; */
+  }
+  nav .toggler-wrapper svg path:hover {
+    fill: darkgreen;
+  }
+  /* Start = Main content ==========================*/
+  header.container {
+    padding: 0 25px;
+    /* background-color: orangered; */
+    margin-top: 125px;
+  }
+  main.container {
+    /* background-color: red; */
+    margin-top: 30px;
+    margin-bottom: 60px;
+    display: block;
+    padding: 0 25px;
+  }
+  /* Start = List Cart Products */
+  /* Start = Select All items */
+  main.container .list-cart-wrapper {
+    width: 100%;
+  }
+  /* End = Select All items */
+  /* End = List Cart Products */
+  /* Start = Total Payement */
+  main.container .total-payment {
+    width: 100%;
+    margin-left: 0;
+  }
+  /* END = Total Payement */
+  /* End = Main content ==========================*/
+}
