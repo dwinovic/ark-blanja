@@ -6,8 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blanja | Customer Login</title>
-  <link rel="stylesheet" href="../styles/customer-login.css" />
-  <link rel="stylesheet" href="../styles/global.css">
+  <!-- Favicon Blanja.com -->
+  <link rel="icon" href="/src/images/icons/favicon.ico">
+  <!-- Global CSS = Color || Font || Body -->
+  <link rel="stylesheet" href="/src/styles/global.css">
+  <!-- Global CSS = Authentication Page -->
+  <link rel="stylesheet" href="../global-login.css">
+  <!-- Current Page CSS -->
 </head>
 
 <body>
@@ -16,7 +21,7 @@
     <!-- START = header page -->
     <header>
       <div class="logo-wrapper">
-        <img src="../../src/images/icons/blanja-icon.png" alt="Blanja.com" />
+        <img src="/src/images/icons/blanja-icon.png" alt="Blanja.com" />
         <h3 class="logo">Blanja</h3>
       </div>
       <p class="sub-heading">Please login with your account</p>
@@ -25,26 +30,29 @@
 
     <!-- START = Navigation role -->
     <nav>
-      <a href="./customer-login.html" class="customer">Custommer</a>
-      <a href="../../index.html" class="seller">Seller</a>
+      <a href="../customer/customer-login.html" class="nav-left active">Custommer</a>
+      <a href="../seller/seller-login.html" class="nav-right default">Seller</a>
     </nav>
 
     <!-- END = Navigation role -->
 
     <!-- START = Form Login Input -->
     <form action="">
-      <div class="row">
+      <div class="form-wrapper">
         <input type="text" placeholder="Email" name="email" />
       </div>
-      <div class="row last">
+      <div class="form-wrapper">
         <input type="password" name="password" placeholder="Password" />
       </div>
       <div class="forgot-info">
-        <a href="#">Forgot password?</a>
+        <a href="../reset-password/reset-password.html" class="text-red text-md text-anchor">Forgot password?</a>
       </div>
-      <button class="submit" onclick="goHome()" class="submit" type="button">PRIMARY</button>
+      <div class="btn-wrapper">
+        <a class="btn primary submit" href="/index.html" type="button">
+          PRIMARY</a>
+      </div>
       <div class="register">
-        <p>Don't have a Blanja account? <a href="./customer-signup.html">Register</a></p>
+        <p>Don't have a Blanja account? <a href="../customer/customer-signup.html" class="text-anchor text-red text-md">Register</a></p>
       </div>
     </form>
   </div>

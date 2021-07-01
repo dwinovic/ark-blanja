@@ -5,17 +5,15 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blanja | Seller Login</title>
+
   <!-- Favicon Blanja.com -->
   <link rel="icon" href="/src/images/icons/favicon.ico">
-  <title>Blanja | Konfirmasi Password</title>
   <!-- Global CSS = Color || Font || Body -->
   <link rel="stylesheet" href="/src/styles/global.css">
-
+  <!-- Global CSS = Authentication Page -->
+  <link rel="stylesheet" href="../global-login.css">
   <!-- Current Page CSS -->
-  <link rel="stylesheet" href="/src/styles/reset-password.css" />
-
-
-
 </head>
 
 <body>
@@ -26,30 +24,37 @@
         <img src="/src/images/icons/blanja-icon.png" alt="Blanja.com" />
         <h3 class="logo">Blanja</h3>
       </div>
-      <p class="sub-heading text-center">Reset Password</p>
-      <p id="wait-email-verification" class="text-red text-center text-md">You need to change your password to activate your account</p>
+      <p class="sub-heading">Please login with your account</p>
     </header>
     <!-- END = header page -->
 
+    <!-- START = Navigation role -->
+    <nav>
+      <a href="../customer/customer-login.html" class="nav-left default">Custommer</a>
+      <a href="./seller-login.html" class="nav-right active">Seller</a>
+    </nav>
+
+    <!-- END = Navigation role -->
+
     <!-- START = Form Login Input -->
     <form>
-      <div class="password-wrapper">
+      <div class="form-wrapper">
+        <label for="email"></label>
+        <input type="text" placeholder="Email" name="email" />
+      </div>
+      <div class="form-wrapper">
         <label for="password"></label>
         <input type="password" name="password" placeholder="Password" />
       </div>
-      <div class="password-wrapper">
-        <label for="password"></label>
-        <input type="password" name="password" placeholder="Confirmation New Password" />
-      </div>
       <div class="forgot-info">
-        <a href="/src/pages/reset-password.html">Forgot password?</a>
+        <a href="../reset-password/reset-password.html" class="text-red text-md text-anchor">Forgot password?</a>
       </div>
       <div class="btn-wrapper">
-        <button onclick="updatePassword()" class="btn primary submit" href="" type="button">
-          PRIMARY</button>
+        <a class="btn primary submit" href="/index.html" type="button">
+          PRIMARY</a>
       </div>
       <div class="register">
-        <p>Don't have a Blanja account? <a href="/src/pages/seller-signup.html">Register</a></p>
+        <p>Don't have a Blanja account? <a href="../seller/seller-signup.html" class="text-anchor text-red text-md">Register</a></p>
       </div>
     </form>
   </div>
@@ -78,16 +83,6 @@
   </div>
   <!-- END = 404 PAGE -->
   <script src="../scripts/main.js"></script>
-  <script>
-    // Wait verification page
-    const updatePassword = () => {
-      let get = document.getElementById('wait-email-verification');
-      get.classList.remove('text-red');
-      get.textContent = "We have sent an email containing a password reset instruction to your email. please check your email."
-      get.classList.add('text-gray')
-        // console.log(get); 
-    };
-  </script>
 </body>
 
 </html>

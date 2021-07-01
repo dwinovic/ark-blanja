@@ -10,10 +10,10 @@
   <link rel="icon" href="/src/images/icons/favicon.ico">
 
   <!-- Global CSS = Color || Font || Body -->
-  <link rel="stylesheet" href="../styles/global.css">
-
+  <link rel="stylesheet" href="/src/styles/global.css">
+  <!-- Global CSS = Authentication Page -->
+  <link rel="stylesheet" href="../global-login.css">
   <!-- Current Page CSS -->
-  <link rel="stylesheet" href="../styles/seller-signup.css" />
 
 
 </head>
@@ -24,7 +24,7 @@
     <!-- START = header page -->
     <header>
       <div class="logo-wrapper">
-        <img src="../images/icons/blanja-icon.png" alt="Blanja.com" />
+        <img src="../../../images/icons/blanja-icon.png" alt="Blanja.com" />
         <h3 class="logo">Blanja</h3>
       </div>
       <p class="sub-heading">Please sign up with your account</p>
@@ -33,39 +33,39 @@
 
     <!-- START = Navigation role -->
     <nav>
-      <a href="./customer-signup.html" class="customer">Custommer</a>
-      <a href=".seller-signup.html" class="seller">Seller</a>
+      <a href="../customer/customer-signup.html" class="nav-left default">Custommer</a>
+      <a href="./seller-signup.html" class="nav-right active">Seller</a>
     </nav>
 
     <!-- END = Navigation role -->
 
     <!-- START = Form Login Input -->
     <form action="">
-      <div class="form name-wrapper">
+      <div class="form-wrapper">
         <input type="text" placeholder="Name" name="name" />
       </div>
-      <div class="form email-wrapper">
+      <div class="form-wrapper">
         <input type="email" placeholder="Email" name="email" />
       </div>
-      <div class="form phone-wrapper">
+      <div class="form-wrapper">
         <input type="text" placeholder="Phone Number" name="phone" />
       </div>
-      <div class="form store-name-wrapper">
+      <div class="form-wrapper">
         <input type="text" placeholder="Store Name" name="store-name" />
       </div>
-      <div class="form password-wrapper">
+      <div class="form-wrapper">
         <input type="password" name="password" placeholder="Password" />
       </div>
 
       <div class="forgot-info">
-        <a href="#" onclick="show404()">Forgot password?</a>
+        <a href="../reset-password/reset-password.html" class="text-red text-md text-anchor">Forgot password?</a>
       </div>
       <div class="btn-wrapper">
         <a class="btn primary submit" href="/index.html" type="button">
           PRIMARY</a>
       </div>
       <div class="register">
-        <p>Already have a Blanja account? <a href="../../index.html">Login</a></p>
+        <p>Already have a Blanja account? <a href="../seller/seller-login.html" class="text-anchor text-red text-md">Login</a></p>
       </div>
     </form>
   </div>

@@ -97,6 +97,14 @@ body {
   text-align: center;
 }
 
+.text-anchor {
+  text-decoration: none;
+}
+
+.text-anchor:hover {
+  opacity: 0.5;
+}
+
 
 /* END = TEXT GLOBALS */
 

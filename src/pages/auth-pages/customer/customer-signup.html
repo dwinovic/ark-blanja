@@ -5,47 +5,58 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blanja | Customer Register</title>
   <!-- Favicon Blanja.com -->
   <link rel="icon" href="/src/images/icons/favicon.ico">
-  <title>Blanja | Reset Password</title>
   <!-- Global CSS = Color || Font || Body -->
   <link rel="stylesheet" href="/src/styles/global.css">
-
+  <!-- Global CSS = Authentication Page -->
+  <link rel="stylesheet" href="../global-login.css">
   <!-- Current Page CSS -->
-  <link rel="stylesheet" href="/src/styles/reset-password.css" />
-
-
-
 </head>
 
 <body>
   <div class="container">
+
     <!-- START = header page -->
     <header>
       <div class="logo-wrapper">
         <img src="/src/images/icons/blanja-icon.png" alt="Blanja.com" />
         <h3 class="logo">Blanja</h3>
       </div>
-      <p class="sub-heading">Reset Password</p>
+      <p class="sub-heading">Please sign up with your account</p>
     </header>
     <!-- END = header page -->
 
+    <!-- START = Navigation role -->
+    <nav>
+      <a href="../customer/customer-signup.html" class="nav-left active">Custommer</a>
+      <a href="../seller/seller-signup.html" class="nav-right default">Seller</a>
+    </nav>
+
+    <!-- END = Navigation role -->
+
     <!-- START = Form Login Input -->
-    <form>
-      <div class="email-wrapper">
-        <label for="email"></label>
-        <input type="text" placeholder="Email" name="email" />
+    <form action="">
+      <div class="form-wrapper">
+        <input type="text" placeholder="Name" name="name" />
+      </div>
+      <div class="form-wrapper">
+        <input type="email" placeholder="Email" name="email" />
       </div>
 
+      <div class="form-wrapper">
+        <input type="password" name="password" placeholder="Password" />
+      </div>
       <div class="forgot-info">
-        <a href="#" onclick="show404()">Forgot password?</a>
+        <a href="../reset-password/reset-password.html" class="text-red text-md text-anchor">Forgot password?</a>
       </div>
       <div class="btn-wrapper">
         <a class="btn primary submit" href="/index.html" type="button">
           PRIMARY</a>
       </div>
       <div class="register">
-        <p>Don't have a Blanja account? <a href="./src/pages/seller-signup.html">Register</a></p>
+        <p>Already have a Blanja account? <a href="./customer-login.html" class="text-anchor text-red text-md">Login</a></p>
       </div>
     </form>
   </div>
@@ -73,7 +84,9 @@
     </div>
   </div>
   <!-- END = 404 PAGE -->
+
   <script src="../scripts/main.js"></script>
+
 </body>
 
 </html>
