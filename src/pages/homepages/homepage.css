@@ -10,111 +10,47 @@ main.container {
 
 /* Start = Carousel ==============================*/
 
-main section.carousel-wrapping {
+.carousel-cell {
+  width: 42%;
+  height: 200px;
+  margin-right: 30px;
+  border-radius: 30px;
+  counter-increment: carousel-cell;
+}
+
+.flickity-page-dots {
+  display: flex;
+}
+
+
+/* cell number */
+
+.container .main-carousel .carousel-cell a.card {
   width: 100%;
-}
-
-main section .content {
-  display: flex;
-  /* overflow-x: scroll; */
-  overflow-y: hidden;
-  overflow-x: hidden;
+  height: 100%;
   position: relative;
-  justify-content: space-between;
-  align-items: center;
-}
-
-main section .content .cards {
   display: flex;
-  gap: 30px;
-}
-
-main section .content .cards .card {
-  position: relative;
-  width: 456px;
-  height: 180px;
-}
-
-
-/* Start = Card Title */
-
-main section .content .cards .card h3 {
-  display: flex;
-  position: absolute;
-  width: 456px;
-  height: 180px;
-  align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.container .main-carousel .carousel-cell a.card:hover {
+  opacity: 0.8;
+}
+
+.container .main-carousel .carousel-cell a.card img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .main-carousel .carousel-cell a.card h3 {
+  position: absolute;
   font-style: normal;
   font-weight: bold;
   font-size: 38px;
-  color: white;
+  line-height: 38px;
+  color: #ffffff;
 }
-
-main section .content .cards .card h3:hover {
-  background-color: rgba(0, 0, 0, 0.013);
-  color: rgba(255, 255, 255, 0.808);
-}
-
-
-/* End = Card Title */
-
-
-/* Start = Button Navigation Card */
-
-main section .content button {
-  position: absolute;
-  background: #ffffff;
-  box-shadow: 0px 4px 10px rgba(181, 181, 181, 0.25);
-  width: 52px;
-  height: 52px;
-  border-radius: 52px;
-  border: 0;
-  margin: 0 20px;
-}
-
-main section .content button:hover {
-  box-shadow: 0px 4px 10px rgba(94, 81, 81, 0.25);
-}
-
-main section .content button.btn-left {
-  /* margin-left: 24px; */
-}
-
-main section .content button.btn-right {
-  right: 0;
-}
-
-
-/* End = Button Navigation Card */
-
-
-/* Start = Circle navigation card content */
-
-main section .circle-navigation-wrapper {
-  margin-top: 21px;
-  height: 10px;
-  display: flex;
-  gap: 8px;
-}
-
-main section .circle-navigation-wrapper .btn-circle {
-  background-color: #eaeaea;
-  width: 10px;
-  height: 10px;
-  border-radius: 100px;
-}
-
-main section .circle-navigation-wrapper .btn-circle.active {
-  background-color: #8e8a8a;
-  width: 10px;
-  height: 10px;
-  border-radius: 100px;
-}
-
-
-/* End = Circle navigation card content */
 
 
 /* End = Carousel =================================*/
@@ -157,22 +93,23 @@ main section .heading p {
 
 /* Start = Category list */
 
-main section .category-wrapper {
-  /* background-color: tomato; */
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  align-items: center;
+main section.category .carousel.main-carousel .flickity-viewport {
+  width: 100%;
+  padding: 0;
+  height: max-content;
 }
 
-main section .category-wrapper .category-items {
-  display: flex;
-  gap: 28px;
-  /* overflow: visible; */
-  /* overflow-x: scroll; */
+main section.category .carousel.main-carousel .carousel-cell {
+  width: min-content;
+  border-radius: 30px;
+  counter-increment: carousel-cell;
 }
 
-main section .category-wrapper .category-items .card {
+main section.category .carousel.main-carousel .flickity-page-dots {
+  display: none;
+}
+
+main section.category .carousel.main-carousel .card {
   width: 206px;
   height: 220px;
   box-sizing: border-box;
@@ -184,38 +121,21 @@ main section .category-wrapper .category-items .card {
   /* margin-right: 28px; */
 }
 
-main section .category-wrapper .category-items .card:hover {
+main section.category .carousel.main-carousel .card:hover {
   opacity: 0.7;
 }
 
-main section .category-wrapper .category-items .card img {
+main section.category .carousel.main-carousel .card img {
   /* background-color: salmon; */
   /* height: 100%; */
 }
 
-main section .category-wrapper .category-items .card h3 {
+main section.category .carousel.main-carousel .card h3 {
   color: white;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
   position: absolute;
-}
-
-main section .category-wrapper button.btn-right {
-  position: absolute;
-  right: -25px;
-  width: 52px;
-  height: 52px;
-  border-radius: 52px;
-  border: 0;
-  background-color: white;
-  background: #ffffff;
-  box-shadow: 0px 4px 10px rgba(181, 181, 181, 0.25);
-}
-
-main section .category-wrapper button.btn-right:hover {
-  /* background-color: rgba(255, 255, 255, 0.623); */
-  /* box-shadow: 0px 4px 10px rgba(181, 181, 181, 0.479); */
 }
 
 
