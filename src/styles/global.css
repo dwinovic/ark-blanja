@@ -55,6 +55,52 @@ body {
 /* END = GLOBAL COLORS */
 
 
+/* START = TEXT GLOBALS */
+
+.text-xl {
+  /* font 20px */
+  font-size: 1.25rem;
+  /* 26px */
+  line-height: 1.625rem;
+}
+
+.text-lg {
+  /* font 16px */
+  font-size: 1rem;
+  /* 22px */
+  line-height: 1.375rem;
+}
+
+.text-md {
+  /* font 14px */
+  font-size: 0.875rem;
+  /* 20px */
+  line-height: 1.25rem;
+}
+
+.text-sm {
+  /* font 12px */
+  font-size: 0.75rem;
+  /* 16px */
+  line-height: 1rem;
+}
+
+.text-red {
+  color: #cc0b04;
+}
+
+.text-gray {
+  color: #9b9b9b;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+/* END = TEXT GLOBALS */
+
+
 /* START = GLOBAL BUTTON */
 
 .btn.primary {
