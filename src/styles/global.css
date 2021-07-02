@@ -51,6 +51,30 @@ body {
   background: #57cd9e;
 }
 
+.bg-black {
+  background-color: #020202;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-red {
+  background-color: #b82222;
+}
+
+.bg-brown {
+  background-color: #bea9a9;
+}
+
+.bg-caramel {
+  background-color: #e2bb8d;
+}
+
+.bg-donker {
+  background-color: #151867;
+}
+
 
 /* END = GLOBAL COLORS */
 

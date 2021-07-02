@@ -18,7 +18,9 @@
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <!-- Global CSS -->
   <link rel="stylesheet" href="/src/styles/global.css">
-  <!-- CSS -->
+  <!-- Global CSS = Modal Filter -->
+  <link rel="stylesheet" href="/src/styles/components/global-modal.css">
+  <!-- CSS Current Page-->
   <link rel="stylesheet" href="/src/pages/homepages/homepage.css" />
   <!-- Global Responsive -->
   <link rel="stylesheet" href="/src/styles/responsive/mq-global.css">
@@ -48,7 +50,7 @@
             </button>
         </div>
         <div class="filter-wrapper">
-          <div href="" onclick="show404()">
+          <div href="" data-bs-toggle="modal" data-bs-target="#payment">
             <img src="/src/images/icons/IC-filter.png" alt="filter icon" />
           </div>
         </div>
@@ -57,10 +59,10 @@
 
       <!-- Start = Navigation -->
       <div class="navigation-auth">
-        <a href="/src/pages/my-bag.html" class="cart"><img src="/src/images/icons/IC-cart.png" alt="cart icon" /></a>
+        <a href="./src/pages/my-bag/my-bag.html" class="cart"><img src="/src/images/icons/IC-cart.png" alt="cart icon" /></a>
         <div class="btn-wrapper">
-          <a href="/index.html" class="button primary">Login</a>
-          <a href="/src/pages/customer-signup.html" class="button secondary">Signup</a>
+          <a href="./src/pages/auth-pages/customer/customer-login.html" class="button primary">Login</a>
+          <a href="./src/pages/auth-pages/customer/customer-signup.html" class="button secondary">Signup</a>
         </div>
         <!-- START = HAMBURGER -->
         <div class="toggler-wrapper" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -100,6 +102,20 @@
     <div class="carousel main-carousel" data-flickity='{ "groupCells": true }'>
       <div class="carousel-cell">
         <a href="#" class="card">
+          <img src="/src/images/CR_trend2020_3.jpg" alt="Product 1" />
+          <h3>Women Inspiring</h3>
+        </a>
+      </div>
+
+      <div class="carousel-cell">
+        <a href="#" class="card">
+          <img src="/src/images/CR_trend2020_4.jpg" alt="Product 1" />
+          <h3>Formal Edition</h3>
+        </a>
+      </div>
+
+      <div class="carousel-cell">
+        <a href="#" class="card">
           <img src="/src/images/CR_trend2020.png" alt="Product 1" />
           <h3>Trend in 2020</h3>
         </a>
@@ -110,27 +126,17 @@
           <h3>Black Edition</h3>
         </a>
       </div>
+
+
       <div class="carousel-cell">
         <a href="#" class="card">
-          <img src="/src/images/CR_trend2020.png" alt="Product 1" />
+          <img src="/src/images/CR_trend2020_4.jpg" alt="Product 1" />
           <h3>Trend in 2020</h3>
         </a>
       </div>
       <div class="carousel-cell">
         <a href="#" class="card">
-          <img src="/src/images/CR_trend2020_2.png" alt="Product 1" />
-          <h3>Trend in 2020</h3>
-        </a>
-      </div>
-      <div class="carousel-cell">
-        <a href="#" class="card">
-          <img src="/src/images/CR_trend2020.png" alt="Product 1" />
-          <h3>Trend in 2020</h3>
-        </a>
-      </div>
-      <div class="carousel-cell">
-        <a href="#" class="card">
-          <img src="/src/images/CR_trend2020_2.png" alt="Product 1" />
+          <img src="/src/images/CR_trend2020_3.jpg" alt="Product 1" />
           <h3>Trend in 2020</h3>
         </a>
       </div>
@@ -145,50 +151,62 @@
       <div class="carousel main-carousel" data-flickity='{ "autoPlay": true }'>
         <div class="carousel-cell">
           <a href="/src/pages/kategori.html" class="card red">
-            <img src="/src/images/CT-tshirt.png" alt="" />
+            <img src="/src/images/CT-tshirt.png" alt="T-Shirt" />
             <h3>T-Shirt</h3>
           </a>
         </div>
         <div class="carousel-cell">
-          <a href="/src/pages/kategori.html" class="card red">
-            <img src="/src/images/CT-tshirt.png" alt="" />
-            <h3>T-Shirt</h3>
+          <a href="/src/pages/kategori.html" class="card blue">
+            <img src="/src/images/PR-sepatu.jpg" alt="Shoes" />
+            <h3>Shorts</h3>
+          </a>
+        </div>
+        <div class="carousel-cell">
+          <a href="/src/pages/kategori.html" class="card orange">
+            <img src="/src/images/PR-jacket.jpg" alt="Jacket" />
+            <h3>Jacket</h3>
+          </a>
+        </div>
+        <div class="carousel-cell">
+          <a href="/src/pages/kategori.html" class="card pink">
+            <img src="/src/images/PR-jeans.jpg" alt="Jeans" />
+            <h3>Pants</h3>
+          </a>
+        </div>
+        <div class="carousel-cell">
+          <a href="/src/pages/kategori.html" class="card green">
+            <img src="/src/images/PR-sepatu.jpg" alt="Shoes" />
+            <h3>Shoes</h3>
           </a>
         </div>
         <div class="carousel-cell">
           <a href="/src/pages/kategori.html" class="card red">
-            <img src="/src/images/CT-tshirt.png" alt="" />
+            <img src="/src/images/CT-tshirt.png" alt="T-Shirt" />
             <h3>T-Shirt</h3>
           </a>
         </div>
         <div class="carousel-cell">
-          <a href="/src/pages/kategori.html" class="card red">
-            <img src="/src/images/CT-tshirt.png" alt="" />
-            <h3>T-Shirt</h3>
+          <a href="/src/pages/kategori.html" class="card blue">
+            <img src="/src/images/PR-sepatu.jpg" alt="Shoes" />
+            <h3>Shorts</h3>
           </a>
         </div>
         <div class="carousel-cell">
-          <a href="/src/pages/kategori.html" class="card red">
-            <img src="/src/images/CT-tshirt.png" alt="" />
-            <h3>T-Shirt</h3>
+          <a href="/src/pages/kategori.html" class="card orange">
+            <img src="/src/images/PR-jacket.jpg" alt="Jacket" />
+            <h3>Jacket</h3>
           </a>
         </div>
         <div class="carousel-cell">
-          <a href="/src/pages/kategori.html" class="card red">
-            <img src="/src/images/CT-tshirt.png" alt="" />
-            <h3>T-Shirt</h3>
+          <a href="/src/pages/kategori.html" class="card pink">
+            <img src="/src/images/PR-jeans.jpg" alt="Jeans" />
+            <h3>Pants</h3>
           </a>
         </div>
         <div class="carousel-cell">
-          <a href="/src/pages/kategori.html" class="card red">
-            <img src="/src/images/CT-tshirt.png" alt="" />
-            <h3>T-Shirt</h3>
-          </a>
-        </div>
-        <div class="carousel-cell">
-          <a href="/src/pages/kategori.html" class="card red">
-            <img src="/src/images/CT-tshirt.png" alt="" />
-            <h3>T-Shirt</h3>
+          <a href="/src/pages/kategori.html" class="card green">
+            <img src="/src/images/PR-sepatu.jpg" alt="Shoes" />
+            <h3>Shoes</h3>
           </a>
         </div>
       </div>
@@ -202,7 +220,7 @@
       </div>
       <div class="custom-container">
         <div class="item">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top" alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -222,7 +240,7 @@
           </a>
         </div>
         <div class="item">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -242,7 +260,7 @@
           </a>
         </div>
         <div class="item">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -262,7 +280,7 @@
           </a>
         </div>
         <div class="item">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -282,7 +300,7 @@
           </a>
         </div>
         <div class="item">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -304,7 +322,7 @@
 
 
         <div class="item ">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -324,7 +342,7 @@
           </a>
         </div>
         <div class="item ">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -344,7 +362,7 @@
           </a>
         </div>
         <div class="item ">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -364,7 +382,7 @@
           </a>
         </div>
         <div class="item ">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -384,7 +402,7 @@
           </a>
         </div>
         <div class="item ">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -405,7 +423,7 @@
         </div>
 
         <div class="item ">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -425,7 +443,7 @@
           </a>
         </div>
         <div class="item ">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -445,7 +463,7 @@
           </a>
         </div>
         <div class="item ">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -465,7 +483,7 @@
           </a>
         </div>
         <div class="item ">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -485,7 +503,7 @@
           </a>
         </div>
         <div class="item ">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -515,7 +533,7 @@
       </div>
       <div class="custom-container">
         <div class="item">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -535,7 +553,7 @@
           </a>
         </div>
         <div class="item">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -555,7 +573,7 @@
           </a>
         </div>
         <div class="item">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -575,7 +593,7 @@
           </a>
         </div>
         <div class="item">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -595,7 +613,7 @@
           </a>
         </div>
         <div class="item">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -617,7 +635,7 @@
 
 
         <div class="item ">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -637,7 +655,7 @@
           </a>
         </div>
         <div class="item ">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -657,7 +675,7 @@
           </a>
         </div>
         <div class="item ">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -677,7 +695,7 @@
           </a>
         </div>
         <div class="item ">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -697,7 +715,7 @@
           </a>
         </div>
         <div class="item ">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -718,7 +736,7 @@
         </div>
 
         <div class="item ">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -738,7 +756,7 @@
           </a>
         </div>
         <div class="item ">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -758,7 +776,7 @@
           </a>
         </div>
         <div class="item ">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -778,7 +796,7 @@
           </a>
         </div>
         <div class="item ">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -798,7 +816,7 @@
           </a>
         </div>
         <div class="item ">
-          <a href="/src/pages/page-product.html" class="card " style=" ">
+          <a href="/src/pages/page-product/page-product.html" class="card " style=" ">
             <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
@@ -832,6 +850,133 @@
 
 
 
+
+  <!-- Start = Modal Filter -->
+  <div class="modal fade" id="payment" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="payment" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h5 class="modal-title" id="payment">Filter</h5>
+        </div>
+        <div class="body">
+          <div class="section">
+            <h6 class="heading">Colors</h6>
+            <div class="bank-wrapper">
+              <div class="row-wrap filter">
+                <div class="check-wrapper">
+                  <label class="container-check">
+                    <input type="checkbox" >
+                    <span class="checkmark bg-black"></span>
+                  </label>
+                  <label class="container-check">
+                    <input type="checkbox" >
+                    <span class="checkmark bg-white"></span>
+                  </label>
+                  <label class="container-check">
+                    <input type="checkbox" >
+                    <span class="checkmark bg-red"></span>
+                  </label>
+                  <label class="container-check">
+                    <input type="checkbox" >
+                    <span class="checkmark bg-brown"></span>
+                  </label>
+                  <label class="container-check">
+                    <input type="checkbox" >
+                    <span class="checkmark bg-caramel"></span>
+                  </label>
+                  <label class="container-check">
+                    <input type="checkbox" >
+                    <span class="checkmark bg-donker"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="section">
+            <h6 class="heading">Sizes</h6>
+            <div class="bank-wrapper">
+              <div class="row-wrap filter">
+                <div class="size-wrapper">
+                  <label class="container-check">
+                    <input type="checkbox" >
+                    <span class="checkmark bg-white">XS</span>
+                  </label>
+                  <label class="container-check">
+                    <input type="checkbox" >
+                    <span class="checkmark bg-white">S</span>
+                  </label>
+                  <label class="container-check">
+                    <input type="checkbox" >
+                    <span class="checkmark bg-white">M</span>
+                  </label>
+                  <label class="container-check">
+                    <input type="checkbox" >
+                    <span class="checkmark bg-white">L</span>
+                  </label>
+                  <label class="container-check">
+                    <input type="checkbox" >
+                    <span class="checkmark bg-white">XL</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="section">
+            <h6 class="heading">Category</h6>
+            <div class="bank-wrapper">
+              <div class="row-wrap filter">
+                <div class="category-wrapper">
+                  <label class="container-check">
+                    <input type="checkbox" >
+                    <span class="checkmark bg-white">All</span>
+                  </label>
+                  <label class="container-check">
+                    <input type="checkbox" >
+                    <span class="checkmark bg-white">Women</span>
+                  </label>
+                  <label class="container-check">
+                    <input type="checkbox" >
+                    <span class="checkmark bg-white">Men</span>
+                  </label>
+                  <label class="container-check">
+                    <input type="checkbox" >
+                    <span class="checkmark bg-white">Boys</span>
+                  </label>
+                  <label class="container-check">
+                    <input type="checkbox" >
+                    <span class="checkmark bg-white">GirlsL</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+
+          <div class="section">
+            <h6 class="heading">Brand</h6>
+            <div class="row-wrap">
+              <p class="text-secondary">adidas Originals, Jack & Jones, s.Oliver</p>
+              <svg class="btn-arrow" width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.41 8.59009L12 13.1701L16.59 8.59009L18 10.0001L12 16.0001L6 10.0001L7.41 8.59009Z" fill="#222222"/>
+                </svg>
+            </div>
+          </div>
+        </div>
+        <div class="footer filter">
+          <div class="btn-wrapper">
+            <button class="btn secondary">Discard</button>
+          </div>
+          <div class="btn-wrapper">
+            <button class="btn primary">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End = Modal Filter -->
   <!-- START = 404 PAGE -->
   <div class="hide-modal-404" id="modal-404">
     <div class="page-404-wrapper" onclick="goBack()">
