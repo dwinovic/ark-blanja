@@ -15,13 +15,15 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <!-- Global CSS = Color || Font || Body -->
-  <link rel="stylesheet" href="../styles/global.css" />
+  <link rel="stylesheet" href="/src/styles/global.css" />
   <!-- Global CSS = Navbar Public -->
-  <link rel="stylesheet" href="../styles/components/navbar-public.css">
+  <link rel="stylesheet" href="/src/styles/components/navbar-public.css">
+  <!-- Global CSS = Modal Filter -->
+  <link rel="stylesheet" href="/src/styles/components/global-modal.css">
   <!-- Current Page CSS -->
-  <link rel="stylesheet" href="../styles/page-product.css" />
+  <link rel="stylesheet" href="./page-product.css" />
   <!-- Responsive Current Page CSS -->
-  <link rel="stylesheet" href="../styles/responsive/mq-page-product.css">
+  <link rel="stylesheet" href="./mq-page-product.css">
 </head>
 
 <body>
@@ -31,7 +33,7 @@
     <div class="container" id="">
       <!-- Start = Logo brand -->
       <a href="/index.html" class="logo-brand">
-        <img src="../images/icons/blanja-icon.png" alt="Blanja.com" />
+        <img src="/src/images/icons/blanja-icon.png" alt="Blanja.com" />
         <p class="logo-name">Blanja</p>
       </a>
       <!-- End = Logo brand -->
@@ -40,12 +42,12 @@
         <div class="form">
           <input type="text" name="searching" placeholder="Search" />
           <button onclick="show404()">
-              <img src="../images/icons/IC-search.png" alt="searching-button" />
+              <img src="/src/images/icons/IC-search.png" alt="searching-button" />
             </button>
         </div>
         <div class="filter-wrapper">
-          <div href="" onclick="show404()">
-            <img src="../images/icons/IC-filter.png" alt="filter icon" />
+          <div href="" data-bs-toggle="modal" data-bs-target="#payment">
+            <img src="/src/images/icons/IC-filter.png" alt="filter icon" />
           </div>
         </div>
       </div>
@@ -53,10 +55,10 @@
 
       <!-- Start = Navigation -->
       <div class="navigation-auth">
-        <a href="/src/pages/my-bag.html" class="cart"><img src="../images/icons/IC-cart.png" alt="cart icon" /></a>
+        <a href="/src/pages/my-bag/my-bag.html" class="cart"><img src="/src/images/icons/IC-cart.png" alt="cart icon" /></a>
         <div class="btn-wrapper">
-          <a href="/index.html" class="button primary">Login</a>
-          <a href="/src/pages/customer-signup.html" class="button secondary">Signup</a>
+          <a href="/src/pages/auth-pages/customer/customer-login.html" class="button primary">Login</a>
+          <a href="/src/pages/auth-pages/customer/customer-signup.html" class="button secondary">Signup</a>
         </div>
         <!-- START = HAMBURGER -->
         <div class="toggler-wrapper" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -129,13 +131,42 @@
           <p>(10)</p>
         </div>
         <h3>$20.0</h3>
-        <div class="selectcolor-wrapper">
+        <!-- <div class="selectcolor-wrapper">
           <p class="heading">Color</p>
           <div class="d-flex">
             <div class="circle black"></div>
             <div class="circle red"></div>
             <div class="circle blue"></div>
             <div class="circle green"></div>
+          </div>
+        </div> -->
+        <div class="selectcolor-wrapper">
+          <h6 class="heading">Colors</h6>
+          <div class="check-wrapper">
+            <label class="container-check">
+                  <input type="checkbox" >
+                  <span class="checkmark bg-black"></span>
+                </label>
+            <label class="container-check">
+                  <input type="checkbox" >
+                  <span class="checkmark bg-white"></span>
+                </label>
+            <label class="container-check">
+                  <input type="checkbox" >
+                  <span class="checkmark bg-red"></span>
+                </label>
+            <label class="container-check">
+                  <input type="checkbox" >
+                  <span class="checkmark bg-brown"></span>
+                </label>
+            <label class="container-check">
+                  <input type="checkbox" >
+                  <span class="checkmark bg-caramel"></span>
+                </label>
+            <label class="container-check">
+                  <input type="checkbox" >
+                  <span class="checkmark bg-donker"></span>
+                </label>
           </div>
         </div>
         <div class="counter-wrapper">
@@ -162,10 +193,10 @@
             <button class="btn secondary" onclick="show404()">Chat</button>
           </div>
           <div class="btn-wrapper secondary">
-            <a href="/src/pages/my-bag.html" class="btn secondary">Add bag</a>
+            <a href="/src/pages/my-bag/my-bag.html" class="btn secondary">Add bag</a>
           </div>
           <div class="btn-wrapper primary">
-            <a class="btn primary" href="/src/pages/checkout.html">Buy Now</a>
+            <a class="btn primary" href="/src/pages/checkout/checkout.html">Buy Now</a>
           </div>
         </div>
 
@@ -199,28 +230,28 @@
             <span>/10</span>
           </div>
           <div class="stars">
-            <img src="../images/icons/IC-star.png" alt="">
-            <img src="../images/icons/IC-star.png" alt="">
-            <img src="../images/icons/IC-star.png" alt="">
-            <img src="../images/icons/IC-star.png" alt="">
-            <img src="../images/icons/IC-star.png" alt="">
+            <img src="/src/images/icons/IC-star.png" alt="">
+            <img src="/src/images/icons/IC-star.png" alt="">
+            <img src="/src/images/icons/IC-star.png" alt="">
+            <img src="/src/images/icons/IC-star.png" alt="">
+            <img src="/src/images/icons/IC-star.png" alt="">
           </div>
         </div>
         <div class="vertical">
           <div class="item">
-            <img src="../images/icons/IC-star.png" alt="">
+            <img src="/src/images/icons/IC-star.png" alt="">
           </div>
           <div class="item">
-            <img src="../images/icons/IC-star.png" alt="">
+            <img src="/src/images/icons/IC-star.png" alt="">
           </div>
           <div class="item">
-            <img src="../images/icons/IC-star.png" alt="">
+            <img src="/src/images/icons/IC-star.png" alt="">
           </div>
           <div class="item">
-            <img src="../images/icons/IC-star.png" alt="">
+            <img src="/src/images/icons/IC-star.png" alt="">
           </div>
           <div class="item">
-            <img src="../images/icons/IC-star.png" alt="">
+            <img src="/src/images/icons/IC-star.png" alt="">
           </div>
         </div>
         <div class="vertical">
@@ -267,18 +298,18 @@
       <div class="custom-container">
         <div class="item">
           <a href="# " class="card " style=" ">
-            <img src="../images/NW-Product.png " class="card-img-top " alt="... " />
+            <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
               <p class="card-text price ">$ 40.0</p>
               <p class="card-text store ">Zalora Cloth</p>
               <div class="rating d-flex align-items-center ">
                 <div class="star-wrapper">
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
                 </div>
                 <span class="sold ">(10)</span>
               </div>
@@ -287,18 +318,18 @@
         </div>
         <div class="item">
           <a href="# " class="card " style=" ">
-            <img src="../images/NW-Product.png " class="card-img-top " alt="... " />
+            <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
               <p class="card-text price ">$ 40.0</p>
               <p class="card-text store ">Zalora Cloth</p>
               <div class="rating d-flex align-items-center ">
                 <div class="star-wrapper ">
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
                 </div>
                 <span class="sold ">(10)</span>
               </div>
@@ -307,18 +338,18 @@
         </div>
         <div class="item">
           <a href="# " class="card " style=" ">
-            <img src="../images/NW-Product.png " class="card-img-top " alt="... " />
+            <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
               <p class="card-text price ">$ 40.0</p>
               <p class="card-text store ">Zalora Cloth</p>
               <div class="rating d-flex align-items-center ">
                 <div class="star-wrapper ">
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
                 </div>
                 <span class="sold ">(10)</span>
               </div>
@@ -327,18 +358,18 @@
         </div>
         <div class="item">
           <a href="# " class="card " style=" ">
-            <img src="../images/NW-Product.png " class="card-img-top " alt="... " />
+            <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
               <p class="card-text price ">$ 40.0</p>
               <p class="card-text store ">Zalora Cloth</p>
               <div class="rating d-flex align-items-center ">
                 <div class="star-wrapper ">
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
                 </div>
                 <span class="sold ">(10)</span>
               </div>
@@ -347,18 +378,18 @@
         </div>
         <div class="item">
           <a href="# " class="card " style=" ">
-            <img src="../images/NW-Product.png " class="card-img-top " alt="... " />
+            <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
               <p class="card-text price ">$ 40.0</p>
               <p class="card-text store ">Zalora Cloth</p>
               <div class="rating d-flex align-items-center ">
                 <div class="star-wrapper ">
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
                 </div>
                 <span class="sold ">(10)</span>
               </div>
@@ -369,18 +400,18 @@
 
         <div class="item ">
           <a href="# " class="card " style=" ">
-            <img src="../images/NW-Product.png " class="card-img-top " alt="... " />
+            <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
               <p class="card-text price ">$ 40.0</p>
               <p class="card-text store ">Zalora Cloth</p>
               <div class="rating d-flex align-items-center ">
                 <div class="star-wrapper ">
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
                 </div>
                 <span class="sold ">(10)</span>
               </div>
@@ -389,18 +420,18 @@
         </div>
         <div class="item ">
           <a href="# " class="card " style=" ">
-            <img src="../images/NW-Product.png " class="card-img-top " alt="... " />
+            <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
               <p class="card-text price ">$ 40.0</p>
               <p class="card-text store ">Zalora Cloth</p>
               <div class="rating d-flex align-items-center ">
                 <div class="star-wrapper ">
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
                 </div>
                 <span class="sold ">(10)</span>
               </div>
@@ -409,18 +440,18 @@
         </div>
         <div class="item ">
           <a href="# " class="card " style=" ">
-            <img src="../images/NW-Product.png " class="card-img-top " alt="... " />
+            <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
               <p class="card-text price ">$ 40.0</p>
               <p class="card-text store ">Zalora Cloth</p>
               <div class="rating d-flex align-items-center ">
                 <div class="star-wrapper ">
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
                 </div>
                 <span class="sold ">(10)</span>
               </div>
@@ -429,18 +460,18 @@
         </div>
         <div class="item ">
           <a href="# " class="card " style=" ">
-            <img src="../images/NW-Product.png " class="card-img-top " alt="... " />
+            <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
               <p class="card-text price ">$ 40.0</p>
               <p class="card-text store ">Zalora Cloth</p>
               <div class="rating d-flex align-items-center ">
                 <div class="star-wrapper ">
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
                 </div>
                 <span class="sold ">(10)</span>
               </div>
@@ -449,18 +480,18 @@
         </div>
         <div class="item ">
           <a href="# " class="card " style=" ">
-            <img src="../images/NW-Product.png " class="card-img-top " alt="... " />
+            <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
               <p class="card-text price ">$ 40.0</p>
               <p class="card-text store ">Zalora Cloth</p>
               <div class="rating d-flex align-items-center ">
                 <div class="star-wrapper ">
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
                 </div>
                 <span class="sold ">(10)</span>
               </div>
@@ -470,18 +501,18 @@
 
         <div class="item ">
           <a href="# " class="card " style=" ">
-            <img src="../images/NW-Product.png " class="card-img-top " alt="... " />
+            <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
               <p class="card-text price ">$ 40.0</p>
               <p class="card-text store ">Zalora Cloth</p>
               <div class="rating d-flex align-items-center ">
                 <div class="star-wrapper ">
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
                 </div>
                 <span class="sold ">(10)</span>
               </div>
@@ -490,18 +521,18 @@
         </div>
         <div class="item ">
           <a href="# " class="card " style=" ">
-            <img src="../images/NW-Product.png " class="card-img-top " alt="... " />
+            <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
               <p class="card-text price ">$ 40.0</p>
               <p class="card-text store ">Zalora Cloth</p>
               <div class="rating d-flex align-items-center ">
                 <div class="star-wrapper ">
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
                 </div>
                 <span class="sold ">(10)</span>
               </div>
@@ -510,18 +541,18 @@
         </div>
         <div class="item ">
           <a href="# " class="card " style=" ">
-            <img src="../images/NW-Product.png " class="card-img-top " alt="... " />
+            <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
               <p class="card-text price ">$ 40.0</p>
               <p class="card-text store ">Zalora Cloth</p>
               <div class="rating d-flex align-items-center ">
                 <div class="star-wrapper ">
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
                 </div>
                 <span class="sold ">(10)</span>
               </div>
@@ -530,18 +561,18 @@
         </div>
         <div class="item ">
           <a href="# " class="card " style=" ">
-            <img src="../images/NW-Product.png " class="card-img-top " alt="... " />
+            <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
               <p class="card-text price ">$ 40.0</p>
               <p class="card-text store ">Zalora Cloth</p>
               <div class="rating d-flex align-items-center ">
                 <div class="star-wrapper ">
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
                 </div>
                 <span class="sold ">(10)</span>
               </div>
@@ -550,18 +581,18 @@
         </div>
         <div class="item ">
           <a href="# " class="card " style=" ">
-            <img src="../images/NW-Product.png " class="card-img-top " alt="... " />
+            <img src="/src/images/NW-Product.png " class="card-img-top " alt="... " />
             <div class="card-body ">
               <h5 class="card-title ">Men's formal suit - Black & White</h5>
               <p class="card-text price ">$ 40.0</p>
               <p class="card-text store ">Zalora Cloth</p>
               <div class="rating d-flex align-items-center ">
                 <div class="star-wrapper ">
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
-                  <img src="../images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
+                  <img src="/src/images/icons/IC-star.png " alt="star icon " />
                 </div>
                 <span class="sold ">(10)</span>
               </div>
@@ -575,10 +606,138 @@
 
   <!-- End = Main content -->
   <footer>
-    <img src="../images/icons/blanja-icon.png" alt="" />
+    <img src="/src/images/icons/blanja-icon.png" alt="" />
     <p>Blanja.com</p>
   </footer>
 
+
+
+  <!-- Start = Modal Filter -->
+  <div class="modal fade" id="payment" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="payment" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h5 class="modal-title" id="payment">Filter</h5>
+        </div>
+        <div class="body">
+          <div class="section">
+            <h6 class="heading">Colors</h6>
+            <div class="bank-wrapper">
+              <div class="row-wrap filter">
+                <div class="check-wrapper">
+                  <label class="container-check">
+                      <input type="checkbox" >
+                      <span class="checkmark bg-black"></span>
+                    </label>
+                  <label class="container-check">
+                      <input type="checkbox" >
+                      <span class="checkmark bg-white"></span>
+                    </label>
+                  <label class="container-check">
+                      <input type="checkbox" >
+                      <span class="checkmark bg-red"></span>
+                    </label>
+                  <label class="container-check">
+                      <input type="checkbox" >
+                      <span class="checkmark bg-brown"></span>
+                    </label>
+                  <label class="container-check">
+                      <input type="checkbox" >
+                      <span class="checkmark bg-caramel"></span>
+                    </label>
+                  <label class="container-check">
+                      <input type="checkbox" >
+                      <span class="checkmark bg-donker"></span>
+                    </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="section">
+            <h6 class="heading">Sizes</h6>
+            <div class="bank-wrapper">
+              <div class="row-wrap filter">
+                <div class="size-wrapper">
+                  <label class="container-check">
+                      <input type="checkbox" >
+                      <span class="checkmark bg-white">XS</span>
+                    </label>
+                  <label class="container-check">
+                      <input type="checkbox" >
+                      <span class="checkmark bg-white">S</span>
+                    </label>
+                  <label class="container-check">
+                      <input type="checkbox" >
+                      <span class="checkmark bg-white">M</span>
+                    </label>
+                  <label class="container-check">
+                      <input type="checkbox" >
+                      <span class="checkmark bg-white">L</span>
+                    </label>
+                  <label class="container-check">
+                      <input type="checkbox" >
+                      <span class="checkmark bg-white">XL</span>
+                    </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="section">
+            <h6 class="heading">Category</h6>
+            <div class="bank-wrapper">
+              <div class="row-wrap filter">
+                <div class="category-wrapper">
+                  <label class="container-check">
+                      <input type="checkbox" >
+                      <span class="checkmark bg-white">All</span>
+                    </label>
+                  <label class="container-check">
+                      <input type="checkbox" >
+                      <span class="checkmark bg-white">Women</span>
+                    </label>
+                  <label class="container-check">
+                      <input type="checkbox" >
+                      <span class="checkmark bg-white">Men</span>
+                    </label>
+                  <label class="container-check">
+                      <input type="checkbox" >
+                      <span class="checkmark bg-white">Boys</span>
+                    </label>
+                  <label class="container-check">
+                      <input type="checkbox" >
+                      <span class="checkmark bg-white">GirlsL</span>
+                    </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+
+          <div class="section">
+            <h6 class="heading">Brand</h6>
+            <div class="row-wrap">
+              <p class="text-secondary">adidas Originals, Jack & Jones, s.Oliver</p>
+              <svg class="btn-arrow" width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.41 8.59009L12 13.1701L16.59 8.59009L18 10.0001L12 16.0001L6 10.0001L7.41 8.59009Z" fill="#222222"/>
+                  </svg>
+            </div>
+          </div>
+        </div>
+        <div class="footer filter">
+          <div class="btn-wrapper">
+            <button class="btn secondary">Discard</button>
+          </div>
+          <div class="btn-wrapper">
+            <button class="btn primary">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End = Modal Filter -->
   <!-- START = 404 PAGE -->
   <div class="hide-modal-404" id="modal-404">
     <div class="page-404-wrapper" onclick="goBack()">

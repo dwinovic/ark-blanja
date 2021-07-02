@@ -15,6 +15,7 @@ nav {
 nav .container {
   padding: 30px 0;
   display: flex;
+  width: 100%;
 }
 
 
@@ -23,7 +24,8 @@ nav .container {
 nav .container .logo-brand {
   display: flex;
   text-decoration: none;
-  width: auto;
+  width: max-content;
+  /* background-color: rebeccapurple; */
   height: 44px;
   margin-right: 60px;
 }
@@ -48,7 +50,7 @@ nav .container .logo-brand .logo-name {
 
 nav .container .seaching-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 100%;
   /* background-color: teal; */
 }
@@ -59,13 +61,18 @@ nav .container .seaching-wrapper .form {
   box-sizing: border-box;
   border-radius: 23px;
   margin-right: 10px;
+  width: 70%;
+  margin-left: 25px;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav .container .seaching-wrapper .form input {
   padding: 10px 20px;
   box-sizing: border-box;
   border-radius: 23px 0 0 23px;
-  width: 507px;
+  /* background-color: orange; */
+  width: 100%;
   height: 40px;
   font: inherit;
   border: 0;
@@ -81,14 +88,20 @@ nav .container .seaching-wrapper .form button {
 }
 
 nav .container .seaching-wrapper .filter-wrapper {
-  background: #ffffff;
-  border: 1px solid #8e8e93;
+  /* background: #ffffff; */
+  /* border: 1px solid #8e8e93; */
   border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 50px;
+  margin-right: 150px;
+}
+
+nav .container .seaching-wrapper .form svg {
+  width: 18px;
+  height: 18px;
 }
 
 
@@ -114,12 +127,69 @@ nav .container .navigation-auth .btn {
   width: 32px;
 }
 
+nav .container .navigation-auth .btn svg {
+  width: 24px;
+  height: 24px;
+}
+
 nav .container .navigation-auth .btn.profile {
   margin-right: 0;
 }
 
 
 /* End = Navigation */
+
+
+/* START = NAVIGATION DROPDOWN */
+
+#navbarNavDropdown {
+  /* background-color: yellow; */
+  z-index: 1;
+  position: absolute;
+  width: 100vw;
+  top: 100px;
+  /* background-color: rgba(0, 0, 0, 0.459); */
+}
+
+#navbarNavDropdown .container {
+  /* background-color: cyan; */
+  padding: 0;
+}
+
+#navbarNavDropdown .container .nav-item {
+  padding: 16px;
+}
+
+
+/* Profile navresponsive */
+
+#navbarNavDropdown .container .nav-item.main {
+  display: flex;
+  justify-content: space-around;
+}
+
+#navbarNavDropdown .container .nav-item.main .btn {
+  padding: 0;
+}
+
+#navbarNavDropdown .container .nav-item.main .btn img,
+svg {
+  width: 40px;
+  height: 40px;
+}
+
+#navbarNavDropdown .container .nav-item a {
+  text-decoration: none;
+  color: #242424;
+  font-size: 1.25rem;
+}
+
+#navbarNavDropdown .container .nav-item a:hover {
+  opacity: 0.5;
+}
+
+
+/* END = NAVIGATION DROPDOWN */
 
 
 /* End = Navigation bar ==========================*/
@@ -137,13 +207,6 @@ nav .container .navigation-auth .btn.profile {
   .container {
     /* background-color: yellow; */
   }
-  nav .container .seaching-wrapper {
-    /* background-color: yellow; */
-    /* justify-content: flex-start; */
-  }
-  nav .container .seaching-wrapper .form input {
-    width: 700px;
-  }
   nav .container .seaching-wrapper .filter-wrapper {}
   #navbarNavDropdown {
     display: none;
@@ -158,14 +221,17 @@ nav .container .navigation-auth .btn.profile {
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   .container {
-    /* background-color: yellow; */
+    /* background-color: greenyellow; */
   }
   /* START = NAVBAR USER */
   nav .container .seaching-wrapper {
     /* background-color: yellow; */
   }
-  nav .container .seaching-wrapper .form input {
-    width: 400px;
+  nav .container .seaching-wrapper .filter-wrapper {
+    margin-right: 50px;
+  }
+  nav .container .navigation-auth .btn {
+    margin-right: 15px;
   }
   /* END = NAVBAR USER */
   #navbarNavDropdown {
@@ -184,46 +250,17 @@ nav .container .navigation-auth .btn.profile {
     /* background-color: orange; */
   }
   /* START = NAVIGATION USER */
-  nav .container .seaching-wrapper {
-    /* background-color: yellow; */
-  }
-  nav .container .seaching-wrapper .form input {
-    width: 150px;
-  }
-  nav .container .navigation-auth {
-    /* background-color: blue; */
+  /* END = NAVIGATION USER */
+  nav .container .seaching-wrapper .filter-wrapper {
+    margin-right: 25px;
   }
   nav .container .navigation-auth .btn {
-    margin-right: 20px;
-    /* background-color: blueviolet; */
+    margin-right: 15px;
   }
-  nav .container .navigation-auth .btn.profile {}
-  /* END = NAVIGATION USER */
-  /* START = NAVIGATION DROPDOWN */
+  /* END = NAVBAR USER */
   #navbarNavDropdown {
-    /* background-color: yellow; */
-    z-index: 1;
-    position: absolute;
-    width: 100vw;
-    top: 100px;
-    background-color: white;
+    display: none;
   }
-  #navbarNavDropdown .container {
-    /* background-color: cyan; */
-    padding: 0;
-  }
-  #navbarNavDropdown .container .nav-item {
-    padding: 16px;
-  }
-  #navbarNavDropdown .container .nav-item a {
-    text-decoration: none;
-    color: #242424;
-    font-size: 1.25rem;
-  }
-  #navbarNavDropdown .container .nav-item a:hover {
-    opacity: 0.5;
-  }
-  /* END = NAVIGATION DROPDOWN */
   /* Start = Main content ==========================*/
   main.container {
     /* background-color: red; */
@@ -255,63 +292,27 @@ nav .container .navigation-auth .btn.profile {
   nav {
     padding: 0 20px;
   }
-  /* Start = Searching feature */
+  nav .toggler-wrapper {
+    display: flex;
+    margin-left: 15px;
+  }
   nav .container .seaching-wrapper {
     /* background-color: yellow; */
-    /* width: max-content; */
   }
-  nav .container .seaching-wrapper .form input {
-    width: 70%;
-  }
-  /* End = Searching feature */
-  /* Start = Navigation Icons */
-  nav .container .navigation-auth {
-    /* background-color: blue; */
+  nav .container .seaching-wrapper .filter-wrapper {
+    margin-right: 0;
   }
   nav .container .navigation-auth .btn {
     display: none;
   }
   nav .container .navigation-auth .btn.profile {
-    margin-right: 10px;
-    margin-left: 10px;
-    display: inline;
+    display: none;
     /* background-color: blueviolet; */
   }
-  nav .container .navigation-auth .btn.profile img {
-    width: 40px;
-  }
-  /* End = Navigation Icons */
-  /* Start = Logo brand */
   nav .container .logo-brand {
     margin-right: 0;
   }
-  /* End = Logo brand */
   /* END = NAVIGATION USER */
-  /* START = NAVIGATION DROPDOWN */
-  #navbarNavDropdown {
-    /* background-color: yellow; */
-    z-index: 1;
-    position: absolute;
-    width: 100vw;
-    top: 100px;
-    background-color: white;
-  }
-  #navbarNavDropdown .container {
-    /* background-color: cyan; */
-    padding: 0;
-  }
-  #navbarNavDropdown .container .nav-item {
-    padding: 16px;
-  }
-  #navbarNavDropdown .container .nav-item a {
-    text-decoration: none;
-    color: #242424;
-    font-size: 1.25rem;
-  }
-  #navbarNavDropdown .container .nav-item a:hover {
-    opacity: 0.5;
-  }
-  /* END = NAVIGATION DROPDOWN */
   /* Start = Main content page MY BAG AND CHECKOUT ==========================*/
   header.container {
     padding: 0 20px;
@@ -350,71 +351,42 @@ nav .container .navigation-auth .btn.profile {
     /* background-color: aqua; */
   }
   /* START = NAVIGATION USER */
-  /* START = NAVIGATION BAR */
-  nav .container {
-    padding: 25px;
-    justify-content: space-between;
+  nav {
+    padding: 0 20px;
   }
-  /* END = NAVIGATION BAR */
-  /* Start = Searching feature */
+  nav .toggler-wrapper {
+    display: inline-flex;
+    /* margin-left: 15px; */
+  }
   nav .container .seaching-wrapper {
-    /* background-color: yellow; */
+    background-color: red;
+    width: max-content;
+  }
+  nav .container .seaching-wrapper .form {
     display: none;
   }
-  /* End = Searching feature */
-  /* Start = Navigation Icons */
+  nav .container .seaching-wrapper .filter-wrapper {
+    /* margin-right: 0; */
+    display: none;
+  }
   nav .container .navigation-auth .btn {
     display: none;
   }
-  /* End = Navigation Icons */
-  /* Start = Logo brand */
-  nav .container .logo-brand {
-    width: 100%;
-  }
-  nav .container .logo-brand p.logo-name {
-    display: inline;
-    text-align: center;
-    font-size: 35px;
-  }
-  /* End = Logo brand */
-  nav .toggler-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
+  nav .container .navigation-auth .btn.profile {
+    display: none;
     /* background-color: blueviolet; */
   }
-  nav .toggler-wrapper svg path:hover {
-    fill: darkgreen;
+  nav .container .logo-brand {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0;
+  }
+  nav .container .logo-brand .logo-name {
+    justify-content: center;
+    font-size: 36px;
   }
   /* END = NAVIGATION USER */
-  /* START = NAVIGATION DROPDOWN */
-  #navbarNavDropdown {
-    /* background-color: yellow; */
-    z-index: 1;
-    position: absolute;
-    width: 100vw;
-    top: 100px;
-    background-color: white;
-  }
-  #navbarNavDropdown .container {
-    /* background-color: cyan; */
-    padding: 0;
-  }
-  #navbarNavDropdown .container .nav-item {
-    padding: 16px;
-  }
-  #navbarNavDropdown .container .nav-item a {
-    text-decoration: none;
-    color: #242424;
-    font-size: 1.25rem;
-  }
-  #navbarNavDropdown .container .nav-item a:hover {
-    opacity: 0.5;
-  }
-  /* END=NAVIGATION DROPDOWN */
   /* Start = Main content  ==========================*/
   header.container {
     padding: 0 25px;

@@ -19,7 +19,7 @@
 
   <!-- Global CSS = Navbar User -->
   <link rel="stylesheet" href="/src/styles/components/navbar-user.css" />
-  <!-- Global CSS = Modal Payment -->
+  <!-- Global CSS = Modal Payment and Filter -->
   <link rel="stylesheet" href="/src/styles/components/global-modal.css">
 
   <!-- Current Page CSS -->
@@ -48,9 +48,8 @@
             </button>
         </div>
         <div class="filter-wrapper">
-          <div href="" onclick="show404()">
+          <div href="" data-bs-toggle="modal" data-bs-target="#payment">
             <img src="/src/images/icons/IC-filter.png" alt="filter icon" />
-            </a>
           </div>
         </div>
         <!-- End = Searching feature -->
@@ -180,6 +179,132 @@
   </footer>
   <!-- End = Footer -->
 
+  <!-- Start = Modal Filter -->
+  <div class="modal fade" id="payment" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="payment" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h5 class="modal-title" id="payment">Filter</h5>
+        </div>
+        <div class="body">
+          <div class="section">
+            <h6 class="heading">Colors</h6>
+            <div class="bank-wrapper">
+              <div class="row-wrap filter">
+                <div class="check-wrapper">
+                  <label class="container-check">
+                        <input type="checkbox" >
+                        <span class="checkmark bg-black"></span>
+                      </label>
+                  <label class="container-check">
+                        <input type="checkbox" >
+                        <span class="checkmark bg-white"></span>
+                      </label>
+                  <label class="container-check">
+                        <input type="checkbox" >
+                        <span class="checkmark bg-red"></span>
+                      </label>
+                  <label class="container-check">
+                        <input type="checkbox" >
+                        <span class="checkmark bg-brown"></span>
+                      </label>
+                  <label class="container-check">
+                        <input type="checkbox" >
+                        <span class="checkmark bg-caramel"></span>
+                      </label>
+                  <label class="container-check">
+                        <input type="checkbox" >
+                        <span class="checkmark bg-donker"></span>
+                      </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="section">
+            <h6 class="heading">Sizes</h6>
+            <div class="bank-wrapper">
+              <div class="row-wrap filter">
+                <div class="size-wrapper">
+                  <label class="container-check">
+                        <input type="checkbox" >
+                        <span class="checkmark bg-white">XS</span>
+                      </label>
+                  <label class="container-check">
+                        <input type="checkbox" >
+                        <span class="checkmark bg-white">S</span>
+                      </label>
+                  <label class="container-check">
+                        <input type="checkbox" >
+                        <span class="checkmark bg-white">M</span>
+                      </label>
+                  <label class="container-check">
+                        <input type="checkbox" >
+                        <span class="checkmark bg-white">L</span>
+                      </label>
+                  <label class="container-check">
+                        <input type="checkbox" >
+                        <span class="checkmark bg-white">XL</span>
+                      </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="section">
+            <h6 class="heading">Category</h6>
+            <div class="bank-wrapper">
+              <div class="row-wrap filter">
+                <div class="category-wrapper">
+                  <label class="container-check">
+                        <input type="checkbox" >
+                        <span class="checkmark bg-white">All</span>
+                      </label>
+                  <label class="container-check">
+                        <input type="checkbox" >
+                        <span class="checkmark bg-white">Women</span>
+                      </label>
+                  <label class="container-check">
+                        <input type="checkbox" >
+                        <span class="checkmark bg-white">Men</span>
+                      </label>
+                  <label class="container-check">
+                        <input type="checkbox" >
+                        <span class="checkmark bg-white">Boys</span>
+                      </label>
+                  <label class="container-check">
+                        <input type="checkbox" >
+                        <span class="checkmark bg-white">GirlsL</span>
+                      </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+
+          <div class="section">
+            <h6 class="heading">Brand</h6>
+            <div class="row-wrap">
+              <p class="text-secondary">adidas Originals, Jack & Jones, s.Oliver</p>
+              <svg class="btn-arrow" width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.41 8.59009L12 13.1701L16.59 8.59009L18 10.0001L12 16.0001L6 10.0001L7.41 8.59009Z" fill="#222222"/>
+                    </svg>
+            </div>
+          </div>
+        </div>
+        <div class="footer filter">
+          <div class="btn-wrapper">
+            <button class="btn secondary">Discard</button>
+          </div>
+          <div class="btn-wrapper">
+            <button class="btn primary">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End = Modal Filter -->
   <!-- Start = Modal Choose Address -->
   <div class="modal fade" id="chooseAddress" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="chooseAddressLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl">

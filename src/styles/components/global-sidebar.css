@@ -1,3 +1,135 @@
+/* Start = Aside User Menu */
+
+body {
+  position: relative;
+  height: 100vh;
+}
+
+main {
+  /* position: absolute; */
+  /* width: 100vw; */
+  display: flex;
+  /* z-index: -99; */
+  height: 100%;
+}
+
+main .aside {
+  background: #d40000;
+  padding-top: 150px;
+  padding-right: 25px;
+  width: 27%;
+  /* z-index: 9; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+main .aside .aside-content-wrapper {
+  align-self: flex-start;
+  background-color: gold;
+  width: max-content;
+}
+
+main .aside .user-profile-wrapper {
+  /* background-color: green; */
+  display: flex;
+}
+
+main .aside .user-profile-wrapper .username-wrapper {
+  /* background-color: orange; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 13px;
+}
+
+main .aside .user-profile-wrapper .username-wrapper h3 {
+  /* background-color: pink; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #222222;
+  margin-bottom: 0;
+}
+
+main .aside .user-profile-wrapper .username-wrapper .edit-profile-wrapper {
+  /* background-color: purple; */
+  display: flex;
+  align-items: center;
+  /* margin: 0; */
+  gap: 5px;
+  text-decoration: none;
+  color: #9b9b9b;
+}
+
+main .aside .user-profile-wrapper .username-wrapper .edit-profile-wrapper:hover {
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+main .aside .user-profile-wrapper svg {
+  width: 16px;
+  height: 16px;
+}
+
+main .aside .user-profile-wrapper .username-wrapper .edit-profile-wrapper p {
+  margin: 0;
+}
+
+main .aside .menu-wrapper {
+  /* background-color: yellow; */
+  margin-top: 70px;
+}
+
+main .aside .menu-row a.btn-anchor {
+  display: flex;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #222222;
+  width: 80%;
+}
+
+main .aside .menu-row a.btn-anchor:hover {
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: #d4d4d4;
+  padding: 2px 4px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 1px 8px #8f8c8c70);
+}
+
+main .aside .menu-row:hover {
+  cursor: pointer;
+}
+
+main .aside .menu-row p.text.secondary {
+  /* background-color: turquoise; */
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+main .aside .menu-row .icon-wrapper {
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 14px;
+}
+
+main .aside .menu-row .icon-wrapper img {
+  /* background-color: yellow; */
+}
+
+
+/* End = Aside User Menu */
+
+
+/* START = SIDEBAR RESPONSIVE */
+
+
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
@@ -335,3 +467,6 @@
     margin-top: 32px;
   }
 }
+
+
+/* END = SIDEBAR RESPONSIVE */

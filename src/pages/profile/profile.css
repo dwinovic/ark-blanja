@@ -91,122 +91,6 @@ main.container .text.secondary.active {
 }
 
 
-/* Start = Aside User Menu */
-
-body {
-  position: relative;
-  height: 100vh;
-}
-
-main {
-  position: absolute;
-  width: 100vw;
-  display: flex;
-  height: 100%;
-}
-
-main aside {
-  /* background: #d40000; */
-  padding-top: 150px;
-  width: 34%;
-  z-index: -9;
-  display: flex;
-  justify-content: flex-end;
-}
-
-main aside .aside-content-wrapper {
-  align-self: flex-start;
-  /* background-color: gold; */
-  width: 50%;
-}
-
-main aside .user-profile-wrapper {
-  /* background-color: green; */
-  display: flex;
-}
-
-main aside .user-profile-wrapper .username-wrapper {
-  /* background-color: orange; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 13px;
-}
-
-main aside .user-profile-wrapper .username-wrapper h3 {
-  /* background-color: pink; */
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  color: #222222;
-  margin-bottom: 0;
-}
-
-main aside .user-profile-wrapper .username-wrapper .edit-profile-wrapper {
-  /* background-color: purple; */
-  display: flex;
-  align-items: center;
-  /* margin: 0; */
-}
-
-main aside .user-profile-wrapper img {
-  width: 60px;
-  height: 60px;
-}
-
-main aside .user-profile-wrapper .username-wrapper .edit-profile-wrapper img {
-  /* background-color: powderblue; */
-  height: fit-content;
-  margin-right: 9px;
-  width: 16px;
-  height: 16px;
-}
-
-main aside .user-profile-wrapper .username-wrapper .edit-profile-wrapper p {
-  margin: 0;
-}
-
-main aside .menu-wrapper {
-  /* background-color: yellow; */
-  margin-top: 70px;
-}
-
-main aside .menu-row {
-  /* background-color: violet; */
-  display: flex;
-  margin-bottom: 20px;
-}
-
-main aside .menu-row:hover {
-  cursor: pointer;
-}
-
-main aside .menu-row p.text.secondary {
-  /* background-color: turquoise; */
-  margin: 0;
-  display: flex;
-  align-items: center;
-}
-
-main aside .menu-row .icon-wrapper {
-  width: 32px;
-  height: 32px;
-  border-radius: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 14px;
-}
-
-main aside .menu-row .icon-wrapper img {
-  /* background-color: yellow; */
-}
-
-
-/* End = Aside User Menu */
-
-
 /* Start = Content Data Profile Menu */
 
 main .content {
@@ -303,12 +187,52 @@ main form .center-wrapper {
   gap: 36px;
 }
 
+
+/* START = GENDER SELECT WRAPPER */
+
+
+/* Customize the label (the gender) */
+
 main form .gender {
-  gap: 16px;
-  /* background-color: chartreuse; */
+  width: 100%;
   display: flex;
+  gap: 1rem;
+  align-items: center;
   align-items: center;
 }
+
+main form .gender input {
+  width: 15px;
+}
+
+main form .gender input:checked {
+  background-color: #db3022;
+}
+
+
+/* Create a custom radio button */
+
+main form .gender .checkmark {
+  /* background-color: yellow; */
+}
+
+
+/* On mouse-over, add a grey background color */
+
+main form .gender:hover input~.checkmark {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+
+/* When the radio button is checked, add a blue background */
+
+main form .gender input:checked~.checkmark {
+  color: #db3022;
+}
+
+
+/* END = GENDER SELECT WRAPPER */
 
 main .content .card .body form .row .col-2,
 .col-10 {

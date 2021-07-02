@@ -75,6 +75,10 @@ body {
   background-color: #151867;
 }
 
+.text.active {
+  font-weight: 800;
+}
+
 
 /* END = GLOBAL COLORS */
 
@@ -190,6 +194,20 @@ body {
 
 
 /* END = GLOBAL BUTTON */
+
+
+/* START = Global SVG */
+
+svg.stroke:hover path {
+  stroke: #db3022;
+}
+
+svg.fill:hover path {
+  fill: #db3022;
+}
+
+
+/* START = Global SVG */
 
 
 /* START = PAGE 404 */

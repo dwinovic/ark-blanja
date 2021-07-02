@@ -46,12 +46,23 @@
         <div class="form">
           <input type="text" name="searching" placeholder="Search" />
           <button onclick="show404()">
-              <img src="/src/images/icons/IC-search.png" alt="searching-button" />
-            </button>
+            <svg class="stroke" width="18" height="18" viewBox="0 0 18 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M17.6697 16.1666L12.7415 11.2366C13.6249 10.0317 14.0981 8.57511 14.0915 7.08114C14.0747 3.18139 10.9205 0.0225957 7.02076 7.16372e-05C5.15452 -0.00837202 3.36242 0.729916 2.04368 2.05047C0.724944 3.37102 -0.0108835 5.16413 0.000121693 7.03036C0.016977 10.9305 3.17147 14.0895 7.07155 14.1121C8.57161 14.1186 10.0335 13.6398 11.2392 12.7473L11.2443 12.7434L16.168 17.6696C16.4342 17.9489 16.8308 18.062 17.2043 17.965C17.5777 17.868 17.8692 17.5762 17.9659 17.2027C18.0626 16.8292 17.9492 16.4326 17.6697 16.1666ZM7.06638 12.7004C3.94649 12.6824 1.42294 10.1554 1.40924 7.0355C1.40082 5.54272 1.98953 4.10851 3.04432 3.05215C4.09912 1.99579 5.53244 1.40495 7.02524 1.41115C10.1451 1.42909 12.6687 3.95609 12.6824 7.076C12.6908 8.56879 12.1021 10.003 11.0473 11.0594C9.99251 12.1157 8.55918 12.7066 7.06638 12.7004Z"
+                fill="#8E8E93" />
+            </svg>
+          </button>
         </div>
         <div class="filter-wrapper">
           <div href="" data-bs-toggle="modal" data-bs-target="#payment">
-            <img src="/src/images/icons/IC-filter.png" alt="filter icon" />
+            <svg class="stroke" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M1 13C1 6.37258 6.37258 1 13 1H29C35.6274 1 41 6.37258 41 13V29C41 35.6274 35.6274 41 29 41H13C6.37258 41 1 35.6274 1 29V13Z"
+                stroke="#8E8E93" stroke-width="2" />
+              <path d="M29.3333 13.5H12.6667L19.3333 21.3833V26.8333L22.6667 28.5V21.3833L29.3333 13.5Z"
+                stroke="#8E8E93" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </div>
         </div>
       </div>
@@ -59,16 +70,37 @@
 
       <!-- Start = Navigation -->
       <div class="navigation-auth">
-        <a href="./src/pages/my-bag/my-bag.html" class="cart"><img src="/src/images/icons/IC-cart.png" alt="cart icon" /></a>
+        <div class="btn">
+          <a href="/src/pages/my-bag/my-bag.html" class="cart"><svg class="stroke" width="24" height="24"
+              viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <path
+                  d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
+                  stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"
+                  stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
+                  stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
         <div class="btn-wrapper">
           <a href="./src/pages/auth-pages/customer/customer-login.html" class="button primary">Login</a>
           <a href="./src/pages/auth-pages/customer/customer-signup.html" class="button secondary">Signup</a>
         </div>
         <!-- START = HAMBURGER -->
         <div class="toggler-wrapper" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M3 6H21V8H3V6ZM3 11H21V13H3V11ZM3 16H21V18H3V16Z" fill=" #9B9B9B"/>
-        </svg>
+          <svg class="fill" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 6H21V8H3V6ZM3 11H21V13H3V11ZM3 16H21V18H3V16Z" fill=" #9B9B9B" />
+          </svg>
         </div>
         <!-- END = HAMBURGER -->
       </div>
@@ -85,7 +117,7 @@
           <a class="nav-link" href="/src/pages/my-bag.html">My Bag</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/src/pages/kategori.html">Category</a>
+          <a class="nav-link" href="/src/pages/category/kategori.html">Category</a>
         </li>
 
         <li class="nav-item">
@@ -150,61 +182,61 @@
       </div>
       <div class="carousel main-carousel" data-flickity='{ "autoPlay": true }'>
         <div class="carousel-cell">
-          <a href="/src/pages/kategori.html" class="card red">
+          <a href="/src/pages/category/kategori.html" class="card red">
             <img src="/src/images/CT-tshirt.png" alt="T-Shirt" />
             <h3>T-Shirt</h3>
           </a>
         </div>
         <div class="carousel-cell">
-          <a href="/src/pages/kategori.html" class="card blue">
+          <a href="/src/pages/category/kategori.html" class="card blue">
             <img src="/src/images/PR-sepatu.jpg" alt="Shoes" />
             <h3>Shorts</h3>
           </a>
         </div>
         <div class="carousel-cell">
-          <a href="/src/pages/kategori.html" class="card orange">
+          <a href="/src/pages/category/kategori.html" class="card orange">
             <img src="/src/images/PR-jacket.jpg" alt="Jacket" />
             <h3>Jacket</h3>
           </a>
         </div>
         <div class="carousel-cell">
-          <a href="/src/pages/kategori.html" class="card pink">
+          <a href="/src/pages/category/kategori.html" class="card pink">
             <img src="/src/images/PR-jeans.jpg" alt="Jeans" />
             <h3>Pants</h3>
           </a>
         </div>
         <div class="carousel-cell">
-          <a href="/src/pages/kategori.html" class="card green">
+          <a href="/src/pages/category/kategori.html" class="card green">
             <img src="/src/images/PR-sepatu.jpg" alt="Shoes" />
             <h3>Shoes</h3>
           </a>
         </div>
         <div class="carousel-cell">
-          <a href="/src/pages/kategori.html" class="card red">
+          <a href="/src/pages/category/kategori.html" class="card red">
             <img src="/src/images/CT-tshirt.png" alt="T-Shirt" />
             <h3>T-Shirt</h3>
           </a>
         </div>
         <div class="carousel-cell">
-          <a href="/src/pages/kategori.html" class="card blue">
+          <a href="/src/pages/category/kategori.html" class="card blue">
             <img src="/src/images/PR-sepatu.jpg" alt="Shoes" />
             <h3>Shorts</h3>
           </a>
         </div>
         <div class="carousel-cell">
-          <a href="/src/pages/kategori.html" class="card orange">
+          <a href="/src/pages/category/kategori.html" class="card orange">
             <img src="/src/images/PR-jacket.jpg" alt="Jacket" />
             <h3>Jacket</h3>
           </a>
         </div>
         <div class="carousel-cell">
-          <a href="/src/pages/kategori.html" class="card pink">
+          <a href="/src/pages/category/kategori.html" class="card pink">
             <img src="/src/images/PR-jeans.jpg" alt="Jeans" />
             <h3>Pants</h3>
           </a>
         </div>
         <div class="carousel-cell">
-          <a href="/src/pages/kategori.html" class="card green">
+          <a href="/src/pages/category/kategori.html" class="card green">
             <img src="/src/images/PR-sepatu.jpg" alt="Shoes" />
             <h3>Shoes</h3>
           </a>
@@ -866,27 +898,27 @@
               <div class="row-wrap filter">
                 <div class="check-wrapper">
                   <label class="container-check">
-                    <input type="checkbox" >
+                    <input type="checkbox">
                     <span class="checkmark bg-black"></span>
                   </label>
                   <label class="container-check">
-                    <input type="checkbox" >
+                    <input type="checkbox">
                     <span class="checkmark bg-white"></span>
                   </label>
                   <label class="container-check">
-                    <input type="checkbox" >
+                    <input type="checkbox">
                     <span class="checkmark bg-red"></span>
                   </label>
                   <label class="container-check">
-                    <input type="checkbox" >
+                    <input type="checkbox">
                     <span class="checkmark bg-brown"></span>
                   </label>
                   <label class="container-check">
-                    <input type="checkbox" >
+                    <input type="checkbox">
                     <span class="checkmark bg-caramel"></span>
                   </label>
                   <label class="container-check">
-                    <input type="checkbox" >
+                    <input type="checkbox">
                     <span class="checkmark bg-donker"></span>
                   </label>
                 </div>
@@ -900,23 +932,23 @@
               <div class="row-wrap filter">
                 <div class="size-wrapper">
                   <label class="container-check">
-                    <input type="checkbox" >
+                    <input type="checkbox">
                     <span class="checkmark bg-white">XS</span>
                   </label>
                   <label class="container-check">
-                    <input type="checkbox" >
+                    <input type="checkbox">
                     <span class="checkmark bg-white">S</span>
                   </label>
                   <label class="container-check">
-                    <input type="checkbox" >
+                    <input type="checkbox">
                     <span class="checkmark bg-white">M</span>
                   </label>
                   <label class="container-check">
-                    <input type="checkbox" >
+                    <input type="checkbox">
                     <span class="checkmark bg-white">L</span>
                   </label>
                   <label class="container-check">
-                    <input type="checkbox" >
+                    <input type="checkbox">
                     <span class="checkmark bg-white">XL</span>
                   </label>
                 </div>
@@ -930,23 +962,23 @@
               <div class="row-wrap filter">
                 <div class="category-wrapper">
                   <label class="container-check">
-                    <input type="checkbox" >
+                    <input type="checkbox">
                     <span class="checkmark bg-white">All</span>
                   </label>
                   <label class="container-check">
-                    <input type="checkbox" >
+                    <input type="checkbox">
                     <span class="checkmark bg-white">Women</span>
                   </label>
                   <label class="container-check">
-                    <input type="checkbox" >
+                    <input type="checkbox">
                     <span class="checkmark bg-white">Men</span>
                   </label>
                   <label class="container-check">
-                    <input type="checkbox" >
+                    <input type="checkbox">
                     <span class="checkmark bg-white">Boys</span>
                   </label>
                   <label class="container-check">
-                    <input type="checkbox" >
+                    <input type="checkbox">
                     <span class="checkmark bg-white">GirlsL</span>
                   </label>
                 </div>
@@ -960,8 +992,9 @@
             <div class="row-wrap">
               <p class="text-secondary">adidas Originals, Jack & Jones, s.Oliver</p>
               <svg class="btn-arrow" width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.41 8.59009L12 13.1701L16.59 8.59009L18 10.0001L12 16.0001L6 10.0001L7.41 8.59009Z" fill="#222222"/>
-                </svg>
+                <path d="M7.41 8.59009L12 13.1701L16.59 8.59009L18 10.0001L12 16.0001L6 10.0001L7.41 8.59009Z"
+                  fill="#222222" />
+              </svg>
             </div>
           </div>
         </div>

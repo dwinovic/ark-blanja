@@ -147,11 +147,27 @@ main section.products-header-wrapper .product-desc-wrapper h3 {
   background-color: green;
 }
 
+
+/* Start = Select Color */
+
 main section.products-header-wrapper .product-desc-wrapper .selectcolor-wrapper {
   margin-bottom: 35px;
 }
 
-main section.products-header-wrapper .product-desc-wrapper p.heading {
+main section.products-header-wrapper .product-desc-wrapper .selectcolor-wrapper h6.heading {
+  margin-bottom: 9px;
+}
+
+main section.products-header-wrapper .product-desc-wrapper .selectcolor-wrapper .check-wrapper {
+  /* background-color: yellowgreen; */
+  display: flex;
+}
+
+
+/* End = Select Color */
+
+
+/* main section.products-header-wrapper .product-desc-wrapper p.heading {
   font-weight: 600;
   font-size: 16px;
   line-height: 16px;
@@ -170,7 +186,7 @@ main section.products-header-wrapper .circle:hover {
   border: 1px solid #db3022;
   transform: scale(1.1);
   box-sizing: border-box;
-}
+} */
 
 
 /* Counter wrapper */
