@@ -22,24 +22,6 @@
   main {
     /* justify-content: center; */
   }
-  main .aside {
-    /* width: max-content; */
-    z-index: -9;
-    display: flex;
-    /* padding-left: 80px; */
-    justify-content: flex-end;
-  }
-  main .aside .aside-content-wrapper {
-    align-self: flex-start;
-    /* background-color: gold; */
-    width: 80%;
-  }
-  main .content {
-    width: 100%;
-    /* background-color: royalblue; */
-    display: flex;
-    justify-content: center;
-  }
   main .content .card {
     width: 90%;
   }
@@ -58,34 +40,6 @@
   main {
     /* background-color: salmon; */
     flex-direction: column;
-  }
-  main .aside {
-    width: 100%;
-    z-index: -9;
-    display: flex;
-    justify-content: center;
-    /* padding-top: 100px; */
-  }
-  main .aside .aside-content-wrapper {
-    align-self: flex-start;
-    width: 80%;
-  }
-  main .aside .user-profile-wrapper {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-  main .aside .menu-wrapper {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-  }
-  main .aside .user-profile-wrapper img {
-    width: 80px;
-    height: 80px;
-  }
-  main .aside .menu-row {
-    margin-bottom: 0px;
   }
   main .content {
     width: 100%;
@@ -152,38 +106,6 @@
   .container {
     /* background-color: green; */
   }
-  main {
-    /* background-color: salmon; */
-    flex-direction: column;
-  }
-  main .aside {
-    width: 100%;
-    z-index: -9;
-    display: flex;
-    justify-content: center;
-    /* padding-top: 100px; */
-  }
-  main .aside .aside-content-wrapper {
-    align-self: flex-start;
-    width: 80%;
-  }
-  main .aside .user-profile-wrapper {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-  main .aside .menu-wrapper {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-  }
-  main .aside .user-profile-wrapper img {
-    width: 80px;
-    height: 80px;
-  }
-  main .aside .menu-row {
-    margin-bottom: 0px;
-  }
   main .content {
     width: 100%;
     /* background-color: royalblue; */
@@ -249,43 +171,12 @@
   .container {
     /* background-color: aqua; */
   }
-  main {
-    /* background-color: salmon; */
-    flex-direction: column;
-  }
-  main .aside {
-    width: 100%;
-    z-index: -9;
-    display: flex;
-    justify-content: center;
-    /* padding-top: 100px; */
-  }
-  main .aside .aside-content-wrapper {
-    align-self: flex-start;
-    width: 80%;
-  }
-  main .aside .user-profile-wrapper {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-  main .aside .menu-wrapper {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-  }
-  main .aside .user-profile-wrapper img {
-    width: 80px;
-    height: 80px;
-  }
-  main .aside .menu-row {
-    margin-bottom: 0px;
-  }
   main .content {
     width: 100%;
-    background-color: royalblue;
+    /* background-color: royalblue; */
     display: flex;
     justify-content: center;
+    padding: 0;
     padding-top: 50px;
   }
   main .content .card {
@@ -293,39 +184,39 @@
   }
   main .content .card .body {
     flex-direction: column-reverse;
-    background: chartreuse;
+    /* background: chartreuse; */
   }
   main .content .card .body .photo-profile-wrapper {
-    background-color: rgb(255, 0, 0);
+    /* background-color: rgb(255, 0, 0); */
     margin: 0 49px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   main .content .card .body .photo-profile-wrapper img {
-    width: 200px;
-    height: 200px;
-    background-color: bisque;
+    width: 150px;
+    height: 150px;
+    /* background-color: bisque; */
     margin-bottom: 20px;
   }
   main form {
     width: 100%;
-    background-color: aqua;
+    /* background-color: aqua; */
   }
   main form.container {
-    background: blueviolet;
+    /* background: blueviolet; */
     padding: 0;
   }
   main form.container {
-    background-color: blue;
+    /* background-color: blue; */
   }
   main form .row {
-    background: blueviolet;
+    /* background: blueviolet; */
     height: max-content;
     margin-bottom: 16px;
   }
   main .content .card form p {
-    background-color: pink;
+    /* background-color: pink; */
     display: flex;
     justify-content: flex-start;
     /* margin-bottom: 140px; */
@@ -333,5 +224,9 @@
   main form .btn-wrapper {
     width: 100%;
     margin-top: 32px;
+  }
+  .page-404-wrapper {
+    padding-right: 25px;
+    padding-left: 25px;
   }
 }

@@ -14,7 +14,7 @@ main {
 }
 
 main .aside {
-  background: #d40000;
+  /* background: #d40000; */
   padding-top: 150px;
   padding-right: 25px;
   width: 27%;
@@ -24,14 +24,19 @@ main .aside {
 }
 
 main .aside .aside-content-wrapper {
-  align-self: flex-start;
-  background-color: gold;
+  /* align-self: flex-start; */
+  /* background-color: gold; */
   width: max-content;
 }
 
 main .aside .user-profile-wrapper {
   /* background-color: green; */
   display: flex;
+}
+
+main .aside .user-profile-wrapper img.avatar {
+  width: 60px;
+  height: 60px;
 }
 
 main .aside .user-profile-wrapper .username-wrapper {
@@ -124,6 +129,20 @@ main .aside .menu-row .icon-wrapper img {
 }
 
 
+/* START = Sidebar Drop Down */
+
+.sidebar-dropdown {
+  display: none;
+}
+
+.icon.dropdown {
+  display: none;
+}
+
+
+/* END = Sidebar Drop Down */
+
+
 /* End = Aside User Menu */
 
 
@@ -151,29 +170,20 @@ main .aside .menu-row .icon-wrapper img {
   .container {
     /* background-color: orange; */
   }
-  main {
-    /* justify-content: center; */
-  }
-  main .aside {
-    /* width: max-content; */
-    z-index: -9;
+  main .aside .user-profile-wrapper {
     display: flex;
-    /* padding-left: 80px; */
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  main .aside .menu-wrapper {
+    margin-top: 40px;
   }
   main .aside .aside-content-wrapper {
-    align-self: flex-start;
-    /* background-color: gold; */
+    width: max-content;
+  }
+  main .aside .aside-content-wrapper {
     width: 80%;
-  }
-  main .content {
-    width: 100%;
-    /* background-color: royalblue; */
-    display: flex;
-    justify-content: center;
-  }
-  main .content .card {
-    width: 90%;
   }
 }
 
@@ -187,38 +197,50 @@ main .aside .menu-row .icon-wrapper img {
   .container {
     /* background-color: aqua; */
   }
-  main {
-    /* background-color: salmon; */
-    flex-direction: column;
-  }
+  /* START = sidebar */
   main .aside {
-    width: 100%;
-    z-index: -9;
+    /* background: #d40000; */
+    padding-top: 150px;
+    width: 100vw;
+    /* z-index: 9; */
     display: flex;
     justify-content: center;
-    /* padding-top: 100px; */
   }
   main .aside .aside-content-wrapper {
-    align-self: flex-start;
+    /* align-self: flex-start; */
+    /* background-color: gold; */
     width: 80%;
+    /* display: flex; */
   }
   main .aside .user-profile-wrapper {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    flex-direction: column;
+    align-items: center;
   }
-  main .aside .menu-wrapper {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-  }
-  main .aside .user-profile-wrapper img {
+  main .aside .user-profile-wrapper img.avatar {
     width: 80px;
     height: 80px;
   }
-  main .aside .menu-row {
-    margin-bottom: 0px;
+  main .aside .user-profile-wrapper .username-wrapper {
+    /* background-color: darkcyan; */
+    margin: 0;
+    margin-top: 16px;
+    align-items: center;
   }
+  main .aside .menu-wrapper {
+    /* background-color: yellow; */
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-around;
+  }
+  main .aside .menu-row a.btn-anchor {
+    display: flex;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #222222;
+    width: 100%;
+  }
+  /* END = sidebar */
   main .content {
     width: 100%;
     /* background-color: royalblue; */
@@ -285,37 +307,53 @@ main .aside .menu-row .icon-wrapper img {
     /* background-color: green; */
   }
   main {
-    /* background-color: salmon; */
+    display: flex;
     flex-direction: column;
   }
+  /* START = sidebar */
   main .aside {
-    width: 100%;
-    z-index: -9;
+    /* background: #d40000; */
+    padding-top: 150px;
+    width: 100vw;
+    /* z-index: 9; */
     display: flex;
     justify-content: center;
-    /* padding-top: 100px; */
   }
   main .aside .aside-content-wrapper {
-    align-self: flex-start;
+    /* align-self: flex-start; */
+    /* background-color: gold; */
     width: 80%;
+    /* display: flex; */
   }
   main .aside .user-profile-wrapper {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    flex-direction: column;
+    align-items: center;
   }
-  main .aside .menu-wrapper {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-  }
-  main .aside .user-profile-wrapper img {
+  main .aside .user-profile-wrapper img.avatar {
     width: 80px;
     height: 80px;
   }
-  main .aside .menu-row {
-    margin-bottom: 0px;
+  main .aside .user-profile-wrapper .username-wrapper {
+    /* background-color: darkcyan; */
+    margin: 0;
+    margin-top: 16px;
+    align-items: center;
   }
+  main .aside .menu-wrapper {
+    /* background-color: yellow; */
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-around;
+  }
+  main .aside .menu-row a.btn-anchor {
+    display: flex;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #222222;
+    width: 100%;
+  }
+  /* END = sidebar */
   main .content {
     width: 100%;
     /* background-color: royalblue; */
@@ -382,90 +420,76 @@ main .aside .menu-row .icon-wrapper img {
     /* background-color: aqua; */
   }
   main {
-    /* background-color: salmon; */
+    display: flex;
     flex-direction: column;
   }
+  /* START = sidebar */
   main .aside {
-    width: 100%;
-    z-index: -9;
+    padding-top: 150px;
+    padding-right: 0;
+    width: 100vw;
     display: flex;
     justify-content: center;
-    /* padding-top: 100px; */
   }
   main .aside .aside-content-wrapper {
-    align-self: flex-start;
-    width: 80%;
+    /* align-self: flex-start; */
+    /* background-color: yellow; */
+    width: 100%;
+    padding: 0 25px;
+    /* display: flex; */
   }
   main .aside .user-profile-wrapper {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    align-items: center;
+    padding-bottom: 16px;
+    /* height: 100%; */
+  }
+  main .aside .user-profile-wrapper img.avatar {
+    width: 60px;
+    height: 60px;
+  }
+  main .aside .user-profile-wrapper .username-wrapper {
+    /* background-color: darkcyan; */
+    margin: 0;
+    margin-left: 16px;
+    align-items: center;
+    /* height: 100%; */
   }
   main .aside .menu-wrapper {
-    margin-top: 20px;
+    display: none;
+  }
+  /* Dropdown */
+  main .aside .user-profile-wrapper .icon.dropdown {
+    flex: 1;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    /* background-color: yellow; */
   }
-  main .aside .user-profile-wrapper img {
-    width: 80px;
-    height: 80px;
-  }
-  main .aside .menu-row {
-    margin-bottom: 0px;
-  }
-  main .content {
-    width: 100%;
-    background-color: royalblue;
+  main .aside .user-profile-wrapper .icon.dropdown svg {
     display: flex;
-    justify-content: center;
-    padding-top: 50px;
+    justify-content: flex-end;
+    /* background-color: yellow; */
+    width: 32px;
+    height: 32px;
   }
-  main .content .card {
-    width: 90%;
+  .sidebar-dropdown {
+    display: flex;
   }
-  main .content .card .body {
-    flex-direction: column-reverse;
-    background: chartreuse;
-  }
-  main .content .card .body .photo-profile-wrapper {
-    background-color: rgb(255, 0, 0);
-    margin: 0 49px;
+  main .aside #sidebar-dropdown .menu-wrapper {
+    /* background-color: yellow; */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-top: 25px;
+    justify-content: space-around;
   }
-  main .content .card .body .photo-profile-wrapper img {
-    width: 200px;
-    height: 200px;
-    background-color: bisque;
-    margin-bottom: 20px;
-  }
-  main form {
-    width: 100%;
-    background-color: aqua;
-  }
-  main form.container {
-    background: blueviolet;
-    padding: 0;
-  }
-  main form.container {
-    background-color: blue;
-  }
-  main form .row {
-    background: blueviolet;
-    height: max-content;
-    margin-bottom: 16px;
-  }
-  main .content .card form p {
-    background-color: pink;
+  main .aside #sidebar-dropdown .menu-row a.btn-anchor {
     display: flex;
-    justify-content: flex-start;
-    /* margin-bottom: 140px; */
-  }
-  main form .btn-wrapper {
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #222222;
     width: 100%;
-    margin-top: 32px;
   }
+  /* END = sidebar */
 }
 
 
