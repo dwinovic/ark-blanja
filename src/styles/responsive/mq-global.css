@@ -17,7 +17,7 @@
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   .container {
-    /* background-color: yellow; */
+    /* background-color: rgb(98, 98, 89); */
   }
 }
 
@@ -94,6 +94,11 @@
     margin-left: 0;
   }
   /* END = Total Payement */
+  /* START = Modal Add New Address Checkout  */
+  form .row.row-col-2 {
+    flex-direction: column;
+  }
+  /* END = Modal Add New Address Checkout  */
   /* End = Main content MY BAG AND CHECKOUT ==========================*/
 }
 
@@ -163,5 +168,10 @@
     margin-left: 0;
   }
   /* END = Total Payement */
+  /* START = Modal Add New Address Checkout  */
+  form .row.row-col-2 {
+    flex-direction: column;
+  }
+  /* END = Modal Add New Address Checkout  */
   /* End = Main content ==========================*/
 }

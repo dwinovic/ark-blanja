@@ -26,12 +26,13 @@ main .aside {
 main .aside .aside-content-wrapper {
   /* align-self: flex-start; */
   /* background-color: gold; */
-  width: max-content;
+  width: 60%;
 }
 
 main .aside .user-profile-wrapper {
   /* background-color: green; */
   display: flex;
+  width: max-content;
 }
 
 main .aside .user-profile-wrapper img.avatar {
@@ -216,6 +217,8 @@ main .aside .menu-row .icon-wrapper img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* background-color: rgb(29, 255, 29); */
+    width: 100%;
   }
   main .aside .user-profile-wrapper img.avatar {
     width: 80px;
@@ -329,6 +332,7 @@ main .aside .menu-row .icon-wrapper img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   main .aside .user-profile-wrapper img.avatar {
     width: 80px;
@@ -436,7 +440,8 @@ main .aside .menu-row .icon-wrapper img {
     /* background-color: yellow; */
     width: 100%;
     padding: 0 25px;
-    /* display: flex; */
+    display: flex;
+    justify-content: center;
   }
   main .aside .user-profile-wrapper {
     display: flex;

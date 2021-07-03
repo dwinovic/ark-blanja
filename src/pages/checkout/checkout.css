@@ -341,7 +341,7 @@ main.container .divider {
   margin-bottom: 40px;
 }
 
-#addNewAddress.modal .modal-body .label {
+#addNewAddress.modal .modal-body label {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -349,6 +349,7 @@ main.container .divider {
   display: flex;
   align-items: center;
   color: #9b9b9b;
+  /* background-color: yellow; */
 }
 
 
@@ -375,8 +376,15 @@ form label {
 form .row {
   display: flex;
   margin-bottom: 16px;
-  gap: 32px;
+  /* background-color: violet; */
 }
+
+form .row.row-col-2 {
+  gap: 16px;
+}
+
+
+/* Responsive ada di mq-global.css start from 481px */
 
 form .row .col {
   padding: 0;
@@ -393,12 +401,11 @@ form .row.last label {
   width: fit-content;
   margin: 0;
   padding: 0;
-  padding-top: 12px;
   margin-left: 13px;
+  /* background-color: tomato; */
 }
 
 form .row.last input {
-  border: 1px solid #9b9b9b;
   box-sizing: border-box;
   border-radius: 4px;
   width: 20px;
