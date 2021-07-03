@@ -9,7 +9,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Profile | Edit Profile</title>
+  <title>Seller | Edit Profile</title>
   <!-- Favicon Blanja.com -->
   <link rel="icon" href="/src/images/icons/favicon.ico" />
 
@@ -24,11 +24,13 @@
 
   <!-- Global CSS = Navbar User -->
   <link rel="stylesheet" href="/src/styles/components/navbar-user.css" />
-  <!-- Current Page CSS -->
-  <link rel="stylesheet" href="./profile.css" />
+  <!-- GLobal Profile = Similar with User Profile Page -->
+  <link rel="stylesheet" href="../profile/profile.css" />
 
   <!-- Responsive Current Page CSS -->
-  <link rel="stylesheet" href="./mq-profile.css" />
+  <link rel="stylesheet" href="../profile/mq-profile.css" />
+  <!-- Current Styling -->
+  <link rel="stylesheet" href="./seller-profile.css">
 </head>
 
 <body>
@@ -69,7 +71,7 @@
 
         <!-- Start = Navigation -->
         <div class="navigation-auth">
-          <div class="btn">
+          <div class="btn cart">
             <a href="/src/pages/my-bag/my-bag.html" class="cart"><svg class="stroke" width="24" height="24"
                 viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0)">
@@ -226,11 +228,11 @@
         <div class="collapse" id="sidebar-dropdown">
           <div class="menu-wrapper">
             <div class="menu-row">
-              <a href="" class="btn-anchor">
+              <a class="btn-anchor">
                 <div class="icon-wrapper blue">
                   <img src="/src/images/icons/IC-user.svg" alt="user" />
                 </div>
-                <p class="text secondary active">My Account</p>
+                <p class="text secondary">My Account</p>
               </a>
             </div>
             <div class="menu-row">
@@ -242,7 +244,7 @@
               </a>
             </div>
             <div class="menu-row">
-              <a href="./profile-my-order.html" class="btn-anchor">
+              <a class="btn-anchor">
                 <div class="icon-wrapper pink">
                   <img src="/src/images/icons/IC-circle-order.svg" alt="order" />
                 </div>
@@ -252,30 +254,59 @@
           </div>
         </div>
         <div class="menu-wrapper">
+          <!-- start collapse -->
           <div class="menu-row">
-            <a href="" class="btn-anchor">
+            <a class="btn-anchor" data-bs-toggle="collapse" href="#store" role="button" aria-expanded="false" aria-controls="store">
               <div class="icon-wrapper blue">
-                <img src="/src/images/icons/IC-user.svg" alt="user" />
+                <img src="/src/images/icons/IC-seller-home.svg" alt="user" />
               </div>
-              <p class="text secondary active">My Account</p>
+              <p class="text secondary active">Store</p>
             </a>
           </div>
+          <div class="collapse" id="store">
+            <div class="">
+              <ul>
+                <li class="active"><a href="./seller-profile.html">Store Profile</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end collapse -->
+          <!-- start collapse -->
           <div class="menu-row">
-            <a href="./profile-shipping-address.html" class="btn-anchor">
+            <a class="btn-anchor" data-bs-toggle="collapse" href="#products" role="button" aria-expanded="false" aria-controls="products">
               <div class="icon-wrapper orange">
-                <img src="/src/images/icons/IC-maps.svg" alt="location" />
+                <img src="/src/images/icons/IC-seller-pack.svg" alt="packed icon" />
               </div>
-              <p class="text secondary">Shipping Adress</p>
+              <p class="text secondary">Products</p>
             </a>
           </div>
+          <div class="collapse" id="products">
+            <div class="">
+              <ul>
+                <li class=""><a href="./seller-my-product.html">My Products</a></li>
+                <li><a href="./seller-selling-products.html">Selling Products</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end collapse -->
+          <!-- start collapse -->
           <div class="menu-row">
-            <a href="./profile-my-order.html" class="btn-anchor">
+            <a class="btn-anchor" data-bs-toggle="collapse" href="#order" role="button" aria-expanded="false" aria-controls="order">
               <div class="icon-wrapper pink">
-                <img src="/src/images/icons/IC-circle-order.svg" alt="order" />
+                <img src="/src/images/icons/IC-seller-cart.svg" alt="cart icon" />
               </div>
-              <p class="text secondary">My Order</p>
+              <p class="text secondary">Order</p>
             </a>
           </div>
+          <div class="collapse" id="order">
+            <div class="">
+              <ul>
+                <li class=""><a href="./seller-my-order.html">My Order</a></li>
+                <li><a href="./seller-order-cancel.html">Order Cancel</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end collapse -->
         </div>
       </div>
     </div>
@@ -284,128 +315,51 @@
     <div class="content">
       <div class="card">
         <div class="header">
-          <h1>Profile</h1>
-          <p>Manage your porfile information</p>
+          <h1>Manage Profile Store</h1>
+          <p>Manage your profile information</p>
         </div>
         <div class="divider"></div>
         <div class="body">
           <form action="" class="container">
             <div class="row">
-              <div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
-                <p class="text secondary">Name</p>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                <p class="text secondary">Store Name</p>
               </div>
-              <div class="col col-sm-12 col-md-12 col-lg-10 col-xl-10">
-                <input type="text" name="name" id="" placeholder="Your Name" />
+              <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+                <input type="text" name="name" id="" placeholder="Store Name" value="Johanes Mikael" />
               </div>
             </div>
             <div class="row">
-              <div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                 <p class="text secondary">Email</p>
               </div>
-              <div class="col col-sm-12 col-md-12 col-lg-10 col-xl-10">
-                <input type="email" name="email" id="" placeholder="Your Email" />
+              <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+                <input type="email" name="email" id="" placeholder="Store Email" value="johanes@gmail.com" />
               </div>
             </div>
             <div class="row">
-              <div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                 <p class="text secondary">Phone Number</p>
               </div>
-              <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10">
-                <input type="text" name="phone" id="" placeholder="Phone Number" />
+              <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+                <input type="text" name="phone" id="" placeholder="Phone Number" value="08901289012" />
               </div>
             </div>
             <div class="row">
-              <div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
-                <p class="text secondary">Gender</p>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                <p class="text secondary">Store description</p>
               </div>
-              <div class="
-              col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10
-                    center-wrapper
-                  ">
-                <div class="gender">
-                  <input type="radio" name="gender" id="male" value="male">
-                  <label class="checkmark" for="male">Laki - laki</label>
-                </div>
-                <div class="gender">
-                  <input type="radio" name="gender" id="female" value="female">
-                  <label class="checkmark" for="female">Perempuan</label>
-                </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
+                <textarea class="form-control" placeholder="Description Store" id="floatingTextarea2" style="height: 100px"></textarea>
               </div>
             </div>
             <div class="row">
-              <div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">
-                <p class="text secondary">Date of birth</p>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                <p class="text secondary"></p>
               </div>
-              <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
-                <select class="form-select" aria-label="Default select example">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10">10</option>
-                  <!-- <option value="11">11</option>
-                  <option value="12">12</option>
-                  <option value="13">13</option>
-                  <option value="14">14</option>
-                  <option value="15">15</option>
-                  <option value="16">16</option>
-                  <option value="17">17</option>
-                  <option value="18">18</option>
-                  <option value="19">19</option>
-                  <option value="20">20</option>
-                  <option value="21">21</option>
-                  <option value="22">22</option>
-                  <option value="23">23</option>
-                  <option value="24">24</option>
-                  <option value="25">25</option>
-                  <option value="26">26</option>
-                  <option value="27">27</option>
-                  <option value="28">28</option>
-                  <option value="29">29</option>
-                  <option value="30">30</option>
-                  <option value="31">31</option> -->
-                </select>
+              <div class="btn-wrapper">
+                <input type="button" value="Save" class="btn primary" />
               </div>
-              <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
-                <select class="form-select" aria-label="Default select example">
-                  <option value="Januari">Januari</option>
-                  <option value="Februari">Februari</option>
-                  <option value="Maret">Maret</option>
-                  <option value="April">April</option>
-                  <option value="Mei">Mei</option>
-                  <option value="Juni">Juni</option>
-                  <option value="Juli">Juli</option>
-                  <option value="Agustus">Agustus</option>
-                  <option value="September">September</option>
-                  <option value="Oktober">Oktober</option>
-                  <option value="November">November</option>
-                  <option value="Desember">Desember</option>
-                </select>
-              </div>
-              <div class="col-4 col-sm-4 col-md-4 col-lg-3 col-xl-3">
-                <select class="form-select" aria-label="Default select example">
-                  <option value="1998">1998</option>
-                  <option value="1999">1999</option>
-                  <option value="2000">2000</option>
-                  <option value="2001">2001</option>
-                  <option value="2002">2002</option>
-                  <option value="2003">2003</option>
-                  <option value="2004">2004</option>
-                  <option value="2005">2005</option>
-                  <option value="2006">2006</option>
-                  <option value="2007">2007</option>
-                  <option value="2008">2008</option>
-                  <option value="2009">2009</option>
-                </select>
-              </div>
-            </div>
-            <div class="btn-wrapper">
-              <input type="button" value="Save" class="btn primary" />
             </div>
           </form>
           <div class="divider vertical"></div>

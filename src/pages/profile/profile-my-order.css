@@ -1,0 +1,65 @@
+/* Start = Tabs */
+
+main .content .card .body {
+  margin-top: 16px;
+  /* background-color: yellow; */
+}
+
+main .content .card .body ul {
+  /* background-color: yellow; */
+}
+
+main .content .card .body ul li {
+  /* background-color: orange; */
+}
+
+main .content .card .body ul li button {
+  /* background-color: aqua; */
+  border: 0;
+}
+
+main .content .card .body ul li .nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9b9b9b;
+}
+
+main .content .card .body ul li .nav-link.active {
+  color: #db3022;
+  border-bottom: 4px solid #db3022;
+}
+
+
+/* End = Tabs */
+
+
+/* Start = Content Tabs */
+
+main #myTabContent .tab-pane.show {
+  /* background-color: yellow; */
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+main #myTabContent .tab-pane img {
+  width: 250px;
+  /* background-color: orange; */
+}
+
+main #myTabContent .tab-pane p {
+  /* background-color: rebeccapurple; */
+  width: max-content;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #222222;
+  opacity: 0.8;
+}
+
+
+/* End = Content Tabs */

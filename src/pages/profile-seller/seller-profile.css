@@ -1,0 +1,350 @@
+/* START = NAVBAR SELLER */
+
+nav .container .seaching-wrapper {
+  justify-content: flex-end;
+  width: 100%;
+  /* background-color: teal; */
+}
+
+nav .container .seaching-wrapper .form {
+  background-color: rosybrown;
+  display: none;
+}
+
+nav .container .seaching-wrapper .filter-wrapper {
+  display: none;
+}
+
+nav .container .navigation-auth .btn.cart {
+  /* background-color: yellow; */
+  display: none;
+}
+
+
+/* END = NAVBAR SELLER */
+
+
+/* START = SIDEBAR COLLAPSE */
+
+main .aside .aside-content-wrapper .menu-wrapper ul {
+  /* background-color: yellow; */
+}
+
+main .aside .aside-content-wrapper .menu-wrapper ul li {
+  list-style: none;
+  font-size: 14px;
+  line-height: 24px;
+  color: #222222;
+}
+
+main .aside .aside-content-wrapper .menu-wrapper ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 24px;
+  color: #9b9b9b;
+  margin-bottom: 10px;
+}
+
+main .aside .aside-content-wrapper .menu-wrapper ul li:hover a {
+  opacity: 0.7;
+}
+
+main .aside .aside-content-wrapper .menu-wrapper ul li.active a {
+  color: #222222;
+  font-weight: 500;
+}
+
+
+/* END = SIDEBAR COLLAPSE */
+
+
+/* START = CARD STORE */
+
+.container .row .col-12 {
+  /* background-color: aqua; */
+  margin: 0;
+  padding: 0;
+}
+
+.container .row p.text.secondary {
+  /* background-color: yellow; */
+  margin-right: 10px;
+}
+
+.container .btn-wrapper {
+  /* background-color: aqua; */
+  padding: 0;
+}
+
+
+/* END = CARD STORE */
+
+
+/* START = Search Fitur  */
+
+
+/* Styling parent at profile-my-order.css => Content Tabs */
+
+main #myTabContent .tab-pane.show {
+  /* background-color: yellow; */
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+main #myTabContent .tab-pane .form-search-wrapper {
+  padding: 10px 15px;
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  border-radius: 23px;
+  /* background-color: aqua; */
+}
+
+main #myTabContent .tab-pane .form-search-wrapper img {
+  /* background-color: orange; */
+  width: 16px;
+  margin-right: 5px;
+}
+
+main #myTabContent .tab-pane .form-search-wrapper input {
+  /* background-color: fuchsia; */
+  border: 0;
+  font-size: 16px;
+  line-height: 16px;
+  color: #9b9b9b;
+}
+
+main #myTabContent .tab-pane .no-content {
+  /* background-color: fuchsia; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main #myTabContent .tab-pane img.illustration {
+  margin-top: 40px;
+}
+
+main #myTabContent .tab-pane p {
+  /* background-color: rebeccapurple; */
+}
+
+
+/* END = Search Fitur  */
+
+
+/* START = SELLING PRODUCT PAGE */
+
+
+/* Main content */
+
+#selling-product main .content {
+  height: max-content;
+  /* background-color: yellow; */
+  flex-direction: column;
+}
+
+
+/* CARD = content .card */
+
+#selling-product main .content .card {
+  border: 0;
+  margin-bottom: 30px;
+}
+
+#selling-product main .content .card .divider {
+  margin: 0;
+}
+
+#selling-product main .content .card {
+  padding: 0;
+}
+
+#selling-product main .content .card .header {
+  padding: 30px;
+}
+
+#selling-product main .content .card .body {
+  padding: 30px;
+}
+
+#selling-product main .content .card .body label {
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #9b9b9b;
+}
+
+#selling-product main .content .card .body input {
+  width: 50%;
+}
+
+#selling-product main .content .card .body .form-wrapper {
+  margin-bottom: 30px;
+}
+
+#selling-product main .content .card .body .form-wrapper .input-group {
+  width: 50%;
+}
+
+#selling-product main .content .card .body .form-wrapper .input-group input {
+  border-right: 0;
+}
+
+#selling-product main .content .card .body .form-wrapper .input-group span.input-group-text {
+  background-color: transparent;
+  border-left: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  color: #9b9b9b;
+}
+
+
+/* Select Stock Baru or Bekas */
+
+#selling-product main .content .card .body .form-wrapper .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #9b9b9b;
+}
+
+#selling-product main .content .card .body .form-wrapper.d-flex {
+  justify-content: flex-start;
+  width: 50%;
+  margin: 0;
+}
+
+#selling-product main .content .card .body .form-wrapper .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+#selling-product main .content .card .body .form-wrapper .container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+#selling-product main .content .card .body .form-wrapper .container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+#selling-product main .content .card .body .form-wrapper .container input:checked~.checkmark {
+  background-color: #db3022;
+}
+
+#selling-product main .content .card .body .form-wrapper .container .checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+#selling-product main .content .card .body .form-wrapper .container input:checked~.checkmark:after {
+  display: block;
+}
+
+#selling-product main .content .card .body .form-wrapper .container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+
+/* Drop Files */
+
+#selling-product main .content .card .body .drop-files-wrapper {
+  border: 1px dashed #d4d4d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 40px 30px;
+}
+
+#selling-product main .content .card .body .drop-files-wrapper .box-wrapper {
+  /* background-color: yellow; */
+  display: flex;
+  gap: 14px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+#selling-product main .content .card .body .drop-files-wrapper .box-wrapper .box-item {
+  /* background-color: orange; */
+  height: max-content;
+}
+
+#selling-product main .content .card .body .drop-files-wrapper .box-wrapper .box-item:hover p.name {
+  display: block;
+}
+
+#selling-product main .content .card .body .drop-files-wrapper .box-wrapper .box-item:hover .box {
+  display: inline-block;
+  transform: scale(1.3);
+}
+
+#selling-product main .content .card .body .drop-files-wrapper .box-wrapper .box-item .box {
+  background: #d4d4d4;
+  border-radius: 4px;
+  transition: all 0.4s ease-in-out;
+}
+
+#selling-product main .content .card .body .drop-files-wrapper .box-wrapper .box-item p.name {
+  /* background-color: pink; */
+  text-align: center;
+  margin-top: 15px;
+  display: none;
+  font-size: 12px;
+}
+
+#selling-product main .content .card .body .btn-wrapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#selling-product main .content .card .body .btn-wrapper .btn-center {
+  width: 160px;
+}
+
+#selling-product main .content .btn-submit {
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+}
+
+#selling-product main .content .btn-submit .btn-wrapper {
+  width: 128px;
+}
+
+
+/* END = SELLING PRODUCT PAGE */

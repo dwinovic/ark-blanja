@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="/src/styles/components/navbar-user.css" />
   <!-- Current Page CSS -->
   <link rel="stylesheet" href="./profile.css" />
+  <link rel="stylesheet" href="./profile-my-order.css">
 
   <!-- Responsive Current Page CSS -->
   <link rel="stylesheet" href="./mq-profile.css" />
@@ -291,32 +292,40 @@
         <div class="body">
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">All items</button>
+              <button class="nav-link active" id="all-item-tab" data-bs-toggle="tab" data-bs-target="#all-item" type="button" role="tab" aria-controls="all-item" aria-selected="true">All items</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Not yet paid</button>
+              <button class="nav-link" id="not-yet-paid-tab" data-bs-toggle="tab" data-bs-target="#not-yet-paid" type="button" role="tab" aria-controls="not-yet-paid" aria-selected="false">Not yet paid</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Packed</button>
+              <button class="nav-link" id="packed-tab" data-bs-toggle="tab" data-bs-target="#packed" type="button" role="tab" aria-controls="packed" aria-selected="false">Packed</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Sent</button>
+              <button class="nav-link" id="sent-tab" data-bs-toggle="tab" data-bs-target="#sent" type="button" role="tab" aria-controls="sent" aria-selected="false">Sent</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Completed</button>
+              <button class="nav-link" id="completed-tab" data-bs-toggle="tab" data-bs-target="#completed" type="button" role="tab" aria-controls="completed" aria-selected="false">Completed</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Order Cancel</button>
+              <button class="nav-link" id="order-cancel-tab" data-bs-toggle="tab" data-bs-target="#order-cancel" type="button" role="tab" aria-controls="order-cancel" aria-selected="false">Order Cancel</button>
             </li>
           </ul>
           <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+            <div class="tab-pane fade show active" id="all-item" role="tabpanel" aria-labelledby="all-item-tab">
+              <img src="/src/images/Illustations/no-content.png" alt="">
+              <p>There are no orders yet</p>
+            </div>
+            <div class="tab-pane fade" id="not-yet-paid" role="tabpanel" aria-labelledby="not-yet-paid-tab">Not yet paid
+            </div>
+            <div class="tab-pane fade" id="packed" role="tabpanel" aria-labelledby="packed-tab">Packed</div>
+            <div class="tab-pane fade" id="sent" role="tabpanel" aria-labelledby="sent-tab">Sent</div>
+            <div class="tab-pane fade" id="completed" role="tabpanel" aria-labelledby="completed-tab">Completed
+            </div>
+            <div class="tab-pane fade" id="order-cancel" role="tabpanel" aria-labelledby="order-cancel-tab-tab">
+              Order Cancel Tab</div>
           </div>
         </div>
       </div>
-    </div>
     </div>
     <!-- End = Data Profile -->
   </main>
