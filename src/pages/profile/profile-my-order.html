@@ -17,7 +17,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <!-- Global CSS = Color || Font || Body -->
   <link rel="stylesheet" href="/src/styles/global.css" />
-  <!-- Global CSS = Modal Payment and Filter -->
+  <!-- Global CSS = Modal filter and Filter -->
   <link rel="stylesheet" href="/src/styles/components/global-modal.css">
   <!-- Global CSS = Sidebar -->
   <link rel="stylesheet" href="/src/styles/components/global-sidebar.css">
@@ -58,7 +58,7 @@
           </button>
         </div>
         <div class="filter-wrapper">
-          <div href="" data-bs-toggle="modal" data-bs-target="#payment">
+          <div href="" data-bs-toggle="modal" data-bs-target="#filter">
             <svg class="stroke" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M1 13C1 6.37258 6.37258 1 13 1H29C35.6274 1 41 6.37258 41 13V29C41 35.6274 35.6274 41 29 41H13C6.37258 41 1 35.6274 1 29V13Z"
@@ -402,12 +402,12 @@
   <!-- End = Modal Add New Address -->
 
   <!-- Start = Modal Filter -->
-  <div class="modal fade" id="payment" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="payment" aria-hidden="true">
+  <div class="modal fade modal-payment" id="filter" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="filter" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="header">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          <h5 class="modal-title" id="payment">Filter</h5>
+          <h5 class="modal-title" id="filter">Filter</h5>
         </div>
         <div class="body">
           <div class="section">

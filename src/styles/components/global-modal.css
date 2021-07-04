@@ -8,11 +8,11 @@
 
 /* Start = Modal Filter and Modal Payment */
 
-#payment .modal-content {
+.modal-payment .modal-content {
   padding: 0;
 }
 
-#payment .modal-content .heading {
+.modal-payment .modal-content .heading {
   font-family: Metropolis;
   font-style: normal;
   font-weight: 600;
@@ -21,18 +21,18 @@
   color: #222222;
 }
 
-#payment .modal-content .header,
+.modal-payment .modal-content .header,
 .footer {
   padding: 23px;
   display: flex;
   box-shadow: 0px 0px 6px rgba(53, 50, 50, 0.25);
 }
 
-#payment .modal-content .header .btn-close {
+.modal-payment .modal-content .header .btn-close {
   margin: 0;
 }
 
-#payment .modal-content .header h5 {
+.modal-payment .modal-content .header h5 {
   width: 100%;
   margin: 0 10px;
   text-align: left;
@@ -42,46 +42,46 @@
   color: #222222;
 }
 
-#payment .modal-content .body {}
+.modal-payment .modal-content .body {}
 
-#payment .modal-content .body .divider {
+.modal-payment .modal-content .body .divider {
   width: 100%;
   height: 4px;
   background-color: #f4f4f4;
 }
 
-#payment .modal-content .body .section {
+.modal-payment .modal-content .body .section {
   padding: 23px;
 }
 
-#payment .modal-content .body .section .heading {
+.modal-payment .modal-content .body .section .heading {
   margin-bottom: 25px;
   font-size: 1rem;
   /* background-color: yellow; */
 }
 
-#payment .modal-content .section .bank-wrapper {
+.modal-payment .modal-content .section .bank-wrapper {
   /* background-color: rebeccapurple; */
 }
 
-#payment .modal-content .section .row-wrap {
+.modal-payment .modal-content .section .row-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 20px;
 }
 
-#payment .modal-content .section .row-wrap.filter {
+.modal-payment .modal-content .section .row-wrap.filter {
   padding-bottom: 0;
 }
 
-#payment .modal-content .section .row-wrap .check-wrapper {
+.modal-payment .modal-content .section .row-wrap .check-wrapper {
   /* background-color: yellow; */
   display: flex;
   justify-content: flex-start;
 }
 
-#payment .modal-content .section .row-wrap .circle-check {
+.modal-payment .modal-content .section .row-wrap .circle-check {
   /* background-color: red; */
   border-radius: 100%;
 }
@@ -253,18 +253,18 @@ svg.btn-arrow:hover path {
 
 /* END = BRAND WRAPPER */
 
-#payment .modal-content .section .row-wrap img {
+.modal-payment .modal-content .section .row-wrap img {
   width: 125px;
 }
 
-#payment .modal-content .section .bank-wrapper .row-wrap h6 {
+.modal-payment .modal-content .section .bank-wrapper .row-wrap h6 {
   margin: 0;
   padding: 0;
   width: 100%;
   margin-left: 40px;
 }
 
-#payment .modal-content .section .row-wrap input {
+.modal-payment .modal-content .section .row-wrap input {
   background-color: black;
   width: 25px;
   height: 25px;
@@ -273,12 +273,12 @@ svg.btn-arrow:hover path {
   border-radius: 4px;
 }
 
-#payment .modal-content .section .row-wrap p {
+.modal-payment .modal-content .section .row-wrap p {
   margin: 0;
   height: max-content;
 }
 
-#payment .modal-content .section .row-wrap .heading.price {
+.modal-payment .modal-content .section .row-wrap .heading.price {
   margin: 100%;
   margin: 0;
   font-size: 18px;
@@ -288,19 +288,19 @@ svg.btn-arrow:hover path {
 
 /* START = Footer Payment Modal  */
 
-#payment .modal-content .footer {
+.modal-payment .modal-content .footer {
   display: flex;
   justify-content: space-between;
 }
 
-#payment .modal-content .footer .total-wrapper {}
+.modal-payment .modal-content .footer .total-wrapper {}
 
-#payment .modal-content .footer .total-wrapper h6 {
+.modal-payment .modal-content .footer .total-wrapper h6 {
   margin: 0;
   margin-bottom: 8px;
 }
 
-#payment .modal-content .text.primary {
+.modal-payment .modal-content .text.primary {
   color: #db3022;
   font-style: normal;
   font-weight: 600;
@@ -309,7 +309,7 @@ svg.btn-arrow:hover path {
   margin: 0;
 }
 
-#payment .modal-content .footer .btn-wrapper {
+.modal-payment .modal-content .footer .btn-wrapper {
   width: 160px;
   display: flex;
   align-items: center;
@@ -318,7 +318,7 @@ svg.btn-arrow:hover path {
 
 /* END = Footer Payment Modal  */
 
-#payment .modal-content .footer.filter {
+.modal-payment .modal-content .footer.filter {
   display: flex;
   justify-content: center;
   gap: 16px;

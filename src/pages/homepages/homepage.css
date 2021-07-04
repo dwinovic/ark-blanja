@@ -14,7 +14,7 @@ main.container {
   width: 42%;
   height: 200px;
   margin-right: 30px;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   counter-increment: carousel-cell;
 }
 
@@ -49,7 +49,7 @@ main.container {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 300px;
+  /* border-radius: 300px; */
 }
 
 .container .main-carousel .carousel-cell a.card:hover {

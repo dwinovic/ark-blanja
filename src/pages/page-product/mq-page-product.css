@@ -234,7 +234,7 @@
     position: absolute;
     left: 0;
     margin-top: 14px;
-    background-color: yellow;
+    /* background-color: yellow; */
   }
   main section.products-header-wrapper .product-desc-wrapper .action-wrapper .btn-wrapper {
     height: 45px;

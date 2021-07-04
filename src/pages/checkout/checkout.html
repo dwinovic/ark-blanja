@@ -44,12 +44,23 @@
         <div class="form">
           <input type="text" name="searching" placeholder="Search" />
           <button onclick="show404()">
-            <img src="/src/images/icons/IC-search.png" alt="searching-button" />
+            <svg class="stroke" width="18" height="18" viewBox="0 0 18 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M17.6697 16.1666L12.7415 11.2366C13.6249 10.0317 14.0981 8.57511 14.0915 7.08114C14.0747 3.18139 10.9205 0.0225957 7.02076 7.16372e-05C5.15452 -0.00837202 3.36242 0.729916 2.04368 2.05047C0.724944 3.37102 -0.0108835 5.16413 0.000121693 7.03036C0.016977 10.9305 3.17147 14.0895 7.07155 14.1121C8.57161 14.1186 10.0335 13.6398 11.2392 12.7473L11.2443 12.7434L16.168 17.6696C16.4342 17.9489 16.8308 18.062 17.2043 17.965C17.5777 17.868 17.8692 17.5762 17.9659 17.2027C18.0626 16.8292 17.9492 16.4326 17.6697 16.1666ZM7.06638 12.7004C3.94649 12.6824 1.42294 10.1554 1.40924 7.0355C1.40082 5.54272 1.98953 4.10851 3.04432 3.05215C4.09912 1.99579 5.53244 1.40495 7.02524 1.41115C10.1451 1.42909 12.6687 3.95609 12.6824 7.076C12.6908 8.56879 12.1021 10.003 11.0473 11.0594C9.99251 12.1157 8.55918 12.7066 7.06638 12.7004Z"
+                fill="#8E8E93" />
+            </svg>
           </button>
         </div>
         <div class="filter-wrapper">
-          <div href="" data-bs-toggle="modal" data-bs-target="#payment">
-            <img src="/src/images/icons/IC-filter.png" alt="filter icon" />
+          <div href="" data-bs-toggle="modal" data-bs-target="#filter">
+            <svg class="stroke" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M1 13C1 6.37258 6.37258 1 13 1H29C35.6274 1 41 6.37258 41 13V29C41 35.6274 35.6274 41 29 41H13C6.37258 41 1 35.6274 1 29V13Z"
+                stroke="#8E8E93" stroke-width="2" />
+              <path d="M29.3333 13.5H12.6667L19.3333 21.3833V26.8333L22.6667 28.5V21.3833L29.3333 13.5Z"
+                stroke="#8E8E93" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </div>
         </div>
         <!-- End = Searching feature -->
@@ -57,48 +68,128 @@
         <!-- Start = Navigation -->
         <div class="navigation-auth">
           <div class="btn">
-            <a href="/src/pages/my-bag/my-bag.html" class="cart"><img src="/src/images/icons/IC-cart.png" alt="cart icon" /></a>
+            <a href="/src/pages/my-bag/my-bag.html" class="cart"><svg class="stroke" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
+                    stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"
+                    stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
+                    stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
           </div>
           <div class="btn" onclick="show404()">
-            <img src="/src/images/icons/IC-bell.svg" alt="" />
+            <svg class="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z"
+                stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M13.7295 21C13.5537 21.3031 13.3014 21.5547 12.9978 21.7295C12.6941 21.9044 12.3499 21.9965 11.9995 21.9965C11.6492 21.9965 11.3049 21.9044 11.0013 21.7295C10.6977 21.5547 10.4453 21.3031 10.2695 21"
+                stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </div>
           <div class="btn" onclick="show404()">
-            <img src="/src/images/icons/IC-main.svg" alt="" />
+            <svg class="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M22 6L12 13L2 6" stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
           </div>
           <div class="btn profile">
             <a href="/src/pages/profile/profile.html">
               <img src="/src/images/icons/profile.png" alt="" />
             </a>
-            <!-- START = HAMBURGER -->
-            <div class="toggler-wrapper" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 6H21V8H3V6ZM3 11H21V13H3V11ZM3 16H21V18H3V16Z" fill=" #9B9B9B" />
-              </svg>
-            </div>
-            <!-- END = HAMBURGER -->
           </div>
+          <div class="toggler-wrapper navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <svg class="fill" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 6H21V8H3V6ZM3 11H21V13H3V11ZM3 16H21V18H3V16Z" fill=" #9B9B9B" />
+            </svg>
+          </div>
+          <!-- END = HAMBURGER -->
           <!-- End = Navigation -->
         </div>
         <!-- End = Navigation bar -->
-        <!-- START = NAVBAR TOGGLER -->
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav container shadow p-3 mb-5 bg-body rounded">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/src/pages/my-bag.html">My Bag</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/src/pages/kategori.html">Category</a>
-            </li>
+      </div>
+    </div>
+    <!-- START = NAVBAR TOGGLER -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav container shadow p-3 mb-5 bg-body rounded">
+        <li class="nav-item main">
+          <div class="btn">
+            <a href="/src/pages/my-bag/my-bag.html" class="cart">
+              <svg class="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
+                    stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"
+                    stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
+                    stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
 
-            <li class="nav-item">
-              <a class="nav-link" href="/index.html">Masuk</a>
-            </li>
-          </ul>
-        </div>
-        <!-- START = NAVBAR TOGGLER -->
+            </a>
+          </div>
+          <div class="btn" onclick="show404()">
+            <svg class="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z"
+                stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M13.7295 21C13.5537 21.3031 13.3014 21.5547 12.9978 21.7295C12.6941 21.9044 12.3499 21.9965 11.9995 21.9965C11.6492 21.9965 11.3049 21.9044 11.0013 21.7295C10.6977 21.5547 10.4453 21.3031 10.2695 21"
+                stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+          </div>
+          <div class="btn" onclick="show404()">
+            <svg class="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M22 6L12 13L2 6" stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+
+          </div>
+          <div class="btn profile">
+            <a href="/src/pages/profile/profile.html">
+              <img src="/src/images/icons/profile.png" alt="" />
+            </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/src/pages/my-bag.html">My Bag</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/src/pages/kategori.html">Category</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">Masuk</a>
+        </li>
+      </ul>
+    </div>
+    <!-- START = NAVBAR TOGGLER -->
   </nav>
   <!-- Start Heading Page -->
   <header class="container">
@@ -176,12 +267,12 @@
   <!-- End = Footer -->
 
   <!-- Start = Modal Filter -->
-  <div class="modal fade" id="payment" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="payment" aria-hidden="true">
+  <div class="modal fade modal-payment" id="filter" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="modal-filter" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="header">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          <h5 class="modal-title" id="payment">Filter</h5>
+          <h5 class="modal-title">Filter</h5>
         </div>
         <div class="body">
           <div class="section">
@@ -396,7 +487,7 @@
   <!-- End = Modal Add New Address -->
 
   <!-- Start = Modal Payment -->
-  <div class="modal fade" id="payment" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="payment" aria-hidden="true">
+  <div class="modal fade modal-payment" id="payment" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="modal-payment" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="header">
@@ -410,17 +501,26 @@
               <div class="row-wrap">
                 <img src="/src/images/icons/IC-Bank-Gopay.png" alt="Gopay" />
                 <h6 class="heading">Gopay</h6>
-                <input type="checkbox" name="gopay" id="" />
+                <label class="checkbox-wrapper">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
               </div>
               <div class="row-wrap">
                 <img src="/src/images/icons/IC-Bank-Pos.png" alt="Pos Indonesia" />
                 <h6 class="heading">Pos Indonesia</h6>
-                <input type="checkbox" name="posindo" id="" />
+                <label class="checkbox-wrapper">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
               </div>
               <div class="row-wrap">
                 <img src="/src/images/icons/IC-Bank-Mastercard.png" alt="Mastercard" />
                 <h6 class="heading">Mastercard</h6>
-                <input type="checkbox" name="mastercard" id="" />
+                <label class="checkbox-wrapper">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
               </div>
             </div>
           </div>

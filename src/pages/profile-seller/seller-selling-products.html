@@ -18,17 +18,17 @@
   <!-- Global CSS = Color || Font || Body -->
   <link rel="stylesheet" href="/src/styles/global.css" />
   <!-- Global CSS = Modal Payment and Filter -->
-  <link rel="stylesheet" href="/src/styles/components/global-modal.css">
+  <link rel="stylesheet" href="/src/styles/components/global-modal.css" />
   <!-- Global CSS = Sidebar -->
-  <link rel="stylesheet" href="/src/styles/components/global-sidebar-seller.css">
+  <link rel="stylesheet" href="/src/styles/components/global-sidebar-seller.css" />
 
   <!-- Global CSS = Navbar User -->
   <link rel="stylesheet" href="/src/styles/components/navbar-user.css" />
   <!-- Current Page CSS -->
   <link rel="stylesheet" href="../profile/profile.css" />
   <!-- Global Modal Card content -->
-  <link rel="stylesheet" href="../profile/profile-my-order.css">
-  <link rel="stylesheet" href="./seller-profile.css">
+  <link rel="stylesheet" href="../profile/profile-my-order.css" />
+  <link rel="stylesheet" href="./seller-profile.css" />
 
   <!-- Responsive Current Page CSS -->
   <link rel="stylesheet" href="../profile/mq-profile.css" />
@@ -51,23 +51,41 @@
         <div class="form">
           <input type="text" name="searching" placeholder="Search" />
           <button onclick="show404()">
-            <svg class="stroke" width="18" height="18" viewBox="0 0 18 18" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M17.6697 16.1666L12.7415 11.2366C13.6249 10.0317 14.0981 8.57511 14.0915 7.08114C14.0747 3.18139 10.9205 0.0225957 7.02076 7.16372e-05C5.15452 -0.00837202 3.36242 0.729916 2.04368 2.05047C0.724944 3.37102 -0.0108835 5.16413 0.000121693 7.03036C0.016977 10.9305 3.17147 14.0895 7.07155 14.1121C8.57161 14.1186 10.0335 13.6398 11.2392 12.7473L11.2443 12.7434L16.168 17.6696C16.4342 17.9489 16.8308 18.062 17.2043 17.965C17.5777 17.868 17.8692 17.5762 17.9659 17.2027C18.0626 16.8292 17.9492 16.4326 17.6697 16.1666ZM7.06638 12.7004C3.94649 12.6824 1.42294 10.1554 1.40924 7.0355C1.40082 5.54272 1.98953 4.10851 3.04432 3.05215C4.09912 1.99579 5.53244 1.40495 7.02524 1.41115C10.1451 1.42909 12.6687 3.95609 12.6824 7.076C12.6908 8.56879 12.1021 10.003 11.0473 11.0594C9.99251 12.1157 8.55918 12.7066 7.06638 12.7004Z"
-                fill="#8E8E93" />
-            </svg>
-          </button>
+              <svg
+                class="stroke"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M17.6697 16.1666L12.7415 11.2366C13.6249 10.0317 14.0981 8.57511 14.0915 7.08114C14.0747 3.18139 10.9205 0.0225957 7.02076 7.16372e-05C5.15452 -0.00837202 3.36242 0.729916 2.04368 2.05047C0.724944 3.37102 -0.0108835 5.16413 0.000121693 7.03036C0.016977 10.9305 3.17147 14.0895 7.07155 14.1121C8.57161 14.1186 10.0335 13.6398 11.2392 12.7473L11.2443 12.7434L16.168 17.6696C16.4342 17.9489 16.8308 18.062 17.2043 17.965C17.5777 17.868 17.8692 17.5762 17.9659 17.2027C18.0626 16.8292 17.9492 16.4326 17.6697 16.1666ZM7.06638 12.7004C3.94649 12.6824 1.42294 10.1554 1.40924 7.0355C1.40082 5.54272 1.98953 4.10851 3.04432 3.05215C4.09912 1.99579 5.53244 1.40495 7.02524 1.41115C10.1451 1.42909 12.6687 3.95609 12.6824 7.076C12.6908 8.56879 12.1021 10.003 11.0473 11.0594C9.99251 12.1157 8.55918 12.7066 7.06638 12.7004Z"
+                  fill="#8E8E93"
+                />
+              </svg>
+            </button>
         </div>
         <div class="filter-wrapper">
           <div href="" data-bs-toggle="modal" data-bs-target="#payment">
             <svg class="stroke" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M1 13C1 6.37258 6.37258 1 13 1H29C35.6274 1 41 6.37258 41 13V29C41 35.6274 35.6274 41 29 41H13C6.37258 41 1 35.6274 1 29V13Z"
-                stroke="#8E8E93" stroke-width="2" />
-              <path d="M29.3333 13.5H12.6667L19.3333 21.3833V26.8333L22.6667 28.5V21.3833L29.3333 13.5Z"
-                stroke="#8E8E93" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1 13C1 6.37258 6.37258 1 13 1H29C35.6274 1 41 6.37258 41 13V29C41 35.6274 35.6274 41 29 41H13C6.37258 41 1 35.6274 1 29V13Z"
+                  stroke="#8E8E93"
+                  stroke-width="2"
+                />
+                <path
+                  d="M29.3333 13.5H12.6667L19.3333 21.3833V26.8333L22.6667 28.5V21.3833L29.3333 13.5Z"
+                  stroke="#8E8E93"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
           </div>
         </div>
         <!-- End = Searching feature -->
@@ -75,55 +93,93 @@
         <!-- Start = Navigation -->
         <div class="navigation-auth">
           <div class="btn cart">
-            <a href="/src/pages/my-bag/my-bag.html" class="cart"><svg class="stroke" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0)">
-                  <path
-                    d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
-                    stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-                  <path
-                    d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"
-                    stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-                  <path
-                    d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
-                    stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-                </g>
-                <defs>
-                  <clipPath id="clip0">
-                    <rect width="24" height="24" fill="white" />
-                  </clipPath>
-                </defs>
+            <a href="/src/pages/my-bag/my-bag.html" class="cart"><svg
+                  class="stroke"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0)">
+                    <path
+                      d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
+                      stroke="#9B9B9B"
+                      stroke-width="2.33333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"
+                      stroke="#9B9B9B"
+                      stroke-width="2.33333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
+                      stroke="#9B9B9B"
+                      stroke-width="2.33333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+          </div>
+          <div class="btn" onclick="show404()">
+            <svg class="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z"
+                  stroke="#9B9B9B"
+                  stroke-width="2.33333"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13.7295 21C13.5537 21.3031 13.3014 21.5547 12.9978 21.7295C12.6941 21.9044 12.3499 21.9965 11.9995 21.9965C11.6492 21.9965 11.3049 21.9044 11.0013 21.7295C10.6977 21.5547 10.4453 21.3031 10.2695 21"
+                  stroke="#9B9B9B"
+                  stroke-width="2.33333"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
               </svg>
-            </a>
           </div>
           <div class="btn" onclick="show404()">
             <svg class="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z"
-                stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-              <path
-                d="M13.7295 21C13.5537 21.3031 13.3014 21.5547 12.9978 21.7295C12.6941 21.9044 12.3499 21.9965 11.9995 21.9965C11.6492 21.9965 11.3049 21.9044 11.0013 21.7295C10.6977 21.5547 10.4453 21.3031 10.2695 21"
-                stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </div>
-          <div class="btn" onclick="show404()">
-            <svg class="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
-                stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M22 6L12 13L2 6" stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-
+                <path
+                  d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                  stroke="#9B9B9B"
+                  stroke-width="2.33333"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M22 6L12 13L2 6"
+                  stroke="#9B9B9B"
+                  stroke-width="2.33333"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
           </div>
           <div class="btn profile">
-            <a href="/src/pages/profile/profile.html">
+            <a href="./seller-profile.html">
               <img src="/src/images/icons/profile.png" alt="" />
             </a>
           </div>
           <div class="toggler-wrapper navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <svg class="fill" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 6H21V8H3V6ZM3 11H21V13H3V11ZM3 16H21V18H3V16Z" fill=" #9B9B9B" />
-            </svg>
+                <path
+                  d="M3 6H21V8H3V6ZM3 11H21V13H3V11ZM3 16H21V18H3V16Z"
+                  fill=" #9B9B9B"
+                />
+              </svg>
           </div>
           <!-- END = HAMBURGER -->
           <!-- End = Navigation -->
@@ -138,48 +194,75 @@
           <div class="btn">
             <a href="/src/pages/my-bag/my-bag.html" class="cart">
               <svg class="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0)">
-                  <path
-                    d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
-                    stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-                  <path
-                    d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"
-                    stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-                  <path
-                    d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
-                    stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-                </g>
-                <defs>
-                  <clipPath id="clip0">
-                    <rect width="24" height="24" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-
+                  <g clip-path="url(#clip0)">
+                    <path
+                      d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
+                      stroke="#9B9B9B"
+                      stroke-width="2.33333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"
+                      stroke="#9B9B9B"
+                      stroke-width="2.33333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
+                      stroke="#9B9B9B"
+                      stroke-width="2.33333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
             </a>
           </div>
           <div class="btn" onclick="show404()">
             <svg class="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z"
-                stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-              <path
-                d="M13.7295 21C13.5537 21.3031 13.3014 21.5547 12.9978 21.7295C12.6941 21.9044 12.3499 21.9965 11.9995 21.9965C11.6492 21.9965 11.3049 21.9044 11.0013 21.7295C10.6977 21.5547 10.4453 21.3031 10.2695 21"
-                stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-
+                <path
+                  d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z"
+                  stroke="#9B9B9B"
+                  stroke-width="2.33333"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13.7295 21C13.5537 21.3031 13.3014 21.5547 12.9978 21.7295C12.6941 21.9044 12.3499 21.9965 11.9995 21.9965C11.6492 21.9965 11.3049 21.9044 11.0013 21.7295C10.6977 21.5547 10.4453 21.3031 10.2695 21"
+                  stroke="#9B9B9B"
+                  stroke-width="2.33333"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
           </div>
           <div class="btn" onclick="show404()">
             <svg class="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
-                stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M22 6L12 13L2 6" stroke="#9B9B9B" stroke-width="2.33333" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-
+                <path
+                  d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                  stroke="#9B9B9B"
+                  stroke-width="2.33333"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M22 6L12 13L2 6"
+                  stroke="#9B9B9B"
+                  stroke-width="2.33333"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
           </div>
           <div class="btn profile">
-            <a href="/src/pages/profile/profile.html">
+            <a href="./seller-profile.html">
               <img src="/src/images/icons/profile.png" alt="" />
             </a>
           </div>
@@ -212,20 +295,26 @@
             <a href="/src/pages/profile/profile.html" class="edit-profile-wrapper">
               <div class="svg-icon pen">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 12.6662V16H3.33379L13.1707 6.16302L9.8369 2.82922L0 12.6662Z" fill="#9B9B9B" />
-                  <path
-                    d="M15.74 2.33586L13.6642 0.260036C13.3174 -0.0866786 12.7529 -0.0866786 12.4062 0.260036L10.7793 1.88693L14.1131 5.22072L15.74 3.59383C16.0867 3.24711 16.0867 2.68258 15.74 2.33586Z"
-                    fill="#9B9B9B" />
-                </svg>
+                    <path
+                      d="M0 12.6662V16H3.33379L13.1707 6.16302L9.8369 2.82922L0 12.6662Z"
+                      fill="#9B9B9B"
+                    />
+                    <path
+                      d="M15.74 2.33586L13.6642 0.260036C13.3174 -0.0866786 12.7529 -0.0866786 12.4062 0.260036L10.7793 1.88693L14.1131 5.22072L15.74 3.59383C16.0867 3.24711 16.0867 2.68258 15.74 2.33586Z"
+                      fill="#9B9B9B"
+                    />
+                  </svg>
               </div>
               <p class="text secondary">Ubah profile</p>
             </a>
           </div>
           <div class="icon dropdown" data-bs-toggle="collapse" data-bs-target="#sidebar-dropdown" aria-expanded="false" aria-controls="sidebar-dropdown">
             <svg class="fill" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7.41 8.59009L12 13.1701L16.59 8.59009L18 10.0001L12 16.0001L6 10.0001L7.41 8.59009Z"
-                fill="#222222" />
-            </svg>
+                <path
+                  d="M7.41 8.59009L12 13.1701L16.59 8.59009L18 10.0001L12 16.0001L6 10.0001L7.41 8.59009Z"
+                  fill="#222222"
+                />
+              </svg>
           </div>
         </div>
         <div class="collapse" id="sidebar-dropdown">
@@ -270,7 +359,9 @@
             <div class="collapse" id="store">
               <div class="">
                 <ul>
-                  <li class=""><a href="./seller-profile.html">Store Profile</a></li>
+                  <li class="">
+                    <a href="./seller-profile.html">Store Profile</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -289,147 +380,165 @@
             <div class="collapse" id="products">
               <div class="">
                 <ul>
-                  <li class=""><a href="./seller-my-product.html">My Products</a></li>
-                  <li class="active"><a href="./seller-selling-products.html">Selling Products</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- end collapse -->
-          <!-- start collapse -->
-          <div class="collapse-bottom">
-            <div class="menu-row">
-              <a class="btn-anchor" data-bs-toggle="collapse" href="#order" role="button" aria-expanded="false" aria-controls="order">
-                <div class="icon-wrapper pink">
-                  <img src="/src/images/icons/IC-seller-cart.svg" alt="cart icon" />
+                  <li class="">
+                    <a href="./seller-my-product.html">My Products</a>
+                  </li>
+                  <li class="active">
+                    <a href="./seller-selling-products.html">Selling Products</a
+                      >
+                    </li>
+                  </ul>
                 </div>
-                <p class="text secondary">Order</p>
-              </a>
-            </div>
-            <div class="collapse" id="order">
-              <div class="">
-                <ul>
-                  <li class=""><a href="./seller-my-order.html">My Order</a></li>
-                  <li><a href="./seller-order-cancel.html">Order Cancel</a></li>
-                </ul>
               </div>
             </div>
-          </div>
+            <!-- end collapse -->
+            <!-- start collapse -->
+            <div class="collapse-bottom">
+              <div class="menu-row">
+                <a
+                  class="btn-anchor"
+                  data-bs-toggle="collapse"
+                  href="#order"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="order"
+                >
+                  <div class="icon-wrapper pink">
+                    <img
+                      src="/src/images/icons/IC-seller-cart.svg"
+                      alt="cart icon"
+                    />
+                  </div>
+                  <p class="text secondary">Order</p>
+                </a>
+              </div>
+              <div class="collapse" id="order">
+                <div class="">
+                  <ul>
+                    <li class="">
+                      <a href="./seller-my-order.html">My Order</a>
+                    </li>
+                    <li>
+                      <a href="./seller-order-cancel.html">Order Cancel</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
-          <!-- end collapse -->
-        </div>
-      </div>
-    </div>
-    <!-- End = Aside User Menu -->
-    <!-- Start = Data Profile -->
-    <div class="content">
-      <div class="card">
-        <div class="header">
-          <h1>Inventory</h1>
-        </div>
-        <div class="divider"></div>
-        <div class="body">
-          <label for="inventory" class="form-label">Name of goods</label>
-          <input type="text" class="form-control" id="inventory" placeholder="">
-        </div>
-      </div>
-      <div class="card">
-        <div class="header">
-          <h1>Item details</h1>
-        </div>
-        <div class="divider"></div>
-        <div class="body">
-          <div class="form-wrapper">
-            <label for="inventory" class="form-label">Unit price</label>
-            <input type="text" class="form-control" id="inventory" placeholder="">
+            <!-- end collapse -->
           </div>
-          <div class="form-wrapper">
+        </div>
+      </div>
+      <!-- End = Aside User Menu -->
+      <!-- Start = Data Profile -->
+      <div class="content">
+        <div class="card">
+          <div class="header">
+            <h1>Inventory</h1>
+          </div>
+          <div class="divider"></div>
+          <div class="body">
+            <label for="inventory" class="form-label">Name of goods</label>
+            <input type="text" class="form-control" id="inventory" placeholder="" />
+          </div>
+        </div>
+        <div class="card">
+          <div class="header">
+            <h1>Item details</h1>
+          </div>
+          <div class="divider"></div>
+          <div class="body">
+            <div class="form-wrapper">
+              <label for="inventory" class="form-label">Unit price</label>
+              <input type="text" class="form-control" id="inventory" placeholder="" />
+            </div>
+            <div class="form-wrapper">
+              <label for="inventory" class="form-label">Stock</label>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon2" />
+                <span class="input-group-text" id="basic-addon2">Buah</span>
+              </div>
+            </div>
             <label for="inventory" class="form-label">Stock</label>
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon2">
-              <span class="input-group-text" id="basic-addon2">Buah</span>
+            <div class="form-wrapper d-flex">
+              <label class="container">
+                <input type="radio" checked="checked" name="radio" />
+                <span class="checkmark"></span>Baru
+              </label>
+              <label class="container">
+                <input type="radio" name="radio" />
+                <span class="checkmark"></span>Bekas
+              </label>
             </div>
           </div>
-          <label for="inventory" class="form-label">Stock</label>
-          <div class="form-wrapper d-flex">
-            <label class="container">
-              <input type="radio" checked="checked" name="radio">
-              <span class="checkmark"></span>Baru
-            </label>
-            <label class="container">
-              <input type="radio" name="radio">
-              <span class="checkmark"></span>Bekas
-            </label>
+        </div>
+        <div class="card">
+          <div class="header">
+            <h1>Photo of goods</h1>
           </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="header">
-          <h1>Photo of goods</h1>
-        </div>
-        <div class="divider"></div>
-        <div class="body">
-          <!-- css = drop files @seller-profile.css -->
-          <div class="drop-files-wrapper">
-            <div class="box-wrapper">
-              <div class="box-item">
-                <div class="box">
-                  <img src="/src/images/icons/box 5.svg" alt="">
+          <div class="divider"></div>
+          <div class="body">
+            <!-- css = drop files @seller-profile.css -->
+            <div class="drop-files-wrapper">
+              <div class="box-wrapper">
+                <div class="box-item">
+                  <div class="box">
+                    <img src="/src/images/icons/box 5.svg" alt="" />
+                  </div>
+                  <p class="name">Foto Utama</p>
                 </div>
-                <p class="name">Foto Utama</p>
-              </div>
-              <div class="box-item">
-                <div class="box">
-                  <img src="/src/images/icons/box 5.svg" alt="">
+                <div class="box-item">
+                  <div class="box">
+                    <img src="/src/images/icons/box 5.svg" alt="" />
+                  </div>
+                  <p class="name">Foto Utama</p>
                 </div>
-                <p class="name">Foto Utama</p>
-              </div>
-              <div class="box-item">
-                <div class="box">
-                  <img src="/src/images/icons/box 5.svg" alt="">
+                <div class="box-item">
+                  <div class="box">
+                    <img src="/src/images/icons/box 5.svg" alt="" />
+                  </div>
+                  <p class="name">Foto Utama</p>
                 </div>
-                <p class="name">Foto Utama</p>
-              </div>
-              <div class="box-item">
-                <div class="box">
-                  <img src="/src/images/icons/box 5.svg" alt="">
+                <div class="box-item">
+                  <div class="box">
+                    <img src="/src/images/icons/box 5.svg" alt="" />
+                  </div>
+                  <p class="name">Foto Utama</p>
                 </div>
-                <p class="name">Foto Utama</p>
-              </div>
-              <div class="box-item">
-                <div class="box">
-                  <img src="/src/images/icons/box 5.svg" alt="">
+                <div class="box-item">
+                  <div class="box">
+                    <img src="/src/images/icons/box 5.svg" alt="" />
+                  </div>
+                  <p class="name">Foto Utama</p>
                 </div>
-                <p class="name">Foto Utama</p>
               </div>
-            </div>
-            <div class="divider"></div>
-            <div class="btn-wrapper">
-              <div class="btn-center">
-                <button class="btn secondary">Upload Foto</button>
+              <div class="divider"></div>
+              <div class="btn-wrapper">
+                <div class="btn-center">
+                  <button class="btn secondary">Upload Foto</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="header">
-          <h1>Description</h1>
+        <div class="card">
+          <div class="header">
+            <h1>Description</h1>
+          </div>
+          <div class="divider"></div>
+          <div class="body">
+            <!-- css = drop files @seller-profile.css -->
+            <div class="drop-files-wrapper"></div>
+          </div>
         </div>
-        <div class="divider"></div>
-        <div class="body">
-          <!-- css = drop files @seller-profile.css -->
-          <div class="drop-files-wrapper">
+        <div class="btn-submit">
+          <div class="btn-wrapper">
+            <button class="btn primary">Jual</button>
           </div>
         </div>
       </div>
-      <div class="btn-submit">
-        <div class="btn-wrapper">
-          <button class="btn primary">Jual</button>
-        </div>
-      </div>
-    </div>
-    <!-- End = Data Profile -->
+      <!-- End = Data Profile -->
   </main>
   <!-- End = Main content -->
   <!-- Start = Footer -->
@@ -438,7 +547,6 @@
     <p>Blanja.com</p>
   </footer>
   <!-- End = Footer -->
-
 
   <!-- Start = Modal Add New Address -->
   <div class="modal fade" id="addNewAddress" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="addNewAddressLabel" aria-hidden="true">
@@ -452,8 +560,8 @@
           <form action="">
             <div class="row">
               <label for="type-address">
-                Save address as (ex : home address, office address)
-              </label>
+                  Save address as (ex : home address, office address)
+                </label>
               <input type="text" name="type-address" placeholder="Rumah" id="" />
             </div>
             <div class="row row-col-2">
@@ -476,7 +584,7 @@
                 <input type="text" name="code-post" placeholder="Code Post" />
               </div>
             </div>
-            <div class="row ">
+            <div class="row">
               <label for="city"> City or Subdistrict </label>
               <input type="text" name="city" placeholder="Rumah" id="" />
             </div>
@@ -487,13 +595,13 @@
             <div class="action-wrapper">
               <div class="btn-wrapper">
                 <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn secondary" data-bs-dismiss="modal">
-                  Cancel
-                </button>
+                    Cancel
+                  </button>
               </div>
               <div class="btn-wrapper">
                 <button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn primary" data-bs-dismiss="modal">
-                  Save
-                </button>
+                    Save
+                  </button>
               </div>
             </div>
           </form>
@@ -518,29 +626,29 @@
               <div class="row-wrap filter">
                 <div class="check-wrapper">
                   <label class="container-check">
-                    <input type="checkbox">
-                    <span class="checkmark bg-black"></span>
-                  </label>
+                      <input type="checkbox" />
+                      <span class="checkmark bg-black"></span>
+                    </label>
                   <label class="container-check">
-                    <input type="checkbox">
-                    <span class="checkmark bg-white"></span>
-                  </label>
+                      <input type="checkbox" />
+                      <span class="checkmark bg-white"></span>
+                    </label>
                   <label class="container-check">
-                    <input type="checkbox">
-                    <span class="checkmark bg-red"></span>
-                  </label>
+                      <input type="checkbox" />
+                      <span class="checkmark bg-red"></span>
+                    </label>
                   <label class="container-check">
-                    <input type="checkbox">
-                    <span class="checkmark bg-brown"></span>
-                  </label>
+                      <input type="checkbox" />
+                      <span class="checkmark bg-brown"></span>
+                    </label>
                   <label class="container-check">
-                    <input type="checkbox">
-                    <span class="checkmark bg-caramel"></span>
-                  </label>
+                      <input type="checkbox" />
+                      <span class="checkmark bg-caramel"></span>
+                    </label>
                   <label class="container-check">
-                    <input type="checkbox">
-                    <span class="checkmark bg-donker"></span>
-                  </label>
+                      <input type="checkbox" />
+                      <span class="checkmark bg-donker"></span>
+                    </label>
                 </div>
               </div>
             </div>
@@ -552,25 +660,25 @@
               <div class="row-wrap filter">
                 <div class="size-wrapper">
                   <label class="container-check">
-                    <input type="checkbox">
-                    <span class="checkmark bg-white">XS</span>
-                  </label>
+                      <input type="checkbox" />
+                      <span class="checkmark bg-white">XS</span>
+                    </label>
                   <label class="container-check">
-                    <input type="checkbox">
-                    <span class="checkmark bg-white">S</span>
-                  </label>
+                      <input type="checkbox" />
+                      <span class="checkmark bg-white">S</span>
+                    </label>
                   <label class="container-check">
-                    <input type="checkbox">
-                    <span class="checkmark bg-white">M</span>
-                  </label>
+                      <input type="checkbox" />
+                      <span class="checkmark bg-white">M</span>
+                    </label>
                   <label class="container-check">
-                    <input type="checkbox">
-                    <span class="checkmark bg-white">L</span>
-                  </label>
+                      <input type="checkbox" />
+                      <span class="checkmark bg-white">L</span>
+                    </label>
                   <label class="container-check">
-                    <input type="checkbox">
-                    <span class="checkmark bg-white">XL</span>
-                  </label>
+                      <input type="checkbox" />
+                      <span class="checkmark bg-white">XL</span>
+                    </label>
                 </div>
               </div>
             </div>
@@ -582,25 +690,25 @@
               <div class="row-wrap filter">
                 <div class="category-wrapper">
                   <label class="container-check">
-                    <input type="checkbox">
-                    <span class="checkmark bg-white">All</span>
-                  </label>
+                      <input type="checkbox" />
+                      <span class="checkmark bg-white">All</span>
+                    </label>
                   <label class="container-check">
-                    <input type="checkbox">
-                    <span class="checkmark bg-white">Women</span>
-                  </label>
+                      <input type="checkbox" />
+                      <span class="checkmark bg-white">Women</span>
+                    </label>
                   <label class="container-check">
-                    <input type="checkbox">
-                    <span class="checkmark bg-white">Men</span>
-                  </label>
+                      <input type="checkbox" />
+                      <span class="checkmark bg-white">Men</span>
+                    </label>
                   <label class="container-check">
-                    <input type="checkbox">
-                    <span class="checkmark bg-white">Boys</span>
-                  </label>
+                      <input type="checkbox" />
+                      <span class="checkmark bg-white">Boys</span>
+                    </label>
                   <label class="container-check">
-                    <input type="checkbox">
-                    <span class="checkmark bg-white">GirlsL</span>
-                  </label>
+                      <input type="checkbox" />
+                      <span class="checkmark bg-white">GirlsL</span>
+                    </label>
                 </div>
               </div>
             </div>
@@ -610,11 +718,15 @@
           <div class="section">
             <h6 class="heading">Brand</h6>
             <div class="row-wrap">
-              <p class="text-secondary">adidas Originals, Jack & Jones, s.Oliver</p>
+              <p class="text-secondary">
+                adidas Originals, Jack & Jones, s.Oliver
+              </p>
               <svg class="btn-arrow" width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.41 8.59009L12 13.1701L16.59 8.59009L18 10.0001L12 16.0001L6 10.0001L7.41 8.59009Z"
-                  fill="#222222" />
-              </svg>
+                  <path
+                    d="M7.41 8.59009L12 13.1701L16.59 8.59009L18 10.0001L12 16.0001L6 10.0001L7.41 8.59009Z"
+                    fill="#222222"
+                  />
+                </svg>
             </div>
           </div>
         </div>
@@ -630,7 +742,6 @@
     </div>
   </div>
   <!-- End = Modal Filter -->
-
 
   <!-- START = 404 PAGE -->
   <div class="hide-modal-404" id="modal-404">
@@ -654,8 +765,7 @@
   </div>
   <!-- END = 404 PAGE -->
   <script src="/src/scripts/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>

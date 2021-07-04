@@ -73,6 +73,10 @@ nav .container .seaching-wrapper .form {
   box-sizing: border-box;
   border-radius: 23px;
   margin-right: 10px;
+  /* background-color: hotpink; */
+  display: flex;
+  padding-right: 1rem;
+  justify-content: space-between;
 }
 
 nav .container .seaching-wrapper .form input {
@@ -193,18 +197,35 @@ nav .container .navigation-auth a.button.secondary:hover {
   /* START = NAVIGATION PUBLIC */
   nav .container {
     /* background-color: pink; */
+    width: 100%;
+    justify-content: space-between;
   }
   nav .container .seaching-wrapper {
     /* background-color: red; */
     justify-content: center;
+    width: 60%;
   }
-  nav .container .seaching-wrapper .form input {}
+  nav .container .seaching-wrapper .form {
+    /* width: 300px; */
+    width: 100%;
+  }
+  nav .container .seaching-wrapper .form button {
+    width: 5%;
+    /* background-color: rgb(253, 0, 127); */
+    padding: 5px;
+  }
+  nav .container .seaching-wrapper .form input {
+    width: 90%;
+    /* background-color: hotpink; */
+  }
   nav .container .navigation-auth {
     /* background-color: gold; */
+    width: 30%;
   }
   nav .container .navigation-auth .cart {
     margin-right: 20px;
   }
+  /* END = NAVIGATION PUBLIC */
   /* END = NAVIGATION PUBLIC */
   #navbarNavDropdown {
     display: none;
@@ -219,24 +240,35 @@ nav .container .navigation-auth a.button.secondary:hover {
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   .container {
-    /* background-color: orange; */
+    /* background-color: greenyellow; */
   }
   /* START = NAVIGATION PUBLIC */
   nav .container {
     /* background-color: pink; */
+    width: 100%;
     justify-content: space-between;
   }
   nav .container .seaching-wrapper {
     /* background-color: red; */
     justify-content: center;
-    width: 50%;
+    width: 60%;
+  }
+  nav .container .seaching-wrapper .form {
+    /* width: 300px; */
+    width: 100%;
+  }
+  nav .container .seaching-wrapper .form button {
+    width: 5%;
+    /* background-color: rgb(253, 0, 127); */
+    padding: 5px;
   }
   nav .container .seaching-wrapper .form input {
-    width: 300px;
+    width: 90%;
+    /* background-color: hotpink; */
   }
   nav .container .navigation-auth {
     /* background-color: gold; */
-    width: 30%;
+    width: 40%;
   }
   nav .container .navigation-auth .cart {
     margin-right: 20px;
@@ -331,19 +363,19 @@ nav .container .navigation-auth a.button.secondary:hover {
   /* START = NAVIGATION PUBLIC */
   nav .container {
     /* background-color: pink; */
-    padding-right: 25px;
-    padding-left: 25px;
+    justify-content: space-between;
   }
   nav .container .seaching-wrapper {
     /* background-color: red; */
-    display: none;
-    width: 70%;
-    margin-right: 16px;
-    margin-left: 8px;
     justify-content: center;
+    width: 100%;
+  }
+  nav .container .seaching-wrapper .form input {
+    width: 150px;
   }
   nav .container .navigation-auth {
-    width: 100%;
+    /* background-color: gold; */
+    width: fit-content;
   }
   nav .container .navigation-auth .cart {
     display: none;
@@ -394,49 +426,29 @@ nav .container .navigation-auth a.button.secondary:hover {
   }
   /* START = NAVIGATION PUBLIC */
   nav .container {
-    padding: 30px;
-    display: flex;
-    /* justify-content: flex-start; */
+    /* background-color: pink; */
+    justify-content: space-between;
   }
   nav .container .seaching-wrapper {
-    display: none;
-  }
-  nav .container .logo-brand {
-    width: 100%;
-  }
-  nav .container .logo-brand .logo-name {
-    font-size: 34px;
-    /* width: 330px; */
-    width: 100%;
-    margin: 0;
-    display: flex;
+    /* background-color: red; */
     justify-content: center;
+    width: 100%;
+  }
+  nav .container .seaching-wrapper .form input {
+    width: 100px;
   }
   nav .container .navigation-auth {
-    /* display: flex;  */
-    /* background-color: blue; */
+    /* background-color: gold; */
+    width: fit-content;
   }
-  nav .toggler-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-    margin-left: -65px;
-    /* background-color: blueviolet; */
-  }
-  nav .toggler-wrapper svg path:hover {
-    fill: darkgreen;
-  }
-  nav .btn-wrapper {
+  nav .container .navigation-auth .cart {
     display: none;
   }
-  nav .cart {
-    /* background-color: darkcyan; */
-    /* display: none; */
-    visibility: hidden;
-    /* background-color: darkgrey; */
+  nav .container .navigation-auth a.button {
+    display: none;
+  }
+  nav .toggler-wrapper {
+    display: inline-flex;
   }
   /* END = NAVIGATION PUBLIC */
   /* START = NAVIGATION DROPDOWN */

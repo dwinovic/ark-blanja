@@ -193,33 +193,44 @@ main form .center-wrapper {
 
 /* Customize the label (the gender) */
 
-main form .gender {
+#profile-user main form .gender {
   width: 100%;
   display: flex;
   gap: 1rem;
   align-items: center;
   align-items: center;
+  /* background-color: tomato; */
 }
 
-main form .gender input {
+#profile-user main form .gender input.form-check-input {
+  width: 10px;
+  height: 10px;
+}
+
+#profile .form-check .form-check-input {
+  float: none;
+}
+
+#profile-user main form .gender input {
   width: 15px;
+  /* background-color: turquoise; */
 }
 
-main form .gender input:checked {
+#profile-user main form .gender input:checked {
   background-color: #db3022;
 }
 
 
 /* Create a custom radio button */
 
-main form .gender .checkmark {
+#profile-user main form .gender .checkmark-gender-user {
   /* background-color: yellow; */
 }
 
 
 /* On mouse-over, add a grey background color */
 
-main form .gender:hover input~.checkmark {
+#profile-user main form .gender:hover input~.checkmark-gender-user {
   opacity: 0.5;
   cursor: pointer;
 }
@@ -227,19 +238,19 @@ main form .gender:hover input~.checkmark {
 
 /* When the radio button is checked, add a blue background */
 
-main form .gender input:checked~.checkmark {
+#profile-user main form .gender input:checked~.checkmark-gender-user {
   color: #db3022;
 }
 
 
 /* END = GENDER SELECT WRAPPER */
 
-main .content .card .body form .row .col-2,
+#profile-user main .content .card .body form .row .col-2,
 .col-10 {
   padding: 0;
 }
 
-main form .gender input {
+#profile-user main form .gender input {
   /* background-color: cornflowerblue; */
 }
 

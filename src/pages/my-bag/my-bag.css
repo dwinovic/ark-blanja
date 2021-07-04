@@ -41,21 +41,7 @@ main.container .card {
   border-radius: 4px;
 }
 
-main.container .list-cart-wrapper input[type='checkbox'] {
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
-  margin-right: 20px;
-}
-
-
-/* input checked */
-
-main.container .list-cart-wrapper input:checked~.checkmark {
-  background-color: #db3022;
-}
-
-main.container .list-cart-wrapper p {
+*/ main.container .list-cart-wrapper p {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -89,7 +75,14 @@ main.container .list-cart-wrapper .all-controls {
   padding: 22px;
   margin-bottom: 20px;
   height: 64px;
-  justify-content: space-between;
+  gap: 16px;
+  /* justify-content: space-between; */
+}
+
+main.container .list-cart-wrapper .all-controls .d-flex.justify-content-between {
+  /* background-color: tomato; */
+  width: 100%;
+  /* justify-content: space-between; */
 }
 
 main.container .list-cart-wrapper .all-controls button {
@@ -115,18 +108,26 @@ main.container .list-cart-wrapper .all-controls button:hover {
 
 /* Start = Items products */
 
-main.container .list-cart-wrapper .items-product .item {
+main.container .list-cart-wrapper .items-product .item.card {
   padding: 22px;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
+  /* justify-content: space-between; */
   flex-direction: row;
   align-items: center;
   margin-bottom: 10px;
+  /* background-color: yellow; */
+  width: 100%;
+  gap: 16px;
 }
 
-main.container .list-cart-wrapper .items-product .item .detail-product {
+main.container .list-cart-wrapper .items-product .item.card .detail-product {
   display: flex;
-  /* width: 100%; */
+  /* background-color: hotpink; */
+}
+
+main.container .list-cart-wrapper .items-product .d-flex.justify-content-between {
+  /* background-color: salmon; */
+  width: 100%;
 }
 
 main.container .list-cart-wrapper .items-product .item .detail-product img {
@@ -178,7 +179,7 @@ main.container .list-cart-wrapper .items-product .item .btn-circle.plus {
 
 main.container .list-cart-wrapper .items-product .item p.count,
 p.price {
-  height: 100%;
+  /* background-color: rebeccapurple; */
 }
 
 main.container .list-cart-wrapper .items-product .item .btn-circle:hover {
