@@ -20,7 +20,7 @@
   <!-- Global CSS = Modal Payment and Filter -->
   <link rel="stylesheet" href="/src/styles/components/global-modal.css">
   <!-- Global CSS = Sidebar -->
-  <link rel="stylesheet" href="/src/styles/components/global-sidebar.css">
+  <link rel="stylesheet" href="/src/styles/components/global-sidebar-seller.css">
 
   <!-- Global CSS = Navbar User -->
   <link rel="stylesheet" href="/src/styles/components/navbar-user.css" />
@@ -255,57 +255,65 @@
         </div>
         <div class="menu-wrapper">
           <!-- start collapse -->
-          <div class="menu-row">
-            <a class="btn-anchor" data-bs-toggle="collapse" href="#store" role="button" aria-expanded="false" aria-controls="store">
-              <div class="icon-wrapper blue">
-                <img src="/src/images/icons/IC-seller-home.svg" alt="user" />
+          <div class="collapse-bottom">
+            <div class="menu-row">
+              <a class="btn-anchor" data-bs-toggle="collapse" href="#store" role="button" aria-expanded="false" aria-controls="store">
+                <div class="icon-wrapper blue">
+                  <img src="/src/images/icons/IC-seller-home.svg" alt="user" />
+                </div>
+                <p class="text secondary active">Store</p>
+              </a>
+            </div>
+            <div class="collapse" id="store">
+              <div class="">
+                <ul>
+                  <li class="active"><a href="./seller-profile.html">Store Profile</a></li>
+                </ul>
               </div>
-              <p class="text secondary active">Store</p>
-            </a>
-          </div>
-          <div class="collapse" id="store">
-            <div class="">
-              <ul>
-                <li class="active"><a href="./seller-profile.html">Store Profile</a></li>
-              </ul>
             </div>
           </div>
           <!-- end collapse -->
           <!-- start collapse -->
-          <div class="menu-row">
-            <a class="btn-anchor" data-bs-toggle="collapse" href="#products" role="button" aria-expanded="false" aria-controls="products">
-              <div class="icon-wrapper orange">
-                <img src="/src/images/icons/IC-seller-pack.svg" alt="packed icon" />
+          <div class="collapse-bottom">
+            <div class="menu-row">
+              <a class="btn-anchor" data-bs-toggle="collapse" href="#products" role="button" aria-expanded="false" aria-controls="products">
+                <div class="icon-wrapper orange">
+                  <img src="/src/images/icons/IC-seller-pack.svg" alt="packed icon" />
+                </div>
+                <p class="text secondary">Products</p>
+              </a>
+            </div>
+            <div class="collapse" id="products">
+              <div class="">
+                <ul>
+                  <li class=""><a href="./seller-my-product.html">My Products</a></li>
+                  <li><a href="./seller-selling-products.html">Selling Products</a></li>
+                </ul>
               </div>
-              <p class="text secondary">Products</p>
-            </a>
-          </div>
-          <div class="collapse" id="products">
-            <div class="">
-              <ul>
-                <li class=""><a href="./seller-my-product.html">My Products</a></li>
-                <li><a href="./seller-selling-products.html">Selling Products</a></li>
-              </ul>
             </div>
           </div>
+
           <!-- end collapse -->
           <!-- start collapse -->
-          <div class="menu-row">
-            <a class="btn-anchor" data-bs-toggle="collapse" href="#order" role="button" aria-expanded="false" aria-controls="order">
-              <div class="icon-wrapper pink">
-                <img src="/src/images/icons/IC-seller-cart.svg" alt="cart icon" />
+          <div class="collapse-bottom">
+            <div class="menu-row">
+              <a class="btn-anchor" data-bs-toggle="collapse" href="#order" role="button" aria-expanded="false" aria-controls="order">
+                <div class="icon-wrapper pink">
+                  <img src="/src/images/icons/IC-seller-cart.svg" alt="cart icon" />
+                </div>
+                <p class="text secondary">Order</p>
+              </a>
+            </div>
+            <div class="collapse" id="order">
+              <div class="">
+                <ul>
+                  <li class=""><a href="./seller-my-order.html">My Order</a></li>
+                  <li><a href="./seller-order-cancel.html">Order Cancel</a></li>
+                </ul>
               </div>
-              <p class="text secondary">Order</p>
-            </a>
-          </div>
-          <div class="collapse" id="order">
-            <div class="">
-              <ul>
-                <li class=""><a href="./seller-my-order.html">My Order</a></li>
-                <li><a href="./seller-order-cancel.html">Order Cancel</a></li>
-              </ul>
             </div>
           </div>
+
           <!-- end collapse -->
         </div>
       </div>

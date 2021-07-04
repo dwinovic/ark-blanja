@@ -348,3 +348,27 @@ main #myTabContent .tab-pane p {
 
 
 /* END = SELLING PRODUCT PAGE */
+
+
+/* Responsive */
+
+@media (min-width: 250px) and (max-width: 480px) {
+  .container {
+    /* background-color: aqua; */
+  }
+  #selling-product main .content .card .body input {
+    width: 100%;
+  }
+  #selling-product main .content .card .body .form-wrapper .input-group {
+    width: 100%;
+  }
+  #selling-product main .content .card .body .form-wrapper .input-group span.input-group-text {
+    /* width: 100%; */
+    position: absolute;
+    right: 0;
+  }
+  #selling-product main .content .btn-submit {
+    /* background-color: yellow; */
+    width: 100%;
+  }
+}

@@ -13,20 +13,25 @@ main {
   height: 100%;
 }
 
+#selling-product body main {
+  overflow-x: hidden;
+}
+
 main .aside {
   /* background: #d40000; */
   padding-top: 150px;
   padding-right: 25px;
   width: 27%;
+  height: 100%;
   /* z-index: 9; */
   display: flex;
   justify-content: flex-end;
 }
 
 main .aside .aside-content-wrapper {
-  /* align-self: flex-start; */
+  align-self: flex-start;
   /* background-color: gold; */
-  width: 60%;
+  /* width: 60%; */
 }
 
 main .aside .user-profile-wrapper {
@@ -159,6 +164,10 @@ main .aside .menu-row .icon-wrapper img {
   .container {
     /* background-color: yellow; */
   }
+  /* Spesial Page seller-selling-product */
+  #selling-product body {
+    /* overflow-y: hidden; */
+  }
 }
 
 
@@ -243,6 +252,14 @@ main .aside .menu-row .icon-wrapper img {
     color: #222222;
     width: 100%;
   }
+  /* Sidabar bottom collapse */
+  main .aside .collapse-bottom {
+    /* background-color: pink; */
+  }
+  main .aside .collapse-bottom .collapse ul {
+    /* background-color: rebeccapurple; */
+    /* padding-left: 10px; */
+  }
   /* END = sidebar */
   main .content {
     width: 100%;
@@ -253,6 +270,10 @@ main .aside .menu-row .icon-wrapper img {
   }
   main .content .card {
     width: 90%;
+  }
+  /* Spesial Page seller-selling-product */
+  #selling-product main .content .card {
+    width: 100%;
   }
   main .content .card .body {
     flex-direction: column-reverse;
@@ -357,6 +378,14 @@ main .aside .menu-row .icon-wrapper img {
     color: #222222;
     width: 100%;
   }
+  /* Sidabar bottom collapse */
+  main .aside .collapse-bottom {
+    /* background-color: pink; */
+  }
+  main .aside .collapse-bottom .collapse ul {
+    /* background-color: rebeccapurple; */
+    /* padding-left: 10px; */
+  }
   /* END = sidebar */
   main .content {
     width: 100%;
@@ -367,6 +396,10 @@ main .aside .menu-row .icon-wrapper img {
   }
   main .content .card {
     width: 90%;
+  }
+  /* Spesial Page seller-selling-product */
+  #selling-product main .content .card {
+    width: 100%;
   }
   main .content .card .body {
     flex-direction: column-reverse;
@@ -450,6 +483,7 @@ main .aside .menu-row .icon-wrapper img {
     padding-bottom: 16px;
     /* height: 100%; */
     width: 100%;
+    /* background-color: yellow; */
   }
   main .aside .user-profile-wrapper img.avatar {
     width: 60px;
@@ -497,6 +531,70 @@ main .aside .menu-row .icon-wrapper img {
     width: 100%;
   }
   /* END = sidebar */
+  /* END = sidebar */
+  main .content {
+    width: 100%;
+    /* background-color: royalblue; */
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  main .content .card {
+    width: 90%;
+  }
+  /* Spesial Page seller-selling-product */
+  #selling-product main .content {
+    width: 100%;
+    /* background-color: royalblue; */
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  #selling-product main .content .card {
+    width: 100%;
+  }
+  main .content .card .body {
+    flex-direction: column-reverse;
+    /* background: chartreuse; */
+  }
+  main .content .card .body .photo-profile-wrapper {
+    /* background-color: rgb(255, 0, 0); */
+    margin: 0 49px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .content .card .body .photo-profile-wrapper img {
+    width: 200px;
+    height: 200px;
+    /* background-color: bisque; */
+    margin-bottom: 20px;
+  }
+  main form {
+    width: 100%;
+    /* background-color: aqua; */
+  }
+  main form.container {
+    /* background: blueviolet; */
+    padding: 0;
+  }
+  main form.container {
+    /* background-color: blue; */
+  }
+  main form .row {
+    /* background: blueviolet; */
+    height: max-content;
+    margin-bottom: 16px;
+  }
+  main .content .card form p {
+    /* background-color: pink; */
+    display: flex;
+    justify-content: flex-start;
+    /* margin-bottom: 140px; */
+  }
+  main form .btn-wrapper {
+    width: 100%;
+    margin-top: 32px;
+  }
 }
 
 
