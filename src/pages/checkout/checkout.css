@@ -4,6 +4,7 @@
   /* background-color: cyan; */
 }
 
+
 /* Button */
 
 .btn.secondary {
@@ -46,7 +47,9 @@
   opacity: 0.8;
 }
 
+
 /* Global Styling =============================== */
+
 
 /* Start = Heading Page */
 
@@ -64,7 +67,9 @@ header h1.heading-page {
   color: #222222;
 }
 
+
 /* End = Heading Page */
+
 
 /* Start = Main content ==========================*/
 
@@ -73,6 +78,7 @@ main.container {
   display: flex;
   padding: 0;
 }
+
 
 /* START = MAIN CONTENT GENERAL */
 
@@ -93,7 +99,9 @@ h3 {
   margin-bottom: 30px;
 }
 
+
 /* END = MAIN CONTENT GENERAL */
+
 
 /* Start = Information Order */
 
@@ -109,6 +117,7 @@ main.container .information-order h2 {
   color: #222222;
   margin-bottom: 14px;
 }
+
 
 /* Start = Address */
 
@@ -129,7 +138,9 @@ main.container .information-order h2 {
   width: 210px;
 }
 
+
 /* End = Address */
+
 
 /* Start = Product Order */
 
@@ -185,7 +196,9 @@ main.container .information-order h2 {
   margin: 0;
 }
 
+
 /* End = Product Order */
+
 
 /* End = Information Order */
 
@@ -232,6 +245,7 @@ main.container .total-payment .price-wrapper h3 {
   margin: 0;
 }
 
+
 /* Divider */
 
 main.container .divider {
@@ -239,9 +253,12 @@ main.container .divider {
   margin: 6px 0 18px 0;
 }
 
+
 /* End = Total Payement */
 
+
 /* End = Main content ============================ */
+
 
 /* Global Modal Start */
 
@@ -265,7 +282,9 @@ main.container .divider {
   margin: 11px 0 30px 0;
 }
 
+
 /* Global Modal End */
+
 
 /* Start = Modal Choose Address */
 
@@ -312,7 +331,9 @@ main.container .divider {
   cursor: pointer;
 }
 
+
 /* End = Modal Choose Address */
+
 
 /* Start = Modal Add New Address */
 
@@ -330,6 +351,7 @@ main.container .divider {
   color: #9b9b9b;
   /* background-color: yellow; */
 }
+
 
 /* Start = Form Input Add New Address */
 
@@ -360,6 +382,7 @@ form .row {
 form .row.row-col-2 {
   gap: 16px;
 }
+
 
 /* Responsive ada di mq-global.css start from 481px */
 
@@ -400,9 +423,12 @@ form .row.last input {
   width: 160px;
 }
 
+
 /* End = Form Input Add New Address */
 
+
 /* End = Modal Add New Address */
+
 
 /* Start = Footer Section ============================ */
 
@@ -423,5 +449,6 @@ footer p {
   font-weight: 700;
   color: #db3022;
 }
+
 
 /* End = Footer Section ============================ */

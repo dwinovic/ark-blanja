@@ -428,11 +428,12 @@ nav .container .navigation-auth a.button.secondary:hover {
   nav .container {
     /* background-color: pink; */
     justify-content: space-between;
+    padding: 10px;
   }
   nav .container .seaching-wrapper {
     /* background-color: red; */
     justify-content: center;
-    width: 100%;
+    width: 80%;
   }
   nav .container .seaching-wrapper .form input {
     width: 100px;

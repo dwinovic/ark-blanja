@@ -7,6 +7,7 @@ main.container {
   margin-top: 150px;
 }
 
+
 /* Start = Carousel ==============================*/
 
 .carousel-cell {
@@ -44,6 +45,7 @@ main.container {
   display: flex;
 }
 
+
 /* cell number */
 
 .container .main-carousel .carousel-cell a.card {
@@ -77,9 +79,12 @@ main.container {
   color: #ffffff;
 }
 
+
 /* End = Carousel =================================*/
 
+
 /* START = SECTION GENERAL =========================*/
+
 
 /* Start = Heading */
 
@@ -103,11 +108,15 @@ main section .heading p {
   margin-bottom: 30px;
 }
 
+
 /* End = Heading */
+
 
 /* END = SECTION GENERAL =========================*/
 
+
 /* Start = Category Section ======================= */
+
 
 /* Start = Category list */
 
@@ -127,10 +136,7 @@ main section.category .carousel.main-carousel .flickity-page-dots {
   display: none;
 }
 
-main
-  section.category
-  .carousel.main-carousel
-  .flickity-prev-next-button.previous {
+main section.category .carousel.main-carousel .flickity-prev-next-button.previous {
   display: none;
 }
 
@@ -167,11 +173,15 @@ main section.category .carousel.main-carousel .card h3 {
   position: absolute;
 }
 
+
 /* End = Category list */
+
 
 /* End = Category Section ======================= */
 
+
 /* Start = New Product Section ==================  */
+
 
 /* TEST GRID */
 
@@ -235,15 +245,7 @@ main section .custom-container .item .card .card-body .rating .star-wrapper {
   height: 100%;
 }
 
-main
-  section
-  .custom-container
-  .item
-  .card
-  .card-body
-  .rating
-  .star-wrapper
-  img {
+main section .custom-container .item .card .card-body .rating .star-wrapper img {
   width: 13px;
   height: 12px;
 }
@@ -253,7 +255,9 @@ main section .custom-container .item .card .card-body .rating .sold {
   color: #9b9b9b;
 }
 
+
 /* TEST GRID */
+
 
 /* End = New Product Section ==================  */
 
@@ -272,5 +276,6 @@ footer p {
   font-weight: 700;
   color: #db3022;
 }
+
 
 /* End = Main content */
