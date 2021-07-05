@@ -3,4 +3,5 @@
 Slicing UI Design to HTML and CSS Bootstrap
 [Blanja.com](https://dreamy-haibt-870680.netlify.app/)
 
-![Untitled%20176aa2b2088c45d0906ad9053ee3b7e9/mockup-blanjacom.png](Untitled%20176aa2b2088c45d0906ad9053ee3b7e9/mockup-blanjacom.png)
+![mockup-blanjacom](https://user-images.githubusercontent.com/59456940/124409434-7d1d1400-dd72-11eb-82e0-726077d122d0.png)
+
