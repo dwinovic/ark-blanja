@@ -430,13 +430,22 @@ nav .container .navigation-auth a.button.secondary:hover {
     justify-content: space-between;
     padding: 10px;
   }
+  nav .container .logo-brand .logo-name {
+    display: none;
+  }
   nav .container .seaching-wrapper {
     /* background-color: red; */
     justify-content: center;
     width: 80%;
   }
+  nav .container .seaching-wrapper .form {
+    justify-content: space-between;
+  }
   nav .container .seaching-wrapper .form input {
     width: 100px;
+  }
+  nav .container .seaching-wrapper .form button {
+    width: 0px;
   }
   nav .container .navigation-auth {
     /* background-color: gold; */
