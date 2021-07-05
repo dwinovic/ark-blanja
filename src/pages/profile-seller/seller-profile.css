@@ -295,6 +295,9 @@ main #myTabContent .tab-pane p {
   gap: 14px;
   margin-bottom: 20px;
   flex-wrap: wrap;
+  height: 200px;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 #selling-product main .content .card .body .drop-files-wrapper .box-wrapper .box-item {
@@ -304,6 +307,7 @@ main #myTabContent .tab-pane p {
 
 #selling-product main .content .card .body .drop-files-wrapper .box-wrapper .box-item:hover p.name {
   display: block;
+  margin-top: 24px;
 }
 
 #selling-product main .content .card .body .drop-files-wrapper .box-wrapper .box-item:hover .box {
@@ -314,7 +318,21 @@ main #myTabContent .tab-pane p {
 #selling-product main .content .card .body .drop-files-wrapper .box-wrapper .box-item .box {
   background: #d4d4d4;
   border-radius: 4px;
-  transition: all 0.4s ease-in-out;
+  width: 150px;
+  height: 150px;
+  /* height: fit-content; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+
+#selling-product main .content .card .body .drop-files-wrapper .box-wrapper .box-item:hover .box {
+  margin: 0 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 #selling-product main .content .card .body .drop-files-wrapper .box-wrapper .box-item p.name {
@@ -352,6 +370,54 @@ main #myTabContent .tab-pane p {
 
 /* Responsive */
 
+@media (min-width: 1281px) {
+  #selling-product main .content .card .body .drop-files-wrapper .box-wrapper {
+    height: fit-content;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    /* background-color: yellow; */
+  }
+  #selling-product main .content .card .body .drop-files-wrapper .box-wrapper {
+    height: fit-content;
+  }
+  #selling-product main .content .card .body .drop-files-wrapper .box-wrapper .box-item .box {
+    width: 130px;
+    height: 130px;
+  }
+  #selling-product main .content .card .body .drop-files-wrapper .box-wrapper {
+    height: fit-content;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    /* background-color: greenyellow; */
+  }
+  #selling-product main .content .card .body .drop-files-wrapper .box-wrapper .box-item .box {
+    width: 130px;
+    height: 130px;
+  }
+  #selling-product main .content .card .body .drop-files-wrapper .box-wrapper {
+    height: fit-content;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    /* background-color: greenyellow; */
+  }
+  #selling-product main .content .card .body .drop-files-wrapper .box-wrapper .box-item .box {
+    width: 100px;
+    height: 100px;
+  }
+  #selling-product main .content .card .body .drop-files-wrapper .box-wrapper {
+    height: fit-content;
+  }
+}
+
 @media (min-width: 250px) and (max-width: 480px) {
   .container {
     /* background-color: aqua; */
@@ -370,5 +436,12 @@ main #myTabContent .tab-pane p {
   #selling-product main .content .btn-submit {
     /* background-color: yellow; */
     width: 100%;
+  }
+  #selling-product main .content .card .body .drop-files-wrapper .box-wrapper .box-item .box {
+    width: 50px;
+    height: 50px;
+  }
+  #selling-product main .content .card .body .drop-files-wrapper .box-wrapper {
+    height: fit-content;
   }
 }
